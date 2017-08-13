@@ -38,7 +38,8 @@ public class AnswerBuilder {
 		
 		for ( QueryResultData resultData:queryResultData ) {
 			JSONObject item = new JSONObject();
-			JSONObject itemData = new JSONObject();
+			Map<String, String> data = resultData.getData();
+			JSONObject itemData = new JSONObject(data);
 			
 			String subject = shorten(resultData.getSubject());
 			subject = normalize(subject);

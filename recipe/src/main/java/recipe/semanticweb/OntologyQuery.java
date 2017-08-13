@@ -6,6 +6,7 @@
 package recipe.semanticweb;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -21,14 +22,19 @@ import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLDataPropertyExpression;
 import org.semanticweb.owlapi.model.OWLEntity;
+import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
+import org.semanticweb.owlapi.model.OWLProperty;
 import org.semanticweb.owlapi.model.PrefixManager;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
+
+import com.mysql.fabric.xmlrpc.base.Array;
 
 import de.derivo.sparqldlapi.Query;
 import de.derivo.sparqldlapi.QueryArgument;
@@ -49,6 +55,8 @@ public class OntologyQuery {
 	private QueryEngine queryEngine;
 	private String queryPattern = "";
 	private static final String RECIPEONTOLOGY_PROPERTY_FILTER = "(http://www.tesis.semantikweb.org/ontoresep/dp)";
+	
+	private OWLObject currentSentencePredicate = null;
 	
 	public static abstract class Key {
 		public abstract class Result {
@@ -80,6 +88,9 @@ public class OntologyQuery {
 	
 	public Map<String, List<? extends QueryResultModel>> execute(List<Sentence> model) throws Exception {
 		
+		Set<OWLDataProperty> dp = reasoner.getRootOntology().getDataPropertiesInSignature();
+		Set<OWLObjectProperty> op = reasoner.getRootOntology().getObjectPropertiesInSignature();
+		
 		Map<String, List<? extends QueryResultModel>> result = new HashMap<String, List<? extends QueryResultModel>>();
 		
 		List<QueryResultData> listOfQueryResultData = new ArrayList<QueryResultData>();
@@ -100,79 +111,81 @@ public class OntologyQuery {
 					
 					QueryArgument item = queryBinding.get(arg);
 					
-					if ( arg.getValue().matches("(sub|ob|)ject")) {	
+					if ( arg.getValue().matches("(sub|ob)ject")) 
+					{	
 						
 						String itemValue = item.getValue();
 						
 						IRI currentIndividualIRI = IRI.create(itemValue);			
-						OWLNamedIndividual currentIndividual = mapper.dataFactory.getOWLNamedIndividual(currentIndividualIRI);
-						
+						OWLNamedIndividual currentIndividual = mapper.dataFactory.getOWLNamedIndividual(currentIndividualIRI);						
 						OWLClass amanTapi = mapper.dataFactory.getOWLClass(IRI.create("http://www.tesis.semantikweb.org/ontoresep#Aman_tapi_dihindari"));
 						
 						boolean isInstanceOfAmanTapiDihindari = reasoner.getTypes(currentIndividual, true).containsEntity(amanTapi);
-//						reasoner.getObjectPro
-						System.out.println("status instance " + isInstanceOfAmanTapiDihindari);
-						System.out.println("opo iki " + currentIndividual.getDatatypesInSignature() );
 						
+						if ( isInstanceOfAmanTapiDihindari && this.currentSentencePredicate.toString().equals("<http://www.tesis.semantikweb.org/ontoresep#aman>") ) {
+							continue;
+						}
 						
 						if ( !boundedIndividuals.contains(currentIndividual) ) {
 								
-								final Set<OWLNamedIndividual> listOfSameIndividuals = reasoner.getSameIndividuals(currentIndividual).getEntities();
-								boundedIndividuals.addAll(listOfSameIndividuals);
+							final Set<OWLNamedIndividual> listOfSameIndividuals = reasoner.getSameIndividuals(currentIndividual).getEntities();
+							boundedIndividuals.addAll(listOfSameIndividuals);
 								
-								//////////////////////////////////////////////////////////////////////////////////////////////
-								// Siapkan objek QueryResultData															//
-								// Objek ini akan menyimpan hasil query sparql yang berupa property dan nilai propertynya	//
-								//////////////////////////////////////////////////////////////////////////////////////////////
-								final QueryResultData resultModel = new QueryResultData();
+							//////////////////////////////////////////////////////////////////////////////////////////////
+							// Siapkan objek QueryResultData															//
+							// Objek ini akan menyimpan hasil query sparql yang berupa property dan nilai propertynya	//
+							//////////////////////////////////////////////////////////////////////////////////////////////
+							final QueryResultData resultModel = new QueryResultData();
 								
-								Runnable decidedTheSubject = new Runnable() {
-									
+							Runnable decidedTheSubject = new Runnable() {
+								
 								@Override
 								public void run() {
-								for (Iterator<OWLNamedIndividual> indv = listOfSameIndividuals.iterator(); indv.hasNext();) {
-									OWLNamedIndividual i = indv.next();
+									Iterator<OWLNamedIndividual> iter = listOfSameIndividuals.iterator();
+									while( iter.hasNext() )
+									{
+										OWLNamedIndividual i = iter.next();
+										// panggil method untuk mengambil informasi object property dari 
+										// individu yang sedang di proses saat ini
+										extractDataPropertyValue(i, dp, resultModel);
+										// Panggil method untuk mengambil semua nilai (range) dari object property
+										// yang ber-relasi dengan individu yang sedang di proses saat ini
+										extractObjectPropertyValue(i, op, resultModel);
+										
+										resultModel.setSubject(i.toStringID());
+										Set<OWLClass> individualTypes = reasoner.getTypes(i, true).getFlattened();
 									
-									if ( i.toString().matches("^(<?http://www.tesis.semantikweb.org/ontoresep)/*") || !indv.hasNext()) {
-											resultModel.setSubject(i.toStringID());
-											Set<OWLClass> individualTypes = reasoner.getTypes(i, true).getFlattened();
-								
-											for ( OWLClass indvidualType:individualTypes ) {
-								
-												QueryResultModel classOfIndividualModel = new QueryResultModel();
-												QueryResultModel individualModel = new QueryResultModel();
-												classOfIndividualModel.setObject(indvidualType.toStringID());
-												individualModel.setObject(i.toStringID());
-												
-												//////////
-												// masukkan daftar hasil query sparql untuk masing-masing individu ke dalam 
-												// array list queryResultObject
-												///////////
-												listOfQueryResultObject.add(individualModel);												
-												
-												break;
-											}
-											break;
-											}
-										}
+										List<OWLClass> cls = new ArrayList<OWLClass>(individualTypes);
+										OWLClass indvidualType = cls.get(0);									
+										QueryResultModel classOfIndividualModel = new QueryResultModel();
+										QueryResultModel individualModel = new QueryResultModel();
+										classOfIndividualModel.setObject(indvidualType.toStringID());
+										individualModel.setObject(i.toStringID());
+										
+										//////////
+										// masukkan daftar hasil query sparql untuk masing-masing individu ke dalam 
+										// array list queryResultObject
+										///////////
+										listOfQueryResultObject.add(individualModel);												
 									}
-								};
+								}
+							};
 					
-								Thread decideTheSubjectThread = new Thread(decidedTheSubject);
-								decideTheSubjectThread.start();
-								decideTheSubjectThread.join();
-								
-								//////////////////////////////////////////////////////////////////////////////////////
-								// Jika individual berasal dari variabel ?subject maka pastikan ia berada 			//
-								// di array paling depan supaya hasil summryText sesuai dengan konteks pertanyaan	//
-								//////////////////////////////////////////////////////////////////////////////////////
-								if ( arg.getValue().equals("subject") ) {
-									listOfQueryResultData.add(0, resultModel);
-								} else {
-									listOfQueryResultData.add(resultModel);
-								}					
-							}
+							Thread decideTheSubjectThread = new Thread(decidedTheSubject);
+							decideTheSubjectThread.start();
+							decideTheSubjectThread.join();
+							
+							//////////////////////////////////////////////////////////////////////////////////////
+							// Jika individual berasal dari variabel ?subject maka pastikan ia berada 			//
+							// di array paling depan supaya hasil summryText sesuai dengan konteks pertanyaan	//
+							//////////////////////////////////////////////////////////////////////////////////////
+							if ( arg.getValue().equals("subject") ) {
+								listOfQueryResultData.add(0, resultModel);
+							} else {
+								listOfQueryResultData.add(resultModel);
+							}					
 						}
+					}
 				}
 			}
 			
@@ -278,6 +291,7 @@ public class OntologyQuery {
 				case "COPI":
 					inferredItem.put(Key.InferedItem.TYPE, "object");
 					inferredItem.put(Key.InferedItem.URI, listOfObjects.get(0).toString());
+					this.currentSentencePredicate = listOfObjects.get(1);
 					
 					analyzedQuery = "{\n"
 							+ "Type( ?subject ," + listOfObjects.get(0) +"),\n"
@@ -314,5 +328,37 @@ public class OntologyQuery {
 		System.out.println("\nQuery : " + query);
 		
 		return Query.create(query);
+	}
+	
+	private QueryResultData extractDataPropertyValue(OWLNamedIndividual individu, Set<OWLDataProperty> prop, QueryResultData result) {
+		for( OWLDataProperty d:prop ) {
+			Set<OWLLiteral> lit = reasoner.getDataPropertyValues(individu, d);
+			if( !lit.isEmpty() ){
+				String namaProperty = normalize(d.toStringID());
+				for(OWLLiteral l: lit) {
+					String value = l.getLiteral();
+					result.putData(namaProperty, value);
+				}
+			}
+		}
+		
+		return result;
+	}
+	
+	private QueryResultData extractObjectPropertyValue(OWLNamedIndividual individu, Set<OWLObjectProperty> prop, QueryResultData result) {
+		for( OWLObjectProperty o:prop ) {
+			Set<OWLNamedIndividual> ind = reasoner.getObjectPropertyValues(individu, (OWLObjectPropertyExpression) o).getFlattened();
+			if( !ind.isEmpty() ){
+				for( OWLNamedIndividual val: ind ) {
+					System.out.println(val);
+				}
+			}
+		}
+		
+		return result;
+	}
+	
+	private static String normalize(String uri) {
+		return uri.replaceAll("[a-z].*#", "");
 	}
 }
