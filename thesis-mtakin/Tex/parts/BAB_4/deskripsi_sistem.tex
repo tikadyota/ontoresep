@@ -1,0 +1,11 @@
+\section{Deskripsi Sistem}
+Sesuai dengan tujuan awal dari penelitian ini yaitu untuk membangun sistem \emph{question answering} data kabutapen di propinsi Nusa Tenggara Barat maka sistem akan dibangun berbasis web sehingga nantinya dapat diakses secara luas.
+
+Halaman beranda terdiri dari form untuk melakukan input pertanyaan dalam bahasa Indonesia baku yang sesuai dengan tata tulis bahasa Indonesia dan tombol untuk submit pertanyaa, kemudian sistem akan menampilkan jawaban pada halaman yang sama tanpa berpidah halaman, hal ini dimaksudkan untuk menyederhanakan interaksi pengguna dengan sistem. 
+
+Secara umum, sistem \emph{question answering} yang akan dibangun terdiri dari tiga tahapan utama yaitu proses awal, proses utama dan proses akhir. Proses awal berkaitan dengan pemrosesan kalimat tanya dimana proses ini merupakan proses transformasi bahasa alami menjadi pohon urai \emph{(parse tree)} sehingga nantinya komputer dapat memahami maksud dari pertanyaa.
+
+Proses utama merupakan proses pencarian jawaban atas pertanyaan ke dalam ontologi. Proses ini dilakukan dengan cara mengubah pohon urai yang sudah dibentuk pada proses awal menjadi statement query SPARQL-DL yang kemudian dijalankan oleh \emph{query engine}, sedangkan poses akhir adalah proses pembentukan template jawaban yang akan ditampilkan di browser.
+
+Pembentukan pohon urai diawali dengan proses POS Tagging dengan tujuan untuk menandai kelas kata. Proses POS Tagging dilakukan dengan cara melakukan pengecekan ke dalam database lexicon, apabila kelas kata tidak ditemukan, maka proses dilanjutkan dengan proses analisa morfologi untuk menebak kelas kata.
+

@@ -1,0 +1,3296 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.tesis.semantikweb.org/ontoresep#"
+     xml:base="http://www.tesis.semantikweb.org/ontoresep"
+     xmlns:ontoresep="http://www.tesis.semantikweb.org/ontoresep#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dp="http://www.tesis.semantikweb.org/ontoresep/dp#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.tesis.semantikweb.org/ontoresep"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#anjuran -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#anjuran">
+        <owl:equivalentProperty rdf:resource="http://www.tesis.semantikweb.org/ontoresep#dianjurkan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#bahan -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#bahan"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#dianjurkan -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#dianjurkan"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#dilarang -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#dilarang">
+        <owl:equivalentProperty rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pantangan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kandungan -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#kandungan"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#mencegah -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#mencegah">
+        <owl:equivalentProperty rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#meningkatkan -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#meningkatkan">
+        <owl:equivalentProperty rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pantangan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#menstabilkan -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#menstabilkan">
+        <owl:equivalentProperty rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#menurunkan -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#menurunkan">
+        <owl:equivalentProperty rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#pantangan -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#pantangan"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#pencegah -->
+
+    <owl:ObjectProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kalori -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#kalori"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#karbohidrat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#karbohidrat"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#lemak -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#lemak"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#protein -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep#protein"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep/dp#bahan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep/dp#bahan"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep/dp#bahan_isi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep/dp#bahan_isi"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep/dp#bahan_kuah -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep/dp#bahan_kuah"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep/dp#bahan_taburan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep/dp#bahan_taburan"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep/dp#bumbu_halus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep/dp#bumbu_halus"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep/dp#cara_membuat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep/dp#cara_membuat"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep/dp#jumlah_purin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep/dp#jumlah_purin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep/dp#tips_diet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.tesis.semantikweb.org/ontoresep/dp#tips_diet"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan_berpurin -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan_berpurin"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Buah -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Buah">
+        <rdfs:subClassOf rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Bumbu -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Bumbu">
+        <rdfs:subClassOf rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Ikan -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Ikan">
+        <rdfs:subClassOf rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Karbohidrat_tinggi -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Karbohidrat_tinggi">
+        <rdfs:subClassOf rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Makanan -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Minuman -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Pengganti_karbohidrat_tinggi -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Pengganti_karbohidrat_tinggi">
+        <rdfs:subClassOf rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Penyakit -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Rendah -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Rendah">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tesis.semantikweb.org/ontoresep/dp#jumlah_purin"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan_berpurin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Resep -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Sayur -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Sayur">
+        <rdfs:subClassOf rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Sayur_hijau -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Sayur_hijau">
+        <rdfs:subClassOf rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Sedang -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Sedang">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tesis.semantikweb.org/ontoresep/dp#jumlah_purin"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan_berpurin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Tinggi -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Tinggi">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.tesis.semantikweb.org/ontoresep/dp#jumlah_purin"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan_berpurin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#Zat -->
+
+    <owl:Class rdf:about="http://www.tesis.semantikweb.org/ontoresep#Zat"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#abon -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#abon">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#acar -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#acar">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#air_jahe_merah -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#air_jahe_merah">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#air_kacang_hijau -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#air_kacang_hijau">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#air_lidah_buaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#air_lidah_buaya">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#air_mentimun -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#air_mentimun">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+        <bahan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#mentimun"/>
+        <dp:bahan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 buah mentimun berukuran sedang</dp:bahan>
+        <dp:cara_membuat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parut mentimun dengan menggunakan parutan. Saring air hasil parutan mentimun, buang ampas. Air mentimun siap dinikmati.</dp:cara_membuat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#air_rebusan_daun_salam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#air_rebusan_daun_salam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#alkohol -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#alkohol">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Zat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#almond -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#almond">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#ampela_hati -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#ampela_hati">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#apel -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#apel">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#asam_urat -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#asam_urat">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+        <dp:tips_diet rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ganti nasi putih dengan nasi berah, karena lebih sedikit mengandung karbohidrat daripada beras putih. Konsumsi buah-buahan dengan serat tinggi, seperti pisang. Buah-buahan dengan serat tinggi bisa menggantikan makanan pokok</dp:tips_diet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#asam_urat_tipe_a -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#asam_urat_tipe_a">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#asam_urat_tipe_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#asam_urat_tipe_b">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#asam_urat_tipe_c -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#asam_urat_tipe_c">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#asinan -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#asinan">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#asinan_buah -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#asinan_buah">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+        <dianjurkan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+        <dp:bahan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 gram bengkuang, potong-potongrendam dalam air garam.
+100 gram jambu air, belah menjadi dua.
+100 gram mangga setengah matang, potong memanjang.
+100 gram nanas , potong-potong, rendam dalam air garam.</dp:bahan>
+        <dp:bahan_kuah rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 buah cabai merah.
+1 sdm ebi sangrai.
+1/2 sdt garam halus.
+1/2 sdt gula pasir.
+2 sdm cuka.
+400 ml air.</dp:bahan_kuah>
+        <dp:cara_membuat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haluskan cabai merah, ebi, garam,dan gula. Tambahkan cuka dan air. Masak sambil diaduk hingga mendidih. Angkat, dinginkan. Tata buah segar dalam mangkuk. Siram dengan kuah. Simpan satu jam dalam lemari es. Sajikan setelah kuah meresap.</dp:cara_membuat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#asparagus -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#asparagus">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">230</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#avocad -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#avocad">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#bacon -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#bacon">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#baking_powder -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#baking_powder">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#bakwan_jagung -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#bakwan_jagung">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+        <dp:bahan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 buah jagung manis
+25 gram wortel
+1 butir telur ayam
+4 sendok makan terigu
+Seledri
+1 batang daun bawang, diiris agak tipis
+100 gram udang, dikupas</dp:bahan>
+        <dp:bumbu_halus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garam secukupnya
+4 siung bawang putih
+1 siung bawang merah
+1 butir kemiri
+¼ sdt ketumbar
+3 buah cabai merah, ditumbuk kasar</dp:bumbu_halus>
+        <dp:cara_membuat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jagung diserut, sebagian ditumbuk kasar, sebagian bulat bulat. Campur jagung, bumbu, telur, seledri, daun bawang, udang dan terigu jadi satu. Panaskan minyak goreng. Ambil adonan satu sendok makan, terus goreng hingga kuning keemasan (matang). Sajikan</dp:cara_membuat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#bandeng_acar -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#bandeng_acar">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+        <dp:bahan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">750 gram bandeng
+1 sdt garam
+2 sdm air jeruk
+Minyak goreng secukupnya
+6 Butir bawang merah, kupas
+4 buah cabai hijau, rajang
+4 buah cabai merah, rajang
+10 buah cabai rawit merah, rajang kasar
+1 ruas jahe iris halus</dp:bahan>
+        <dp:cara_membuat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bubuhi bandeng dengan air jeruk nipis dan garam, diamkan selama 20 menit. Panaskan minyak, goreng bandeng hingga matang, angkat, sisihkan. Panaskan sedikit minyak, tumis bawang merah hingga harum. Tambahkan cabai merah, cabai hijau dan cabai rawit. Aduk hingga layu. Tambahkan jahe, sisa air jeruk dan sisa garam. Didihkan.Masukkan ikan goreng, masak sebentar dengan api besar sampai matang. Angkat, sajikan.</dp:cara_membuat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#bawang_putih -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#bawang_putih">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#bayam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#bayam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur_hijau"/>
+        <kandungan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#purin"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">570</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#belimbing -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#belimbing">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#beras_merah -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#beras_merah">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Pengganti_karbohidrat_tinggi"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#beras_putih -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#beras_putih">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Karbohidrat_tinggi"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#bihun -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#bihun">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#biji_melinjo -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#biji_melinjo">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">222</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#biji_rami -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#biji_rami">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#bir -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#bir">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <kandungan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#alkohol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#biskuit -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#biskuit">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#blackberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#blackberry">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#blueberry"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#buah_berry"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#raspberry"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#strawberry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#blewah -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#blewah">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#blueberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#blueberry">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#buah_berry"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#raspberry"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#strawberry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#brokoli -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#brokoli">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur_hijau"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#buah_berry -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#buah_berry">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#raspberry"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#strawberry"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#buah_ceri -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#buah_ceri">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#buah_dalam_kaleng -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#buah_dalam_kaleng">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#buah_naga -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#buah_naga">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#bubur -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#bubur">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Karbohidrat_tinggi"/>
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#ca_sawi_ayam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#ca_sawi_ayam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#bawang_putih"/>
+        <dp:bahan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 ikat sawi hijau (200 gram)
+    6 buah bawang merah
+    2 siung bawang putih
+    1 ruas laos
+    3 buah tomat
+    2 biji cabai merah
+    5 biji cabai rawit
+    10 biji petai (jika suka)
+    8 buah bakso
+    200 gram daging ayam potong dadu
+    200 gram tahu cina
+    ½ sdt terasi
+    1 sdm Kecap manis</dp:bahan>
+        <dp:cara_membuat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1. Sawi dipotong-potong sepanjang 2-3 cm, buang batang yang besar untuk mengurangi rasa pahit, kemudian cuci hingga bersih.
+    2. Rajang bawang putih, bawang merah dan laos.
+    3. Potong cabai rawit, cabai merah, dan petai
+    4. Potong dadu tomat dan tahu, tahunya untuk digoren tersendiri
+    5. Tumis bawang putih, bawang merah, cabai rawit, dan cabai merah.
+    6. Masukkan ayam, lalu sawi. Aduk hingga rata sampai setengah matang
+    7. Masukkan terasi, laos, sedikit garam dan air. Aduk rata hinga air meresap ke dalam masakan.
+    8. Masukkan petai dan kecap manis, terakhir tahu goreng.
+    9. Sajikan.</dp:cara_membuat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#cabai -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#cabai">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#coklat -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#coklat">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#coklat_hitam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#coklat_hitam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#coklat_padat -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#coklat_padat">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#dark_chocolate"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#crepes_isi_ragout -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#crepes_isi_ragout">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+        <kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</kalori>
+        <karbohidrat rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</karbohidrat>
+        <lemak rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</lemak>
+        <protein rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</protein>
+        <dp:bahan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 gram tepung terigu
+    1 butir kuning telur ayam,pisahkan bagian kuning dan putihnya
+    250 ml susu skim cair
+    1/2 sdt garam
+    1 sdm minyak jagung untuk mengoles</dp:bahan>
+        <dp:bahan_isi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 sdm minyak jagung
+    30 gram tepung terigu
+    250 ml susu skim cair
+    50 gram daging ayam tanpa kulit, rebus, iris kecil
+    50 gram wortel, iris dadu kecil, rebus
+    1/2 sdt garam
+    1/2 sdt merica bubuk
+    h.25 gram keju parut
+    1 sdm seledri cincang
+    1 sdt gula pasir</dp:bahan_isi>
+        <dp:cara_membuat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kulit: campur tepung terigu bersama kuning telur, aduk. Tuangi susu sedikit demi sedikit sambil diaduk rata. Tambahkan putih telur dan garam, aduk rata. 
+Panaskan wajan dadar antilengket yang telah diolesi dengan minyak jagung. Tuangkan adonan sebanyak 1 sendok sayur, ratakan. Buat dadar tipis-tipis hingga adonan habis.
+
+Isi : panaskan minyak jagung. Masukkan tepung terigu,aduk-aduk hingga berbutir-butir. Tuangkan susu sedikit demi sedikit sambil diaduk rata. Masukkan daging ayam, wortel, garam, merica, keju parut, seledri, dan gula pasir.Masak hingga matang , angkat, dan sisihkan.
+Ambil selembar dadar. Beri 1 sdm isi ragout,gulung. Siap dihidangkan.</dp:cara_membuat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#dada_ayam_berkulit -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#dada_ayam_berkulit">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">175</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#daging_angsa -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#daging_angsa">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">165</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#daging_asap -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#daging_asap">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#daging_ayam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#daging_ayam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">169</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#daging_bebek -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#daging_bebek">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">138</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#daging_kambing -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#daging_kambing">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#daging_kuda -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#daging_kuda">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#daging_sapi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#daging_sapi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#daging_segar -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#daging_segar">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#dark_chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#dark_chocolate">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#daun_melinjo -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#daun_melinjo">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">366</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#daun_salam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#daun_salam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#dendeng -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#dendeng">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#diabetes">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+        <dp:tips_diet rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pengolahan makanan harus dikukus atau direbus</dp:tips_diet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#durian -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#durian">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#ebi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#ebi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#gandum -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#gandum">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#garam_dapur -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#garam_dapur">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#ginjal_sapi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#ginjal_sapi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">269</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#gula -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#gula">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#ham -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#ham">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#hati_ayam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#hati_ayam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">243</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#hati_sapi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#hati_sapi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">554</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#hipertensi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#hipertensi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+        <dp:tips_diet rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maksimal konsumsi garam untuk penderita hipertensi adalah 1 sendok teh per hari</dp:tips_diet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#hunkue -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#hunkue">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#ikan_asin -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#ikan_asin">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#ikan_kakap -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#ikan_kakap">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">160</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#ikan_kaleng -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#ikan_kaleng">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#ikan_sarden -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#ikan_sarden">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">480</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#ikan_teri -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#ikan_teri">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">239</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jahe_merah -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jahe_merah">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jambu -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jambu">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jambu_biji -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jambu_biji">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jamu_temulawak -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jamu_temulawak">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jamur -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jamur">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">910</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jantung_kambing -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jantung_kambing">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">241</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jantung_sapi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jantung_sapi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jeruk -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jeruk">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_jambu_biji -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_jambu_biji">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_jeruk -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_jeruk">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#orange_juice"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_jeruk_keprok -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_jeruk_keprok">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_jeruk_nipis -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_jeruk_nipis">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_mangga -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_mangga">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_melon -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_melon">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_pepaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_pepaya">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_pisang -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_pisang">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_seledri -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_seledri">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_sirsak -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_sirsak">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#jus_tomat -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#jus_tomat">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kacang_hijau -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kacang_hijau">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kacang_kedelai -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kacang_kedelai">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kacang_merah -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kacang_merah">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kacang_polong -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kacang_polong">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kacang_tanah -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kacang_tanah">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kafein -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kafein">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Zat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kafein_coklat -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kafein_coklat">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2300</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kangkung -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kangkung">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">290</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kayu_manis -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kayu_manis">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kecap -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kecap">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#keju -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#keju">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kembang_kol -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kembang_kol">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">510</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kembung -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kembung">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Ikan"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kenari -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kenari">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kentang -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kentang">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Pengganti_karbohidrat_tinggi"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kerang -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kerang">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kopi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kopi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <kandungan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#kafein"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kopi_tanpa_gula -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kopi_tanpa_gula">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kornet -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kornet">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kue_kering -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kue_kering">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#kunyit -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#kunyit">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#lidah_sapi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#lidah_sapi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">160</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#limpa_kambing -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#limpa_kambing">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">773</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#limpa_sapi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#limpa_sapi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">444</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#lobster -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#lobster">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#lontong -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#lontong">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Karbohidrat_tinggi"/>
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#madu -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#madu">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#makaroni -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#makaroni">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#manisan_buah -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#manisan_buah">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#margarin -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#margarin">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#margarin_tanpa_garam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#margarin_tanpa_garam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#melon -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#melon">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#mengkudu -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#mengkudu">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#mentega -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#mentega">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#mentega_tanpa_garam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#mentega_tanpa_garam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#mentimun -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#mentimun">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#mie -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#mie">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#mie_hokian -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#mie_hokian">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+        <bahan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#bihun"/>
+        <bahan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#mie"/>
+        <kalori rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">305</kalori>
+        <karbohidrat rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</karbohidrat>
+        <lemak rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</lemak>
+        <protein rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</protein>
+        <dp:bahan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mi basah 50 g
+    Bihun kering 25 g
+    Sawi 3 lbr
+    Daun bawang 1 btg
+    Minyak untuk menumis 1 sdt
+    Bawang putih 3 siung cincang
+    Jahe cincang 1 sdt
+    Merica bubuk dan garam secukupnya</dp:bahan>
+        <dp:bahan_taburan rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telur ayam 1 btr orak arik
+    Daun ketumbar cincang 1 sdt
+    Wortel serut 1 sdm</dp:bahan_taburan>
+        <dp:cara_membuat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potong-potong sawi 3 cm dan iris serong daun bawang dengan ukuran 2 cm.
+Cuci mi basah, tiriskan. Rendam bihun hingga lunak, tiriskan.
+Panaskan minyak goreng dalam wajan diatas api besar, tumis bawang putih dan jahe hingga harum,tuang sedikit air dan masukkan merica.
+Masukkan sawi dan daun bawang,setelah agak layu masukkan mi basah dan bihun, aduk hingga rata.
+Angkat,hidangkan panas dengan taburan telur orak arik, daun ketumbar dan wortel serut.</dp:cara_membuat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#minuman_bersoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#minuman_bersoda">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#soft_drink"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#minuman_coklat -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#minuman_coklat">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#minuman_kaleng -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#minuman_kaleng">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#minuman_lidah_buaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#minuman_lidah_buaya">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#minyak_goreng -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#minyak_goreng">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#minyak_goreng_tanpa_garam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#minyak_goreng_tanpa_garam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#minyak_zaitun -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#minyak_zaitun">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#mkui -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#mkui">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#nanas -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#nanas">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#nasi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#nasi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Karbohidrat_tinggi"/>
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#nasi_goreng_sayur -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#nasi_goreng_sayur">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#oat -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#oat">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#oatmeal -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#oatmeal">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Pengganti_karbohidrat_tinggi"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#orange_juice -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#orange_juice">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#oseng_kikil -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#oseng_kikil">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#pare -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#pare">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#paru_paru_sapi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#paru_paru_sapi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">339</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#pasta -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#pasta">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#pepaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#pepaya">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#perkedel_kentang -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#perkedel_kentang">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+        <bahan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#kentang"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#petis -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#petis">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#pie_aneka_buah -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#pie_aneka_buah">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#pie_anggur -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#pie_anggur">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#pisang -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#pisang">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#puding -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#puding">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#puding_jagung_manis -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#puding_jagung_manis">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#puding_strawberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#puding_strawberry">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#purin -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#purin">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Zat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#raspberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#raspberry">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <owl:sameAs rdf:resource="http://www.tesis.semantikweb.org/ontoresep#strawberry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#roti -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#roti">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#roti_putih -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#roti_putih">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#rujak_gohu -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#rujak_gohu">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#salmon -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#salmon">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Ikan"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sandwich_tuna_panggang -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sandwich_tuna_panggang">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#santan -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#santan">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sate_kerang -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sate_kerang">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sate_sarepeh -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sate_sarepeh">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#saus_tomat -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#saus_tomat">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sawi_asin -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sawi_asin">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sayur_dalam_kaleng -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sayur_dalam_kaleng">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sayur_pare -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sayur_pare">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sayur_rica_rodoh -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sayur_rica_rodoh">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sayur_sawi_bakso_ikan -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sayur_sawi_bakso_ikan">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#schotel_makaroni -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#schotel_makaroni">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#selai_kacang -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#selai_kacang">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#seledri -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#seledri">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#semangka -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#semangka">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sereal -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sereal">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Pengganti_karbohidrat_tinggi"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#singkong -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#singkong">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sirsak -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sirsak">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#soda_kue -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#soda_kue">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#soft_drink -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#soft_drink">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#spageti -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#spageti">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#strawberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#strawberry">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Buah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sup_ceker_ayam -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sup_ceker_ayam">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#sup_ikan_kembung -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#sup_ikan_kembung">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#susu -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#susu">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+        <kandungan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#purin"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#susu_kedelai -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#susu_kedelai">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#susu_sapi_rendah_lemak -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#susu_sapi_rendah_lemak">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#tahu -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#tahu">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#tapioka -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#tapioka">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#tauco -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#tauco">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#teh -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#teh">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#telur_asin -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#telur_asin">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#telur_dadar -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#telur_dadar">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#telur_pindang -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#telur_pindang">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#telur_rebus -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#telur_rebus">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#tempe -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#tempe">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">141</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#tempe_kukus_cabe_hijau -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#tempe_kukus_cabe_hijau">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#terasi -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#terasi">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#terigu -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#terigu">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#tomat -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#tomat">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Sayur"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#tumis_tahu_kentang_seledri -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#tumis_tahu_kentang_seledri">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#tuna -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#tuna">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Ikan"/>
+        <pencegah rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#udang -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#udang">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <dp:jumlah_purin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</dp:jumlah_purin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#udang_kering -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#udang_kering">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+        <pantangan rdf:resource="http://www.tesis.semantikweb.org/ontoresep#hipertensi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#vetsin -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#vetsin">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bumbu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.tesis.semantikweb.org/ontoresep#yogurt -->
+
+    <owl:NamedIndividual rdf:about="http://www.tesis.semantikweb.org/ontoresep#yogurt">
+        <rdf:type rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+        <anjuran rdf:resource="http://www.tesis.semantikweb.org/ontoresep#diabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.tesis.semantikweb.org/ontoresep#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.tesis.semantikweb.org/ontoresep#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.tesis.semantikweb.org/ontoresep#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resep_pantangan_berdasarkan_minuman</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep/dp#bahan"/>
+                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pantangan"/>
+                                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+                                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pantangan"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asam urat tipe A tidak boleh mengkonsumsi makanan berpurin tinggi</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rule_purin_tinggi_asam_urat_A</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Tinggi"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pantangan"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat_tipe_a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asam urat tidak boleh mengkonsumsi makanan berpurin</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rule_purin_dan_asam_urat</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#kandungan"/>
+                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#purin"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pantangan"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#asam_urat"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resep_anjuran</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#bahan"/>
+                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#anjuran"/>
+                                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+                                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#anjuran"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resep_pencegah</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#bahan"/>
+                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+                                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+                                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resep_pantangan</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep/dp#bahan"/>
+                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Bahan_makanan"/>
+                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pantangan"/>
+                                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+                                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pantangan"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resep_anjuran_berdasarkan_makanan</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#bahan"/>
+                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#anjuran"/>
+                                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+                                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#anjuran"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resep_pantangan_berdasarkan_makanan</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#bahan"/>
+                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+                                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+                                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resep_pencegah_berdasarkan_makanan</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#bahan"/>
+                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Makanan"/>
+                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+                                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+                                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resep_anjuran_berdasarkan_minuman</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep/dp#bahan"/>
+                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#anjuran"/>
+                                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+                                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#anjuran"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resep_pencegah_berdasarkan_minuman</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Resep"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#bahan"/>
+                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Minuman"/>
+                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+                                                <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#Penyakit"/>
+                                                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.tesis.semantikweb.org/ontoresep#pencegah"/>
+                        <swrl:argument1 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#x"/>
+                        <swrl:argument2 rdf:resource="http://www.tesis.semantikweb.org/ontoresep#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

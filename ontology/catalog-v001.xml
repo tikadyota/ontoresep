@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1502642498166" name="duplicate:http://www.tesis.semantikweb.org/ontoresep" uri="OntologiResepV14.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1502642498166" name="duplicate:http://www.tesis.semantikweb.org/ontoresep" uri="OntologiResepV15.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1502642498166" name="duplicate:http://www.tesis.semantikweb.org/ontoresep" uri="OntologiResepV4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1502642498166" name="duplicate:http://www.tesis.semantikweb.org/ontoresep" uri="OntologiResepV8-noSWRLB.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1502642498166" name="duplicate:http://www.tesis.semantikweb.org/ontoresep" uri="OntologiResepV9-edit.owl"/>
+    </group>
+</catalog>

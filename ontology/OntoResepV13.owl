@@ -1,0 +1,1374 @@
+Prefix(:=<http://www.tesis.semantikweb.org/ontoresep#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.tesis.semantikweb.org/ontoresep>
+
+Declaration(Class(:Alkohol))
+Declaration(Class(:Bahan_makanan))
+Declaration(Class(:Bahan_makanan_berpurin))
+Declaration(Class(:Bahan_makanan_berpurin_rendah))
+Declaration(Class(:Bahan_makanan_berpurin_sedang))
+Declaration(Class(:Bahan_makanan_berpurin_tinggi))
+Declaration(Class(:Buah))
+Declaration(Class(:Bumbu))
+Declaration(Class(:Herbal))
+Declaration(Class(:Ikan))
+Declaration(Class(:Kafein))
+Declaration(Class(:Makanan))
+Declaration(Class(:Minuman))
+Declaration(Class(:Penyakit))
+Declaration(Class(:Proses_memasak))
+Declaration(Class(:Resep))
+Declaration(Class(:Resep_masakan))
+Declaration(Class(:Sayur))
+Declaration(Class(:Sayur_hijau))
+Declaration(ObjectProperty(:boleh_makan))
+Declaration(ObjectProperty(:dianjurkan))
+Declaration(ObjectProperty(:dibuat))
+Declaration(ObjectProperty(:dibuat_dengan))
+Declaration(ObjectProperty(:dihindari))
+Declaration(ObjectProperty(:dikonsumsi))
+Declaration(ObjectProperty(:dimasak))
+Declaration(ObjectProperty(:diproses))
+Declaration(ObjectProperty(:disarankan))
+Declaration(ObjectProperty(:hasIngredient))
+Declaration(ObjectProperty(:mengonsumsi))
+Declaration(ObjectProperty(:menurunkan))
+Declaration(ObjectProperty(:pantangan))
+Declaration(ObjectProperty(:pencegah))
+Declaration(ObjectProperty(:terbuat))
+Declaration(DataProperty(:bahan_bahan))
+Declaration(DataProperty(:cara_memasak))
+Declaration(DataProperty(:cara_membuat))
+Declaration(DataProperty(:cara_mengolah))
+Declaration(DataProperty(:gambar))
+Declaration(DataProperty(:jumlah_porsi))
+Declaration(DataProperty(:jumlah_purin))
+Declaration(DataProperty(:kadar_purin))
+Declaration(DataProperty(:kalori))
+Declaration(DataProperty(:karbohidrat))
+Declaration(DataProperty(:kolesterol))
+Declaration(DataProperty(:lemak))
+Declaration(DataProperty(:natrium))
+Declaration(DataProperty(:protein))
+Declaration(DataProperty(:serat))
+Declaration(DataProperty(:website))
+Declaration(NamedIndividual(:abon))
+Declaration(NamedIndividual(:acar))
+Declaration(NamedIndividual(:air))
+Declaration(NamedIndividual(:air_kacang_hijau))
+Declaration(NamedIndividual(:air_timun))
+Declaration(NamedIndividual(:almond))
+Declaration(NamedIndividual(:apel))
+Declaration(NamedIndividual(:asam_urat))
+Declaration(NamedIndividual(:asam_urat_tipe_a))
+Declaration(NamedIndividual(:asam_urat_tipe_b))
+Declaration(NamedIndividual(:asam_urat_tipe_c))
+Declaration(NamedIndividual(:asinan))
+Declaration(NamedIndividual(:asinan_buah))
+Declaration(NamedIndividual(:asparagus))
+Declaration(NamedIndividual(:ati_ayam_balado))
+Declaration(NamedIndividual(:avocad))
+Declaration(NamedIndividual(:bacon))
+Declaration(NamedIndividual(:bakar))
+Declaration(NamedIndividual(:baking_powder))
+Declaration(NamedIndividual(:bawang_putih))
+Declaration(NamedIndividual(:bayam))
+Declaration(NamedIndividual(:belimbing))
+Declaration(NamedIndividual(:beras))
+Declaration(NamedIndividual(:beras_merah))
+Declaration(NamedIndividual(:biji_melinjo))
+Declaration(NamedIndividual(:biji_rami))
+Declaration(NamedIndividual(:blackberry))
+Declaration(NamedIndividual(:blueberry))
+Declaration(NamedIndividual(:brokoli))
+Declaration(NamedIndividual(:buah_beri))
+Declaration(NamedIndividual(:buah_ceri))
+Declaration(NamedIndividual(:buah_naga))
+Declaration(NamedIndividual(:cabai))
+Declaration(NamedIndividual(:coklat))
+Declaration(NamedIndividual(:coklat_padat))
+Declaration(NamedIndividual(:dada_ayam))
+Declaration(NamedIndividual(:dada_ayam_berkulit))
+Declaration(NamedIndividual(:daging_angsa))
+Declaration(NamedIndividual(:daging_asap))
+Declaration(NamedIndividual(:daging_bebek))
+Declaration(NamedIndividual(:daging_kambing))
+Declaration(NamedIndividual(:daging_kuda))
+Declaration(NamedIndividual(:daging_merah))
+Declaration(NamedIndividual(:daging_sapi))
+Declaration(NamedIndividual(:daging_segar))
+Declaration(NamedIndividual(:dark_chocolate))
+Declaration(NamedIndividual(:daun_melinjo))
+Declaration(NamedIndividual(:dendeng))
+Declaration(NamedIndividual(:diabetes))
+Declaration(NamedIndividual(:durian))
+Declaration(NamedIndividual(:ebi))
+Declaration(NamedIndividual(:gandum))
+Declaration(NamedIndividual(:garam))
+Declaration(NamedIndividual(:garam_dapur))
+Declaration(NamedIndividual(:ginjal_sapi))
+Declaration(NamedIndividual(:goreng))
+Declaration(NamedIndividual(:gulai_kambing))
+Declaration(NamedIndividual(:ham))
+Declaration(NamedIndividual(:hati_ayam))
+Declaration(NamedIndividual(:hati_sapi))
+Declaration(NamedIndividual(:hipertensi))
+Declaration(NamedIndividual(:ikan_asin))
+Declaration(NamedIndividual(:ikan_kakap))
+Declaration(NamedIndividual(:ikan_kaleng))
+Declaration(NamedIndividual(:ikan_sarden))
+Declaration(NamedIndividual(:ikan_teri))
+Declaration(NamedIndividual(:jahe_merah))
+Declaration(NamedIndividual(:jamur))
+Declaration(NamedIndividual(:jantung_kambing))
+Declaration(NamedIndividual(:jantung_sapi))
+Declaration(NamedIndividual(:jeruk))
+Declaration(NamedIndividual(:jus_buah_naga))
+Declaration(NamedIndividual(:jus_jeruk))
+Declaration(NamedIndividual(:jus_melon))
+Declaration(NamedIndividual(:jus_pepaya))
+Declaration(NamedIndividual(:jus_pisang))
+Declaration(NamedIndividual(:jus_seledri))
+Declaration(NamedIndividual(:jus_sirsak))
+Declaration(NamedIndividual(:jus_tomat))
+Declaration(NamedIndividual(:kacang))
+Declaration(NamedIndividual(:kacang_kedelai))
+Declaration(NamedIndividual(:kacang_merah))
+Declaration(NamedIndividual(:kacang_polong))
+Declaration(NamedIndividual(:kacang_tanah))
+Declaration(NamedIndividual(:kafein_coklat))
+Declaration(NamedIndividual(:kangkung))
+Declaration(NamedIndividual(:kayu_manis))
+Declaration(NamedIndividual(:kedelai))
+Declaration(NamedIndividual(:keju))
+Declaration(NamedIndividual(:kembang_kol))
+Declaration(NamedIndividual(:kembung))
+Declaration(NamedIndividual(:kenari))
+Declaration(NamedIndividual(:kentang))
+Declaration(NamedIndividual(:kerang))
+Declaration(NamedIndividual(:kopi))
+Declaration(NamedIndividual(:kornet))
+Declaration(NamedIndividual(:kukus))
+Declaration(NamedIndividual(:kunyit))
+Declaration(NamedIndividual(:lidah_sapi))
+Declaration(NamedIndividual(:limpa_kambing))
+Declaration(NamedIndividual(:limpa_sapi))
+Declaration(NamedIndividual(:lobster))
+Declaration(NamedIndividual(:lontong_sayur_medan))
+Declaration(NamedIndividual(:madu))
+Declaration(NamedIndividual(:margarin))
+Declaration(NamedIndividual(:mengkudu))
+Declaration(NamedIndividual(:mentega))
+Declaration(NamedIndividual(:mie))
+Declaration(NamedIndividual(:mie_hokian))
+Declaration(NamedIndividual(:minuman_coklat))
+Declaration(NamedIndividual(:minuman_kalengan))
+Declaration(NamedIndividual(:minuman_lidah_buaya))
+Declaration(NamedIndividual(:minyak_zaitun))
+Declaration(NamedIndividual(:nanas))
+Declaration(NamedIndividual(:oat))
+Declaration(NamedIndividual(:orange_juice))
+Declaration(NamedIndividual(:oseng_kikil))
+Declaration(NamedIndividual(:panggang))
+Declaration(NamedIndividual(:pare))
+Declaration(NamedIndividual(:paru_sapi))
+Declaration(NamedIndividual(:pasta))
+Declaration(NamedIndividual(:pepaya))
+Declaration(NamedIndividual(:peria))
+Declaration(NamedIndividual(:petis))
+Declaration(NamedIndividual(:pisang))
+Declaration(NamedIndividual(:puding))
+Declaration(NamedIndividual(:puding_strawberry))
+Declaration(NamedIndividual(:raspberry))
+Declaration(NamedIndividual(:rebus))
+Declaration(NamedIndividual(:roti_putih))
+Declaration(NamedIndividual(:salmon))
+Declaration(NamedIndividual(:santan))
+Declaration(NamedIndividual(:sawi_asin))
+Declaration(NamedIndividual(:sayur_dalam_kaleng))
+Declaration(NamedIndividual(:sayur_rica_rodoh))
+Declaration(NamedIndividual(:sayur_tumis))
+Declaration(NamedIndividual(:selai_kacang))
+Declaration(NamedIndividual(:seledri))
+Declaration(NamedIndividual(:semangka))
+Declaration(NamedIndividual(:sereal))
+Declaration(NamedIndividual(:soda))
+Declaration(NamedIndividual(:soft_drink))
+Declaration(NamedIndividual(:spageti))
+Declaration(NamedIndividual(:strawberry))
+Declaration(NamedIndividual(:sup_ceker_ayam))
+Declaration(NamedIndividual(:sup_ikan_kembung))
+Declaration(NamedIndividual(:susu))
+Declaration(NamedIndividual(:susu_kedelai))
+Declaration(NamedIndividual(:susu_sapi_rendah_lemak))
+Declaration(NamedIndividual(:tahu))
+Declaration(NamedIndividual(:teh))
+Declaration(NamedIndividual(:telur))
+Declaration(NamedIndividual(:telur_asin))
+Declaration(NamedIndividual(:telur_dadar))
+Declaration(NamedIndividual(:telur_pindang))
+Declaration(NamedIndividual(:telur_rebus))
+Declaration(NamedIndividual(:tempe))
+Declaration(NamedIndividual(:tempe_kukus_cabe_hijau))
+Declaration(NamedIndividual(:teobromin))
+Declaration(NamedIndividual(:terasi))
+Declaration(NamedIndividual(:tomat))
+Declaration(NamedIndividual(:tumis))
+Declaration(NamedIndividual(:tumis_pare))
+Declaration(NamedIndividual(:tumis_tahu_kentang_seledri))
+Declaration(NamedIndividual(:tuna))
+Declaration(NamedIndividual(:udang))
+Declaration(NamedIndividual(:udang_kering))
+Declaration(NamedIndividual(:vetsin))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :dibuat_dengan (:dibuat_dengan)
+
+SubObjectPropertyOf(:dibuat_dengan owl:topObjectProperty)
+
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Alkohol (:Alkohol)
+
+SubClassOf(:Alkohol :Minuman)
+
+# Class: :Bahan_makanan_berpurin (:Bahan_makanan_berpurin)
+
+AnnotationAssertion(rdfs:comment :Bahan_makanan_berpurin "Bahan makanan yang mengandung zat purin. purin adalah komponen dari makanan tertentu yang di metabolisme menjadi asam urat pada tubuh.")
+SubClassOf(:Bahan_makanan_berpurin :Bahan_makanan)
+
+# Class: :Bahan_makanan_berpurin_rendah (:Bahan_makanan_berpurin_rendah)
+
+AnnotationAssertion(rdfs:comment :Bahan_makanan_berpurin_rendah "Bahan makanan berpurin rendah adalah bahan makanan yang mengandung jumlah purin rendah antara 0-50mg/100 makanan. contohnya adalah keju, susu dan telur.")
+EquivalentClasses(:Bahan_makanan_berpurin_rendah ObjectIntersectionOf(:Bahan_makanan DataSomeValuesFrom(:jumlah_purin DatatypeRestriction(xsd:integer xsd:minInclusive "0"^^xsd:integer xsd:maxExclusive "50"^^xsd:integer))))
+SubClassOf(:Bahan_makanan_berpurin_rendah :Bahan_makanan_berpurin)
+
+# Class: :Bahan_makanan_berpurin_sedang (:Bahan_makanan_berpurin_sedang)
+
+AnnotationAssertion(rdfs:comment :Bahan_makanan_berpurin_sedang "Bahan makanan berpurin tinggi adalah bahan makanan yang mengandung jumlah purin sedang yaitu antara 50-150mg/100gram bahan makanan. contohnya adalah kacang-kacangan, aspargus, buncis, jamur, daun singkong, daun pepaya dan kangkung.")
+EquivalentClasses(:Bahan_makanan_berpurin_sedang ObjectIntersectionOf(:Bahan_makanan DataSomeValuesFrom(:jumlah_purin DatatypeRestriction(xsd:integer xsd:minInclusive "50"^^xsd:integer xsd:maxInclusive "150"^^xsd:integer))))
+SubClassOf(:Bahan_makanan_berpurin_sedang :Bahan_makanan_berpurin)
+
+# Class: :Bahan_makanan_berpurin_tinggi (:Bahan_makanan_berpurin_tinggi)
+
+AnnotationAssertion(rdfs:comment :Bahan_makanan_berpurin_tinggi "Bahan makanan berpurin tinggi adalah bahan makanan yang mengandung jumlah purin tinggi yaitu antara 150-800 mg / 100gram bahan makanan. contohnya adalah hati, ginjal, jantung, paru (semua jeroan), udang, alkohol dan tape (ragi).")
+EquivalentClasses(:Bahan_makanan_berpurin_tinggi ObjectIntersectionOf(:Bahan_makanan DataSomeValuesFrom(:jumlah_purin DatatypeRestriction(xsd:integer xsd:minExclusive "150"^^xsd:integer))))
+SubClassOf(:Bahan_makanan_berpurin_tinggi :Bahan_makanan_berpurin)
+
+# Class: :Buah (:Buah)
+
+SubClassOf(:Buah :Bahan_makanan)
+
+# Class: :Bumbu (:Bumbu)
+
+SubClassOf(:Bumbu :Bahan_makanan)
+
+# Class: :Herbal (:Herbal)
+
+SubClassOf(:Herbal :Minuman)
+
+# Class: :Ikan (:Ikan)
+
+SubClassOf(:Ikan :Bahan_makanan)
+
+# Class: :Kafein (:Kafein)
+
+SubClassOf(:Kafein :Minuman)
+
+# Class: :Makanan (:Makanan)
+
+EquivalentClasses(:Makanan ObjectComplementOf(:Minuman))
+
+# Class: :Minuman (:Minuman)
+
+EquivalentClasses(:Minuman ObjectComplementOf(:Makanan))
+
+# Class: :Resep_masakan (:Resep_masakan)
+
+SubClassOf(:Resep_masakan :Resep)
+
+# Class: :Sayur (:Sayur)
+
+SubClassOf(:Sayur :Bahan_makanan)
+
+# Class: :Sayur_hijau (:Sayur_hijau)
+
+SubClassOf(:Sayur_hijau :Sayur)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :abon (:abon)
+
+ClassAssertion(:Makanan :abon)
+
+# Individual: :acar (:acar)
+
+ClassAssertion(:Makanan :acar)
+
+# Individual: :air (:air)
+
+ClassAssertion(:Bahan_makanan :air)
+
+# Individual: :air_kacang_hijau (:air_kacang_hijau)
+
+ClassAssertion(:Minuman :air_kacang_hijau)
+ObjectPropertyAssertion(:dianjurkan :air_kacang_hijau :hipertensi)
+
+# Individual: :air_timun (:air_timun)
+
+ClassAssertion(:Resep :air_timun)
+
+# Individual: :almond (:almond)
+
+ClassAssertion(:Bahan_makanan :almond)
+SameIndividual(:almond :kacang)
+
+# Individual: :apel (:apel)
+
+ClassAssertion(:Buah :apel)
+ObjectPropertyAssertion(:pencegah :apel :diabetes)
+
+# Individual: :asam_urat (:asam_urat)
+
+ClassAssertion(:Penyakit :asam_urat)
+
+# Individual: :asam_urat_tipe_a (:asam_urat_tipe_a)
+
+ClassAssertion(:Penyakit :asam_urat_tipe_a)
+
+# Individual: :asam_urat_tipe_b (:asam_urat_tipe_b)
+
+ClassAssertion(:Penyakit :asam_urat_tipe_b)
+
+# Individual: :asam_urat_tipe_c (:asam_urat_tipe_c)
+
+ClassAssertion(:Penyakit :asam_urat_tipe_c)
+
+# Individual: :asinan (:asinan)
+
+ClassAssertion(:Makanan :asinan)
+
+# Individual: :asinan_buah (:asinan_buah)
+
+ClassAssertion(:Makanan :asinan_buah)
+
+# Individual: :asparagus (:asparagus)
+
+ClassAssertion(:Bahan_makanan :asparagus)
+DataPropertyAssertion(:jumlah_purin :asparagus "230"^^xsd:integer)
+
+# Individual: :ati_ayam_balado (:ati_ayam_balado)
+
+ClassAssertion(:Resep_masakan :ati_ayam_balado)
+ObjectPropertyAssertion(:dimasak :ati_ayam_balado :goreng)
+DataPropertyAssertion(:bahan_bahan :ati_ayam_balado "6 pasang hati ampela
+2 lembar daun salam
+5 lembar daun jeruk, dibuang tulang daunnya
+1 batang serai, diambil bagian putihnya, dimemarkan
+1 sendok teh garam
+1/2 sendok teh gula pasir
+50 ml minyak untuk menumis
+minyak untuk menggoreng
+
+Bumbu Tumbuk Kasar:
+10 butir bawang merah
+2 siung bawang putih
+4 buah cabai merah besar
+5 buah cabai keriting"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :ati_ayam_balado "1. Rebus hati ampela didalam 1.000 ml air dengan 2 lembar daun salam, 2 cm jahe sampai matang.
+2. Goreng dalam minyak yang telah dipanaskan sampai kecokelatan. Sisihkan.
+3.Tumis bumbu tumbuk kasar dengan daun salam, daun jeruk dan serai sampai harum.
+4.Tambahkan hati ampela, garam dan gula pasir. Aduk rata. Masak sampai matang dan meresap."^^xsd:string)
+
+# Individual: :avocad (:avocad)
+
+ClassAssertion(:Buah :avocad)
+ObjectPropertyAssertion(:pencegah :avocad :hipertensi)
+
+# Individual: :bacon (:bacon)
+
+ClassAssertion(:Bahan_makanan :bacon)
+
+# Individual: :bakar (:bakar)
+
+ClassAssertion(:Proses_memasak :bakar)
+
+# Individual: :baking_powder (:baking_powder)
+
+ClassAssertion(:Bahan_makanan :baking_powder)
+
+# Individual: :bawang_putih (:bawang_putih)
+
+ClassAssertion(:Bumbu :bawang_putih)
+ObjectPropertyAssertion(:pencegah :bawang_putih :diabetes)
+
+# Individual: :bayam (:bayam)
+
+ClassAssertion(:Bahan_makanan :bayam)
+ClassAssertion(:Sayur :bayam)
+ClassAssertion(:Sayur_hijau :bayam)
+ObjectPropertyAssertion(:pencegah :bayam :hipertensi)
+DataPropertyAssertion(:jumlah_purin :bayam "570"^^xsd:integer)
+
+# Individual: :belimbing (:belimbing)
+
+ClassAssertion(:Buah :belimbing)
+ObjectPropertyAssertion(:pencegah :belimbing :hipertensi)
+
+# Individual: :beras (:beras)
+
+ClassAssertion(:Bahan_makanan :beras)
+
+# Individual: :beras_merah (:beras_merah)
+
+ClassAssertion(:Bahan_makanan :beras_merah)
+
+# Individual: :biji_melinjo (:biji_melinjo)
+
+ClassAssertion(:Bahan_makanan :biji_melinjo)
+DataPropertyAssertion(:jumlah_purin :biji_melinjo "222"^^xsd:integer)
+
+# Individual: :biji_rami (:biji_rami)
+
+ClassAssertion(:Makanan :biji_rami)
+
+# Individual: :blackberry (:blackberry)
+
+ClassAssertion(:Buah :blackberry)
+SameIndividual(:blackberry :buah_beri)
+
+# Individual: :blueberry (:blueberry)
+
+ClassAssertion(:Buah :blueberry)
+SameIndividual(:blueberry :buah_beri)
+
+# Individual: :brokoli (:brokoli)
+
+ClassAssertion(:Bahan_makanan :brokoli)
+ClassAssertion(:Sayur :brokoli)
+ClassAssertion(:Sayur_hijau :brokoli)
+ObjectPropertyAssertion(:pencegah :brokoli :diabetes)
+ObjectPropertyAssertion(:pencegah :brokoli :hipertensi)
+
+# Individual: :buah_beri (:buah_beri)
+
+ClassAssertion(:Buah :buah_beri)
+SameIndividual(:buah_beri :raspberry)
+SameIndividual(:buah_beri :strawberry)
+ObjectPropertyAssertion(:pencegah :buah_beri :hipertensi)
+
+# Individual: :buah_ceri (:buah_ceri)
+
+ClassAssertion(:Buah :buah_ceri)
+ClassAssertion(:Makanan :buah_ceri)
+ObjectPropertyAssertion(:pencegah :buah_ceri :asam_urat)
+
+# Individual: :buah_naga (:buah_naga)
+
+ClassAssertion(:Buah :buah_naga)
+ObjectPropertyAssertion(:pencegah :buah_naga :hipertensi)
+
+# Individual: :cabai (:cabai)
+
+ClassAssertion(:Bahan_makanan :cabai)
+ObjectPropertyAssertion(:pencegah :cabai :diabetes)
+
+# Individual: :coklat (:coklat)
+
+ClassAssertion(:Makanan :coklat)
+
+# Individual: :coklat_padat (:coklat_padat)
+
+ClassAssertion(:Makanan :coklat_padat)
+SameIndividual(:coklat_padat :dark_chocolate)
+ObjectPropertyAssertion(:pencegah :coklat_padat :hipertensi)
+
+# Individual: :dada_ayam (:dada_ayam)
+
+ClassAssertion(:Bahan_makanan :dada_ayam)
+DataPropertyAssertion(:jumlah_purin :dada_ayam "169"^^xsd:integer)
+
+# Individual: :dada_ayam_berkulit (:dada_ayam_berkulit)
+
+ClassAssertion(:Bahan_makanan :dada_ayam_berkulit)
+DataPropertyAssertion(:jumlah_purin :dada_ayam_berkulit "175"^^xsd:integer)
+
+# Individual: :daging_angsa (:daging_angsa)
+
+ClassAssertion(:Bahan_makanan :daging_angsa)
+DataPropertyAssertion(:jumlah_purin :daging_angsa "165"^^xsd:integer)
+
+# Individual: :daging_asap (:daging_asap)
+
+ClassAssertion(:Bahan_makanan :daging_asap)
+
+# Individual: :daging_bebek (:daging_bebek)
+
+ClassAssertion(:Bahan_makanan :daging_bebek)
+DataPropertyAssertion(:jumlah_purin :daging_bebek "138"^^xsd:integer)
+
+# Individual: :daging_kambing (:daging_kambing)
+
+ClassAssertion(:Bahan_makanan :daging_kambing)
+SameIndividual(:daging_kambing :daging_merah)
+
+# Individual: :daging_kuda (:daging_kuda)
+
+ClassAssertion(:Bahan_makanan :daging_kuda)
+DataPropertyAssertion(:jumlah_purin :daging_kuda "200"^^xsd:integer)
+
+# Individual: :daging_merah (:daging_merah)
+
+ClassAssertion(:Bahan_makanan :daging_merah)
+SameIndividual(:daging_merah :daging_sapi)
+
+# Individual: :daging_sapi (:daging_sapi)
+
+ClassAssertion(:Bahan_makanan :daging_sapi)
+
+# Individual: :daging_segar (:daging_segar)
+
+ClassAssertion(:Bahan_makanan :daging_segar)
+ObjectPropertyAssertion(:pencegah :daging_segar :hipertensi)
+
+# Individual: :dark_chocolate (:dark_chocolate)
+
+ClassAssertion(:Makanan :dark_chocolate)
+
+# Individual: :daun_melinjo (:daun_melinjo)
+
+ClassAssertion(:Bahan_makanan :daun_melinjo)
+DataPropertyAssertion(:jumlah_purin :daun_melinjo "366"^^xsd:integer)
+
+# Individual: :dendeng (:dendeng)
+
+ClassAssertion(:Makanan :dendeng)
+
+# Individual: :diabetes (:diabetes)
+
+ClassAssertion(:Penyakit :diabetes)
+
+# Individual: :durian (:durian)
+
+AnnotationAssertion(rdfs:comment :durian "Bahan makanan yang dapat diubah menjadi alkohol sebaiknya dihindari yaitu seperti durian dan nenas.")
+ClassAssertion(:Buah :durian)
+ObjectPropertyAssertion(:dihindari :durian :durian)
+
+# Individual: :ebi (:ebi)
+
+ClassAssertion(:Bahan_makanan :ebi)
+
+# Individual: :gandum (:gandum)
+
+ClassAssertion(:Bahan_makanan :gandum)
+
+# Individual: :garam (:garam)
+
+ClassAssertion(:Bumbu :garam)
+
+# Individual: :garam_dapur (:garam_dapur)
+
+ClassAssertion(:Bumbu :garam_dapur)
+
+# Individual: :ginjal_sapi (:ginjal_sapi)
+
+ClassAssertion(:Bahan_makanan :ginjal_sapi)
+DataPropertyAssertion(:jumlah_purin :ginjal_sapi "269"^^xsd:integer)
+
+# Individual: :goreng (:goreng)
+
+ClassAssertion(:Proses_memasak :goreng)
+
+# Individual: :gulai_kambing (:gulai_kambing)
+
+ClassAssertion(:Resep_masakan :gulai_kambing)
+ObjectPropertyAssertion(:dimasak :gulai_kambing :rebus)
+ObjectPropertyAssertion(:hasIngredient :gulai_kambing :daging_kambing)
+ObjectPropertyAssertion(:hasIngredient :gulai_kambing :santan)
+DataPropertyAssertion(:bahan_bahan :gulai_kambing "500 grm daging kambing, potong sesuai selera
+    250 grm kentang, potong kotak sedang
+    500 ml santan kelapa kental
+    5 butir cengkeh
+    5 lembar Daun kari (daun salam koja)
+    4 lembar daun jeruk
+    3 butir bunga lawang
+    3 cm kulit batang kayu manis
+    1 sdm garam halus
+    1 sdt gula pasir
+    5 sdm minyak, untuk menumis
+
+Bumbu yang dihaluskan 
+
+    8 buah cabe merah
+    5 butir bawang merah
+    4 siung bawang putih
+    2 cm lengkuas
+    2 cm jahe, kupas
+    2 cm kunyit, kupas
+    1 sendok makan ketumbar
+    1/4 sendok teh jinten
+    ¼ sdt pala bubuk
+    Serai"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :gulai_kambing "1. Siapkan wajan untuk menumis bumbu yang dihaluskan sampai harum, jangan lupa mengaduk-aduknya
+2. Masukan kayu manis, bunga lawang, cengkeh, daun jeruk, dan daun kari atau biasa disebut daun salam koja, aduk sampai tercium harum
+3. Nah sekarang silahkan anda masukan daging kambing yang sudah dipotong tadi, lalu aduk sampai bumbu meresap dalam daging
+4. Tambahkan santan kental, gula pasir dan garam, aduk sampai semua tercampur rata, dan rasa pas
+5. Tunggu sampai kuah mendidih lalu masukan kentang yang sudah dipotong tadi, tunggu sampai kentang matang dan empuk
+    
+Kari kambing specialpun siap untuk dinikmati."^^xsd:string)
+
+# Individual: :ham (:ham)
+
+ClassAssertion(:Bahan_makanan :ham)
+
+# Individual: :hati_ayam (:hati_ayam)
+
+ClassAssertion(:Bahan_makanan :hati_ayam)
+DataPropertyAssertion(:jumlah_purin :hati_ayam "243"^^xsd:integer)
+
+# Individual: :hati_sapi (:hati_sapi)
+
+ClassAssertion(:Bahan_makanan :hati_sapi)
+DataPropertyAssertion(:jumlah_purin :hati_sapi "554"^^xsd:integer)
+
+# Individual: :hipertensi (:hipertensi)
+
+ClassAssertion(:Penyakit :hipertensi)
+
+# Individual: :ikan_asin (:ikan_asin)
+
+ClassAssertion(:Bahan_makanan :ikan_asin)
+
+# Individual: :ikan_kakap (:ikan_kakap)
+
+ClassAssertion(:Bahan_makanan :ikan_kakap)
+DataPropertyAssertion(:jumlah_purin :ikan_kakap "160"^^xsd:integer)
+
+# Individual: :ikan_kaleng (:ikan_kaleng)
+
+ClassAssertion(:Bahan_makanan :ikan_kaleng)
+
+# Individual: :ikan_sarden (:ikan_sarden)
+
+ClassAssertion(:Bahan_makanan :ikan_sarden)
+DataPropertyAssertion(:jumlah_purin :ikan_sarden "480"^^xsd:integer)
+
+# Individual: :ikan_teri (:ikan_teri)
+
+ClassAssertion(:Bahan_makanan :ikan_teri)
+DataPropertyAssertion(:jumlah_purin :ikan_teri "239"^^xsd:integer)
+
+# Individual: :jahe_merah (:jahe_merah)
+
+ClassAssertion(:Bumbu :jahe_merah)
+
+# Individual: :jamur (:jamur)
+
+ClassAssertion(:Bahan_makanan :jamur)
+DataPropertyAssertion(:jumlah_purin :jamur "910"^^xsd:integer)
+
+# Individual: :jantung_kambing (:jantung_kambing)
+
+ClassAssertion(:Bahan_makanan :jantung_kambing)
+DataPropertyAssertion(:jumlah_purin :jantung_kambing "241"^^xsd:integer)
+
+# Individual: :jantung_sapi (:jantung_sapi)
+
+ClassAssertion(:Bahan_makanan :jantung_sapi)
+DataPropertyAssertion(:jumlah_purin :jantung_sapi "256"^^xsd:integer)
+
+# Individual: :jeruk (:jeruk)
+
+ClassAssertion(:Buah :jeruk)
+ObjectPropertyAssertion(:pencegah :jeruk :hipertensi)
+
+# Individual: :jus_buah_naga (:jus_buah_naga)
+
+ClassAssertion(:Minuman :jus_buah_naga)
+ObjectPropertyAssertion(:dianjurkan :jus_buah_naga :hipertensi)
+
+# Individual: :jus_jeruk (:jus_jeruk)
+
+ClassAssertion(:Minuman :jus_jeruk)
+SameIndividual(:jus_jeruk :orange_juice)
+
+# Individual: :jus_melon (:jus_melon)
+
+ClassAssertion(:Minuman :jus_melon)
+
+# Individual: :jus_pepaya (:jus_pepaya)
+
+ClassAssertion(:Minuman :jus_pepaya)
+ObjectPropertyAssertion(:dianjurkan :jus_pepaya :diabetes)
+
+# Individual: :jus_pisang (:jus_pisang)
+
+ClassAssertion(:Minuman :jus_pisang)
+
+# Individual: :jus_seledri (:jus_seledri)
+
+ClassAssertion(:Minuman :jus_seledri)
+ObjectPropertyAssertion(:pencegah :jus_seledri :hipertensi)
+
+# Individual: :jus_sirsak (:jus_sirsak)
+
+ClassAssertion(:Minuman :jus_sirsak)
+
+# Individual: :jus_tomat (:jus_tomat)
+
+ClassAssertion(:Minuman :jus_tomat)
+ObjectPropertyAssertion(:dianjurkan :jus_tomat :hipertensi)
+
+# Individual: :kacang (:kacang)
+
+ClassAssertion(:Bahan_makanan :kacang)
+SameIndividual(:kacang :kacang_kedelai)
+SameIndividual(:kacang :kacang_merah)
+SameIndividual(:kacang :kacang_polong)
+SameIndividual(:kacang :kacang_tanah)
+ObjectPropertyAssertion(:pencegah :kacang :hipertensi)
+DataPropertyAssertion(:jumlah_purin :kacang "190"^^xsd:integer)
+
+# Individual: :kacang_kedelai (:kacang_kedelai)
+
+ClassAssertion(:Bahan_makanan :kacang_kedelai)
+SameIndividual(:kacang_kedelai :kedelai)
+
+# Individual: :kacang_merah (:kacang_merah)
+
+ClassAssertion(:Bahan_makanan :kacang_merah)
+ObjectPropertyAssertion(:pencegah :kacang_merah :diabetes)
+
+# Individual: :kacang_polong (:kacang_polong)
+
+ClassAssertion(:Bahan_makanan :kacang_polong)
+
+# Individual: :kacang_tanah (:kacang_tanah)
+
+ClassAssertion(:Bahan_makanan :kacang_tanah)
+
+# Individual: :kafein_coklat (:kafein_coklat)
+
+ClassAssertion(:Bahan_makanan :kafein_coklat)
+DataPropertyAssertion(:jumlah_purin :kafein_coklat "2300"^^xsd:integer)
+
+# Individual: :kangkung (:kangkung)
+
+ClassAssertion(:Bahan_makanan :kangkung)
+DataPropertyAssertion(:jumlah_purin :kangkung "290"^^xsd:integer)
+
+# Individual: :kayu_manis (:kayu_manis)
+
+ClassAssertion(:Bahan_makanan :kayu_manis)
+ObjectPropertyAssertion(:pencegah :kayu_manis :diabetes)
+
+# Individual: :kedelai (:kedelai)
+
+ClassAssertion(:Bahan_makanan :kedelai)
+DataPropertyAssertion(:jumlah_purin :kedelai "190"^^xsd:integer)
+
+# Individual: :keju (:keju)
+
+ClassAssertion(:Bahan_makanan :keju)
+ClassAssertion(:Makanan :keju)
+DataPropertyAssertion(:jumlah_purin :keju "49"^^xsd:integer)
+
+# Individual: :kembang_kol (:kembang_kol)
+
+ClassAssertion(:Bahan_makanan :kembang_kol)
+DataPropertyAssertion(:jumlah_purin :kembang_kol "510"^^xsd:integer)
+
+# Individual: :kembung (:kembung)
+
+ClassAssertion(:Ikan :kembung)
+
+# Individual: :kenari (:kenari)
+
+ClassAssertion(:Makanan :kenari)
+
+# Individual: :kentang (:kentang)
+
+ClassAssertion(:Bahan_makanan :kentang)
+
+# Individual: :kerang (:kerang)
+
+ClassAssertion(:Bahan_makanan :kerang)
+DataPropertyAssertion(:jumlah_purin :kerang "136"^^xsd:integer)
+
+# Individual: :kopi (:kopi)
+
+ClassAssertion(:Minuman :kopi)
+ObjectPropertyAssertion(:dihindari :kopi :asam_urat)
+ObjectPropertyAssertion(:dihindari :kopi :hipertensi)
+
+# Individual: :kornet (:kornet)
+
+ClassAssertion(:Bahan_makanan :kornet)
+
+# Individual: :kukus (:kukus)
+
+ClassAssertion(:Proses_memasak :kukus)
+
+# Individual: :kunyit (:kunyit)
+
+ClassAssertion(:Bumbu :kunyit)
+
+# Individual: :lidah_sapi (:lidah_sapi)
+
+ClassAssertion(:Bahan_makanan :lidah_sapi)
+DataPropertyAssertion(:jumlah_purin :lidah_sapi "160"^^xsd:integer)
+
+# Individual: :limpa_kambing (:limpa_kambing)
+
+ClassAssertion(:Bahan_makanan :limpa_kambing)
+DataPropertyAssertion(:jumlah_purin :limpa_kambing "773"^^xsd:integer)
+
+# Individual: :limpa_sapi (:limpa_sapi)
+
+ClassAssertion(:Bahan_makanan :limpa_sapi)
+DataPropertyAssertion(:jumlah_purin :limpa_sapi "444"^^xsd:integer)
+
+# Individual: :lobster (:lobster)
+
+ClassAssertion(:Bahan_makanan :lobster)
+DataPropertyAssertion(:jumlah_purin :lobster "118"^^xsd:integer)
+
+# Individual: :lontong_sayur_medan (:lontong_sayur_medan)
+
+ClassAssertion(:Resep_masakan :lontong_sayur_medan)
+ObjectPropertyAssertion(:dihindari :lontong_sayur_medan :asam_urat)
+ObjectPropertyAssertion(:dihindari :lontong_sayur_medan :diabetes)
+ObjectPropertyAssertion(:hasIngredient :lontong_sayur_medan :santan)
+DataPropertyAssertion(:bahan_bahan :lontong_sayur_medan "1 buah labu siam, potong korek api
+    1 ikat kacang panjang, potong 10 cm
+    1 kaleng nangka muda
+    400 ml santan
+    1 batang serai, memarkan
+
+Bumbu-bumbu halus :
+
+    3 bawang merah
+    3 siung bawang putih
+    4 buah cabe merah
+    3 cm jahe
+    3 cm lengkuas
+    2 cm kunyit
+    butir kemiri
+    Garam secukupnya"^^xsd:string)
+DataPropertyAssertion(:cara_memasak :lontong_sayur_medan "1.  Langkah pertama tumis bumbu halus hingga mengeluarkan aroma harum, kemudian masukkan santan dan serai.
+2. Gunakan api sedang dan masak sampai mendidih, kalau sudah mendidih silahkan masukkan nangka
+3. Masak terus hingga kuah agak berkurang, kemudian baru masukkan labu siam dan kacang panjang
+4. Di aduk-aduk dan dimasak terus hingga kacang panjangnya matang."^^xsd:string)
+DataPropertyAssertion(:jumlah_porsi :lontong_sayur_medan "3 porsi"^^xsd:string)
+DataPropertyAssertion(:kalori :lontong_sayur_medan "120"^^xsd:integer)
+DataPropertyAssertion(:website :lontong_sayur_medan "http://resepaneka99.blogspot.co.id/2014/07/resep-lontong-sayur-asli-medan.html"^^xsd:string)
+
+# Individual: :madu (:madu)
+
+ClassAssertion(:Minuman :madu)
+
+# Individual: :margarin (:margarin)
+
+ClassAssertion(:Bahan_makanan :margarin)
+
+# Individual: :mengkudu (:mengkudu)
+
+ClassAssertion(:Buah :mengkudu)
+ObjectPropertyAssertion(:pencegah :mengkudu :hipertensi)
+
+# Individual: :mentega (:mentega)
+
+ClassAssertion(:Bahan_makanan :mentega)
+
+# Individual: :mie (:mie)
+
+ClassAssertion(:Makanan :mie)
+
+# Individual: :mie_hokian (:mie_hokian)
+
+ClassAssertion(:Resep_masakan :mie_hokian)
+ObjectPropertyAssertion(:dianjurkan :mie_hokian :hipertensi)
+ObjectPropertyAssertion(:dimasak :mie_hokian :goreng)
+DataPropertyAssertion(:bahan_bahan :mie_hokian "Mi basah 50 g
+    Bihun kering 25 g
+    Sawi 3 lbr
+    Daun bawang 1 btg
+    Minyak untuk menumis 1 sdt
+    Bawang putih 3 siung cincang
+    Jahe cincang 1 sdt
+    Merica bubuk dan garam secukupnya
+
+Taburan
+
+    Telur ayam 1 btr orak arik
+    Daun ketumbar cincang 1 sdt
+    Wortel serut 1 sdm"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :mie_hokian "1. Potong-potong sawi 3 cm dan iris serong daun bawang dengan ukuran 2 cm
+    2. Cuci mi basah, tiriskan. Rendam bihun hingga lunak, tiriskan
+    3. Panaskan minyak goreng dalam wajan diatas api besar, tumis bawang putih    dan jahe hingga harum,tuang sedikit air dan masukkan merica
+    4. Masukkan sawi dan daun bawang,setelah agak layu masukkan mi basah dan bihun, aduk hingga rata
+    5. Angkat,hidangkan panas dengan taburan telur orak arik, daun ketumbar dan wortel serut"^^xsd:string)
+DataPropertyAssertion(:kalori :mie_hokian "305"^^xsd:integer)
+DataPropertyAssertion(:karbohidrat :mie_hokian "39"^^xsd:integer)
+DataPropertyAssertion(:lemak :mie_hokian "11"^^xsd:integer)
+DataPropertyAssertion(:protein :mie_hokian "9"^^xsd:integer)
+
+# Individual: :minuman_coklat (:minuman_coklat)
+
+ClassAssertion(:Minuman :minuman_coklat)
+
+# Individual: :minuman_kalengan (:minuman_kalengan)
+
+ClassAssertion(:Minuman :minuman_kalengan)
+
+# Individual: :minuman_lidah_buaya (:minuman_lidah_buaya)
+
+ClassAssertion(:Minuman :minuman_lidah_buaya)
+
+# Individual: :minyak_zaitun (:minyak_zaitun)
+
+ClassAssertion(:Makanan :minyak_zaitun)
+
+# Individual: :nanas (:nanas)
+
+AnnotationAssertion(rdfs:comment :nanas "Bahan makanan yang dapat diubah menjadi alkohol sebaiknya dihindari yaitu seperti durian dan nenas.")
+ClassAssertion(:Buah :nanas)
+ObjectPropertyAssertion(:dihindari :nanas :asam_urat)
+
+# Individual: :oat (:oat)
+
+ClassAssertion(:Makanan :oat)
+
+# Individual: :orange_juice (:orange_juice)
+
+ClassAssertion(:Minuman :orange_juice)
+ObjectPropertyAssertion(:dihindari :orange_juice :asam_urat)
+
+# Individual: :oseng_kikil (:oseng_kikil)
+
+ClassAssertion(:Resep_masakan :oseng_kikil)
+ObjectPropertyAssertion(:dimasak :oseng_kikil :tumis)
+DataPropertyAssertion(:bahan_bahan :oseng_kikil "500 gram kikil, potong dadu, rebus sampai empuk
+500 ml air
+2 sdm minyak jagung
+
+Bumbu yang Dihaluskan :
+
+    6 butir bawang merah
+    2 siung bawang putih
+    1/2 sdt merica butiran
+    1 cm jahe
+    1 sdm taoco
+
+Bumbu lainnya :
+
+    2 lembar daun salam
+    1 baatang serai, memarkan
+    3 buah cabai merah, iris miring
+    3 buah cabai hijau, iris miring
+    1 buah tomat, potong 6 bagian
+    2 sdm kecap manis khusus untuk diabetes
+    1 1/2 sdm garam"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :oseng_kikil "1. Tumis bumbu halus, daun salam, dan serai sampai harum. Tambahkan cabai merah, cabai hijau, dan tomat. Tumis hingga layu.
+2. Masukkan kikil,aduk beberapa saat, lalu tambahkankecap, garam, dan air. Masak sampai bumbu meresap.
+3. Angkat, sajikan hangat."^^xsd:string)
+DataPropertyAssertion(:jumlah_porsi :oseng_kikil "10 porsi"^^xsd:string)
+
+# Individual: :panggang (:panggang)
+
+ClassAssertion(:Proses_memasak :panggang)
+
+# Individual: :pare (:pare)
+
+ClassAssertion(:Bahan_makanan :pare)
+ClassAssertion(:Sayur :pare)
+SameIndividual(:pare :peria)
+ObjectPropertyAssertion(:pencegah :pare :diabetes)
+
+# Individual: :paru_sapi (:paru_sapi)
+
+ClassAssertion(:Bahan_makanan :paru_sapi)
+DataPropertyAssertion(:jumlah_purin :paru_sapi "339"^^xsd:integer)
+
+# Individual: :pasta (:pasta)
+
+ClassAssertion(:Makanan :pasta)
+
+# Individual: :pepaya (:pepaya)
+
+ClassAssertion(:Buah :pepaya)
+ObjectPropertyAssertion(:dianjurkan :pepaya :diabetes)
+
+# Individual: :peria (:peria)
+
+ClassAssertion(:Bahan_makanan :peria)
+
+# Individual: :petis (:petis)
+
+ClassAssertion(:Bahan_makanan :petis)
+
+# Individual: :pisang (:pisang)
+
+ClassAssertion(:Buah :pisang)
+ObjectPropertyAssertion(:dianjurkan :pisang :asam_urat)
+ObjectPropertyAssertion(:pencegah :pisang :hipertensi)
+
+# Individual: :puding (:puding)
+
+ClassAssertion(:Makanan :puding)
+
+# Individual: :puding_strawberry (:puding_strawberry)
+
+ClassAssertion(:Resep_masakan :puding_strawberry)
+ObjectPropertyAssertion(:dianjurkan :puding_strawberry :asam_urat)
+ObjectPropertyAssertion(:dimasak :puding_strawberry :rebus)
+DataPropertyAssertion(:bahan_bahan :puding_strawberry "Bahan Lapisan 1 : 
+    1 bungkus agar-agar bubuk merah
+    150 gram gula pasir
+    600 ml air
+    200 gram buah strawberi
+
+Bahan Lapisan 2 :
+    1 bungkus agar-agar bubuk putih
+    150 gram gula pasir
+    600 ml susu cair
+    Garam secukupnya sekedar untuk memberi rasa gurih"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :puding_strawberry "1. Campur bahan 1-3 dari bahan 1, sisakan sedikit air untuk memblender strawberi
+2. Masak sambil sesekali diaduk
+3. Sementara itu belender daging strawberi dengan sisa air
+4. Tunggu hingga campuran agar-agar mendidih. Masukkan jus buah strawberi, aduk lagi hingga mendidih. Angkat.
+5. Tuang adonan puding kedalam cetakan yang telah dibasahi
+6. Campur semua bahan 2, masak sambil sesekali diaduk hingga mendidih. Angkat.
+7. Jika pada lapisan pudding buah strawberi telah terbentuk langit-langit, tuang adonan pudding susu secara perlahan sedikit demi sedikit agar adonan pudding tidak banyak yang tercampur.
+8. Dinginkan."^^xsd:string)
+
+# Individual: :rebus (:rebus)
+
+ClassAssertion(:Proses_memasak :rebus)
+
+# Individual: :roti_putih (:roti_putih)
+
+ClassAssertion(:Makanan :roti_putih)
+
+# Individual: :salmon (:salmon)
+
+ClassAssertion(:Ikan :salmon)
+
+# Individual: :santan (:santan)
+
+ClassAssertion(:Bahan_makanan :santan)
+
+# Individual: :sawi_asin (:sawi_asin)
+
+ClassAssertion(:Makanan :sawi_asin)
+
+# Individual: :sayur_dalam_kaleng (:sayur_dalam_kaleng)
+
+ClassAssertion(:Makanan :sayur_dalam_kaleng)
+
+# Individual: :sayur_rica_rodoh (:sayur_rica_rodoh)
+
+ClassAssertion(:Resep_masakan :sayur_rica_rodoh)
+ObjectPropertyAssertion(:dianjurkan :sayur_rica_rodoh :hipertensi)
+ObjectPropertyAssertion(:dimasak :sayur_rica_rodoh :rebus)
+DataPropertyAssertion(:bahan_bahan :sayur_rica_rodoh "Kacang panjang 5 btg (50 g) potong 2 cm
+    Jagung muda 1 bh sisir
+    Daun kemangi 1 gengem
+    Tomat hijau 1 bh belah 2
+    Baun bawang ½ btg potong 2 cm
+    Serai ½ btg, memarkan
+    Daun jeruk purut 1 lbr
+    Garam dan gula pasir secukupnya
+    Minyak untuk menumis ½ sdt
+    Air 500 cc
+
+Bumbu halus :
+
+    Cabai rawit 3 bh
+    Cabai merah 2 bh
+    Jahe ½ sdt"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :sayur_rica_rodoh "1. Tumis bumbu halus, serai, dan daun jeruk sampai layu tuangi 500 cc air
+2. Masukkan jagung,kacang panjang sampai matang terakhir masukan daun kemangi."^^xsd:string)
+DataPropertyAssertion(:kalori :sayur_rica_rodoh "103"^^xsd:integer)
+DataPropertyAssertion(:karbohidrat :sayur_rica_rodoh "18"^^xsd:integer)
+DataPropertyAssertion(:lemak :sayur_rica_rodoh "3"^^xsd:integer)
+DataPropertyAssertion(:protein :sayur_rica_rodoh "2"^^xsd:integer)
+
+# Individual: :sayur_tumis (:sayur_tumis)
+
+ClassAssertion(:Resep_masakan :sayur_tumis)
+
+# Individual: :selai_kacang (:selai_kacang)
+
+ClassAssertion(:Makanan :selai_kacang)
+
+# Individual: :seledri (:seledri)
+
+ClassAssertion(:Bahan_makanan :seledri)
+ClassAssertion(:Sayur :seledri)
+ObjectPropertyAssertion(:pencegah :seledri :hipertensi)
+
+# Individual: :semangka (:semangka)
+
+ClassAssertion(:Buah :semangka)
+ObjectPropertyAssertion(:pencegah :semangka :hipertensi)
+
+# Individual: :sereal (:sereal)
+
+ClassAssertion(:Makanan :sereal)
+
+# Individual: :soda (:soda)
+
+ClassAssertion(:Bahan_makanan :soda)
+
+# Individual: :soft_drink (:soft_drink)
+
+ClassAssertion(:Minuman :soft_drink)
+ObjectPropertyAssertion(:dihindari :soft_drink :asam_urat)
+
+# Individual: :spageti (:spageti)
+
+ClassAssertion(:Makanan :spageti)
+
+# Individual: :strawberry (:strawberry)
+
+ClassAssertion(:Buah :strawberry)
+
+# Individual: :sup_ceker_ayam (:sup_ceker_ayam)
+
+ClassAssertion(:Resep_masakan :sup_ceker_ayam)
+ObjectPropertyAssertion(:dimasak :sup_ceker_ayam :rebus)
+DataPropertyAssertion(:bahan_bahan :sup_ceker_ayam "150 gram ceker ayam,dimemarkan
+    200 gram wortel, dipotong miring bergerigi
+    100 gram buncis, dipotong 3 cm
+    10 gram jamur hioko, direndam laluiris tipis
+    1 liter air
+    2 sdm minyak jagung
+
+Bumbu :
+
+    1/2 buah bawang bombay, dicinang halus
+    2 siung bawang putih
+    1 sdt garam
+    1 sdt merica bubuk"^^xsd:string)
+DataPropertyAssertion(:bahan_bahan :sup_ceker_ayam "3 Porsi"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :sup_ceker_ayam "1. Cuci kaki ayam hinggga bersih. Rebus dengan api kecil hingga lunak.
+2. Tumis bawang bombay dan bawang putih sampai harum. Masukkan ke dalam rebusan kaki ayam.
+3. Tambahkan wortel, buncis dan jamur. Masukkan garam dan merica. Masak hingga bumbu meresap.
+4. Angkat, sajikan selagi hangat."^^xsd:string)
+DataPropertyAssertion(:kalori :sup_ceker_ayam "103"^^xsd:integer)
+DataPropertyAssertion(:karbohidrat :sup_ceker_ayam "18"^^xsd:integer)
+DataPropertyAssertion(:lemak :sup_ceker_ayam "6"^^xsd:integer)
+DataPropertyAssertion(:protein :sup_ceker_ayam "2"^^xsd:integer)
+
+# Individual: :sup_ikan_kembung (:sup_ikan_kembung)
+
+ClassAssertion(:Resep_masakan :sup_ikan_kembung)
+ObjectPropertyAssertion(:dianjurkan :sup_ikan_kembung :asam_urat)
+ObjectPropertyAssertion(:dimasak :sup_ikan_kembung :rebus)
+ObjectPropertyAssertion(:hasIngredient :sup_ikan_kembung :kembung)
+DataPropertyAssertion(:bahan_bahan :sup_ikan_kembung "500 gram ikan kembung (3 ekor)
+    1 liter air
+    1 sdm air jeruk nipis
+    2 sdm minyak goreng
+    2 batang serai, ambil bagian putih iris serong
+    3 cm jahe, iris tipis
+    3 buah cabai merah
+    3 buah cabai hijau
+    4 buah tomat hijau, belah empat (kalo tidak ada boleh tomat biasa)
+    5 butir bawang merah, belah dua
+    1 sdt garam
+
+Bumbu Halus :
+
+    3 siung bawang putih
+    1 buah cabai merah
+    2 cm kunyit
+    Gula pasir dan garam secukupnya"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :sup_ikan_kembung "1. Lumuri ikan dengan air jeruk nipis dan garam. Diamkan selama 15 menit
+2. Panaskan minyak. Tumis bumbu halus hingga harum, lalu masukkan irisan jahe dan serai. Aduk rata.
+3. Tuang air dan masak hingga mendidih.
+4. Masukkan ikan, kemudian masak hingga matang.
+5. Masukkan cabai merah, tomat sayur, air jeruk nipis dan bawang merah.
+6. Masak selama 5 menit. Angkat dan sajikan."^^xsd:string)
+
+# Individual: :susu (:susu)
+
+ClassAssertion(:Bahan_makanan :susu)
+ClassAssertion(:Makanan :susu)
+DataPropertyAssertion(:jumlah_purin :susu "49"^^xsd:integer)
+
+# Individual: :susu_kedelai (:susu_kedelai)
+
+ClassAssertion(:Minuman :susu_kedelai)
+
+# Individual: :susu_sapi_rendah_lemak (:susu_sapi_rendah_lemak)
+
+ClassAssertion(:Minuman :susu_sapi_rendah_lemak)
+
+# Individual: :tahu (:tahu)
+
+ClassAssertion(:Bahan_makanan :tahu)
+DataPropertyAssertion(:jumlah_purin :tahu "108"^^xsd:integer)
+
+# Individual: :teh (:teh)
+
+ClassAssertion(:Minuman :teh)
+
+# Individual: :telur (:telur)
+
+ClassAssertion(:Bahan_makanan :telur)
+DataPropertyAssertion(:jumlah_purin :telur "40"^^xsd:integer)
+
+# Individual: :telur_asin (:telur_asin)
+
+ClassAssertion(:Bahan_makanan :telur_asin)
+
+# Individual: :telur_dadar (:telur_dadar)
+
+ClassAssertion(:Makanan :telur_dadar)
+
+# Individual: :telur_pindang (:telur_pindang)
+
+ClassAssertion(:Bahan_makanan :telur_pindang)
+
+# Individual: :telur_rebus (:telur_rebus)
+
+ClassAssertion(:Makanan :telur_rebus)
+
+# Individual: :tempe (:tempe)
+
+ClassAssertion(:Bahan_makanan :tempe)
+DataPropertyAssertion(:jumlah_purin :tempe "141"^^xsd:integer)
+
+# Individual: :tempe_kukus_cabe_hijau (:tempe_kukus_cabe_hijau)
+
+ClassAssertion(:Resep_masakan :tempe_kukus_cabe_hijau)
+ObjectPropertyAssertion(:dianjurkan :tempe_kukus_cabe_hijau :hipertensi)
+ObjectPropertyAssertion(:dimasak :tempe_kukus_cabe_hijau :tumis)
+DataPropertyAssertion(:bahan_bahan :tempe_kukus_cabe_hijau "Tempe 1 potong (50g) kukus hingga matang
+Minyak untuk menumis 1 sdt
+
+Bumbu
+
+    Bawang merah 3 siung iris halus
+    Bawang putih 2 siung iris halus
+    Cabai hijau 5 buah ulek kasar
+    Tomat hijau 1 bh, potong 4 bagian
+    Lengkuas 1 cm memarkan
+    Daun salam 1 lembar
+    Air panas secukupnya
+    Garam bila diperlukan (secukupnya/1/2 sdt)"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :tempe_kukus_cabe_hijau "1. Tumis bawang merah dan bawang putih sampai wangi
+2. Tambahkan daun salam, lengkuas, cabai hijau,tomat
+3. Aduk sampai cabai dan tomat layu
+4. Masukkan temped an sedikit air
+5. Biarkan sesaat sampai bumbu meresap"^^xsd:string)
+DataPropertyAssertion(:kalori :tempe_kukus_cabe_hijau "147"^^xsd:integer)
+DataPropertyAssertion(:karbohidrat :tempe_kukus_cabe_hijau "13"^^xsd:integer)
+DataPropertyAssertion(:lemak :tempe_kukus_cabe_hijau "7"^^xsd:integer)
+DataPropertyAssertion(:lemak :tempe_kukus_cabe_hijau "9"^^xsd:integer)
+
+# Individual: :teobromin (:teobromin)
+
+ClassAssertion(:Bahan_makanan :teobromin)
+
+# Individual: :terasi (:terasi)
+
+ClassAssertion(:Bumbu :terasi)
+
+# Individual: :tomat (:tomat)
+
+ClassAssertion(:Bahan_makanan :tomat)
+ClassAssertion(:Sayur :tomat)
+ObjectPropertyAssertion(:pencegah :tomat :hipertensi)
+
+# Individual: :tumis (:tumis)
+
+ClassAssertion(:Proses_memasak :tumis)
+
+# Individual: :tumis_pare (:tumis_pare)
+
+ClassAssertion(:Resep_masakan :tumis_pare)
+ObjectPropertyAssertion(:dianjurkan :tumis_pare :diabetes)
+ObjectPropertyAssertion(:dimasak :tumis_pare :tumis)
+ObjectPropertyAssertion(:hasIngredient :tumis_pare :pare)
+ObjectPropertyAssertion(:pencegah :tumis_pare :diabetes)
+DataPropertyAssertion(:bahan_bahan :tumis_pare "500 gram pare, belah dua dan potong-potong ½ cm
+    1 potong lengkuas, memarkan
+    1 lembar daun salam
+    1 sdm garam
+    1 sdm gula
+
+Bumbu Halus :
+
+    5 Buah cabai merah
+    7 buah bawang merah
+    3 siung bawang putih
+    ½ sendok teh terasi
+    1 buah tomat iris tipis
+    3 buah kemiri sangria
+    1 sdt garam"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :tumis_pare "1. Keruk biji pare, belah dua dan poton melintang dengan ketebalan ½ cm, remas-remas dengan garam sampai berbusa dan buang air garam remas lagi dengan menggunakan gula. Diamkan 10 menit, cuci dan tiriskan.
+2. Tumis bumbu halus, daun salam dan lengkuas sampai harum. Masukkan pare.
+3. Tuang 100 ml air, beri garam dan gula. Kecilkan api, masak hingga matang dan kuah habis.
+4. Angkat sajikan."^^xsd:string)
+
+# Individual: :tumis_tahu_kentang_seledri (:tumis_tahu_kentang_seledri)
+
+ClassAssertion(:Resep_masakan :tumis_tahu_kentang_seledri)
+ObjectPropertyAssertion(:boleh_makan :tumis_tahu_kentang_seledri :diabetes)
+ObjectPropertyAssertion(:dimasak :tumis_tahu_kentang_seledri :tumis)
+DataPropertyAssertion(:bahan_bahan :tumis_tahu_kentang_seledri "Kentang 1 buah (50 g)
+    Tahu 1 bh (50g) goreng utuh setengah matang
+    Merica bubuk secukupnya
+    Garam seperlunya
+    Seledri 2 tangkai cincang halus
+    Minyak untuk menumis ½ sdt"^^xsd:string)
+DataPropertyAssertion(:cara_membuat :tumis_tahu_kentang_seledri "1. Kupas kentang, potong dadu ukuran 2-3 cm masukkan ke dalam panic berisi air
+  2. Didihkan selama 5 menit, tiriskan hingga kering
+  3. Potong dadu tahu goreng sebesar 2—3 cm
+  4. Panaskan ½ sdt minyak goreng, masukkan kentang dan tahu
+  5. Bubuhi garam dan merica bubuk aduk hingga kuning keemasan
+  6. Taburan seledri cincang aduk angkat"^^xsd:string)
+DataPropertyAssertion(:kalori :tumis_tahu_kentang_seledri "186"^^xsd:integer)
+DataPropertyAssertion(:karbohidrat :tumis_tahu_kentang_seledri "11"^^xsd:integer)
+DataPropertyAssertion(:lemak :tumis_tahu_kentang_seledri "8"^^xsd:integer)
+DataPropertyAssertion(:protein :tumis_tahu_kentang_seledri "5"^^xsd:integer)
+
+# Individual: :tuna (:tuna)
+
+ClassAssertion(:Ikan :tuna)
+
+# Individual: :udang (:udang)
+
+ClassAssertion(:Bahan_makanan :udang)
+DataPropertyAssertion(:jumlah_purin :udang "234"^^xsd:integer)
+
+# Individual: :udang_kering (:udang_kering)
+
+ClassAssertion(:Bahan_makanan :udang_kering)
+
+# Individual: :vetsin (:vetsin)
+
+ClassAssertion(:Bumbu :vetsin)
+
+
+)

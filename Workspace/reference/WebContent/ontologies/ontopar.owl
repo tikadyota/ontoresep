@@ -1,0 +1,577 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://semanticweb.techtalk.web.id/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://semanticweb.techtalk.web.id/ontology"
+     versionIRI="http://semanticweb.techtalk.web.id/ontology/ontopar/1.0">
+    <Prefix name="" IRI="http://semanticweb.techtalk.web.id/ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prop" IRI="http://semanticweb.techtalk.web.id/ontology/property#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ontologi yang menyimpan mengenai fakta-fakta seuptar informasi destinasi wisata seperti obyek wisata alam, wisata belanja dan wisata budaya serta informasi mengenai akomodasi transportasi serta penginapan yang terdapat di masing-masing kabpaten</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Pantai"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#postCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#nama"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#hasRitual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#terletak_di"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wisata_alam"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rumah_makan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gunung"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#alamat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#website"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Budaya"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#hasPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restoran"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kebudayaan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#tarif"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wisata_budaya"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#isLocationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#isProductOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#telepon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#berada_di"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#ada_di"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#roomRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Akomodasi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#posisi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minuman"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#rating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#terdapat_di"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#harga_kamar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#hasAttraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#letak"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#telp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#kode_pos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transportasi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kuliner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#bintang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wisata_kuliner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#hasWebsite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Penginapan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wisata_belanja"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#tarif_kamar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Souvenir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wisata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tradisi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#hasProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Losmen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Makanan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wisata_pantai"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Villa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pariwisata"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/property#alamat_website"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/property#hasTradition"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Budaya"/>
+        <Class IRI="#Kebudayaan"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Budaya"/>
+        <Class IRI="#Wisata_budaya"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Budaya"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Produk"/>
+            <ObjectComplementOf>
+                <ObjectUnionOf>
+                    <Class IRI="#Kuliner"/>
+                    <Class IRI="#Souvenir"/>
+                </ObjectUnionOf>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hotel"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Penginapan"/>
+            <ObjectComplementOf>
+                <ObjectUnionOf>
+                    <Class IRI="#Losmen"/>
+                    <Class IRI="#Villa"/>
+                </ObjectUnionOf>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Kuliner"/>
+        <Class IRI="#Wisata_kuliner"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Kuliner"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Produk"/>
+            <ObjectComplementOf>
+                <ObjectUnionOf>
+                    <Class IRI="#Budaya"/>
+                    <Class IRI="#Souvenir"/>
+                </ObjectUnionOf>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Losmen"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Penginapan"/>
+            <ObjectComplementOf>
+                <ObjectUnionOf>
+                    <Class IRI="#Hotel"/>
+                    <Class IRI="#Villa"/>
+                </ObjectUnionOf>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Makanan"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Kuliner"/>
+            <ObjectComplementOf>
+                <Class IRI="#Minuman"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Minuman"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Kuliner"/>
+            <ObjectComplementOf>
+                <Class IRI="#Makanan"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Pantai"/>
+        <Class IRI="#Wisata_pantai"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Pariwisata"/>
+        <Class IRI="#Wisata"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Penginapan"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Akomodasi"/>
+            <ObjectComplementOf>
+                <Class IRI="#Transportasi"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Restoran"/>
+        <Class IRI="#Rumah_makan"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Souvenir"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Produk"/>
+            <ObjectComplementOf>
+                <ObjectUnionOf>
+                    <Class IRI="#Budaya"/>
+                    <Class IRI="#Kuliner"/>
+                </ObjectUnionOf>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Tradisi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Budaya"/>
+            <Class IRI="#Produk"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Transportasi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Akomodasi"/>
+            <ObjectComplementOf>
+                <Class IRI="#Penginapan"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Villa"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Penginapan"/>
+            <ObjectComplementOf>
+                <ObjectUnionOf>
+                    <Class IRI="#Hotel"/>
+                    <Class IRI="#Losmen"/>
+                </ObjectUnionOf>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Wisata_belanja"/>
+        <ObjectUnionOf>
+            <Class IRI="#Kuliner"/>
+            <Class IRI="#Souvenir"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Gunung"/>
+        <Class IRI="#Wisata_alam"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kebudayaan"/>
+        <Class IRI="#Produk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wisata_alam"/>
+        <Class IRI="#Wisata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wisata_belanja"/>
+        <Class IRI="#Wisata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wisata_budaya"/>
+        <Class IRI="#Wisata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wisata_kuliner"/>
+        <Class IRI="#Wisata_belanja"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wisata_pantai"/>
+        <Class IRI="#Wisata_alam"/>
+    </SubClassOf>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#ada_di"/>
+        <ObjectProperty IRI="/property#berada_di"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#ada_di"/>
+        <ObjectProperty IRI="/property#hasLocation"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#ada_di"/>
+        <ObjectProperty IRI="/property#letak"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#ada_di"/>
+        <ObjectProperty IRI="/property#posisi"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#ada_di"/>
+        <ObjectProperty IRI="/property#terdapat_di"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#ada_di"/>
+        <ObjectProperty IRI="/property#terletak_di"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#berada_di"/>
+        <ObjectProperty IRI="/property#hasLocation"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#berada_di"/>
+        <ObjectProperty IRI="/property#letak"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#berada_di"/>
+        <ObjectProperty IRI="/property#posisi"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#berada_di"/>
+        <ObjectProperty IRI="/property#terdapat_di"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#hasLocation"/>
+        <ObjectProperty IRI="/property#letak"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#hasLocation"/>
+        <ObjectProperty IRI="/property#posisi"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#hasLocation"/>
+        <ObjectProperty IRI="/property#terdapat_di"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#hasRitual"/>
+        <ObjectProperty IRI="/property#hasTradition"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#letak"/>
+        <ObjectProperty IRI="/property#posisi"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#letak"/>
+        <ObjectProperty IRI="/property#terdapat_di"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#letak"/>
+        <ObjectProperty IRI="/property#terletak_di"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="/property#posisi"/>
+        <ObjectProperty IRI="/property#terdapat_di"/>
+    </EquivalentObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/property#hasLocation"/>
+        <ObjectProperty IRI="/property#isLocationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/property#hasProduct"/>
+        <ObjectProperty IRI="/property#isProductOf"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/property#ada_di"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/property#berada_di"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/property#hasLocation"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/property#letak"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/property#terdapat_di"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/property#terletak_di"/>
+    </TransitiveObjectProperty>
+    <EquivalentDataProperties>
+        <DataProperty IRI="/property#bintang"/>
+        <DataProperty IRI="/property#hasRating"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="/property#hasPhone"/>
+        <DataProperty IRI="/property#telp"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="/property#roomRate"/>
+        <DataProperty IRI="/property#tarif_kamar"/>
+    </EquivalentDataProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#alamat_website"/>
+        <DataProperty IRI="/property#website"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#bintang"/>
+        <DataProperty IRI="/property#rating"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#hasAddress"/>
+        <DataProperty IRI="/property#alamat"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#hasName"/>
+        <DataProperty IRI="/property#nama"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#hasPhone"/>
+        <DataProperty IRI="/property#telepon"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#hasRating"/>
+        <DataProperty IRI="/property#rating"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#hasWebsite"/>
+        <DataProperty IRI="/property#website"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#postCode"/>
+        <DataProperty IRI="/property#kode_pos"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#rate"/>
+        <DataProperty IRI="/property#tarif"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#roomRate"/>
+        <DataProperty IRI="/property#harga_kamar"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#tarif_kamar"/>
+        <DataProperty IRI="/property#harga_kamar"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/property#telp"/>
+        <DataProperty IRI="/property#telepon"/>
+    </SubDataPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wisata</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Merepresentasikan daerah-daerah yang memiliki destinasi wisata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wisata_alam</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Merepresentasikan daerah-daerah yang memiliki destinasi wisata alam seperti pegunungan, pantai, air terjun dll</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wisata_belanja</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Merepresentasikan daerah yang memiliki destinasi wisata belanja seperti souvenir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wisata_budaya</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">merepresentasikan daerah-daerah yang memiliki destinasi wisata budaya</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wisata_kuliner</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Kelas yang merepresentasikan daerah-daerah yang memiliki destinasi wisata kuliner khas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wisata_pantai</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Merepresentasikan daerah-daerah yang khusus memiliki destinasi wisata pantai</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/property#hasLocation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mendefinisikan lokasi dari hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/property#hasRating</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rating hotel (bintang 1 - 5)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/property#roomRate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property untuk menjelaskan tarif kamar hotel</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+

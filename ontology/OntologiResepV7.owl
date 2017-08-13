@@ -1,0 +1,1899 @@
+Prefix(:=<http://www.tesis.semantikweb.org/ontoresep#>)
+Prefix(dp:=<http://www.tesis.semantikweb.org/ontoresep/dp#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(ontoresep:=<http://www.tesis.semantikweb.org/ontoresep#>)
+
+
+Ontology(<http://www.tesis.semantikweb.org/ontoresep>
+
+Declaration(Class(ontoresep:Bahan_makanan))
+Declaration(Class(ontoresep:Biji_bijian))
+Declaration(Class(ontoresep:Buah))
+Declaration(Class(ontoresep:Bumbu))
+Declaration(Class(ontoresep:Daging))
+Declaration(Class(ontoresep:Hewani))
+Declaration(Class(ontoresep:Ikan))
+Declaration(Class(ontoresep:Indeks_glikemik))
+Declaration(Class(ontoresep:Indeks_glikemik_rendah))
+Declaration(Class(ontoresep:Indeks_glikemik_sedang))
+Declaration(Class(ontoresep:Indeks_glikemik_tinggi))
+Declaration(Class(ontoresep:Jeroan))
+Declaration(Class(ontoresep:Kacang_kacangan))
+Declaration(Class(ontoresep:Makanan))
+Declaration(Class(ontoresep:Minuman))
+Declaration(Class(ontoresep:Muatan_glikemik))
+Declaration(Class(ontoresep:Muatan_glikemik_rendah))
+Declaration(Class(ontoresep:Muatan_glikemik_sedang))
+Declaration(Class(ontoresep:Muatan_glikemik_tinggi))
+Declaration(Class(ontoresep:Nabati))
+Declaration(Class(ontoresep:Natrium))
+Declaration(Class(ontoresep:Natrium_rendah))
+Declaration(Class(ontoresep:Natrium_tinggi))
+Declaration(Class(ontoresep:Penyakit))
+Declaration(Class(ontoresep:Purin))
+Declaration(Class(ontoresep:Purin_rendah))
+Declaration(Class(ontoresep:Purin_sedang))
+Declaration(Class(ontoresep:Purin_tinggi))
+Declaration(Class(ontoresep:Resep))
+Declaration(Class(ontoresep:Sayur))
+Declaration(Class(ontoresep:Susu))
+Declaration(Class(ontoresep:Udang))
+Declaration(Class(ontoresep:Zat_makanan))
+Declaration(ObjectProperty(ontoresep:aman))
+Declaration(ObjectProperty(ontoresep:aman_konsumsi))
+Declaration(ObjectProperty(ontoresep:bahan))
+Declaration(ObjectProperty(ontoresep:dianjurkan))
+Declaration(ObjectProperty(ontoresep:dibatasi))
+Declaration(ObjectProperty(ontoresep:dihindari))
+Declaration(ObjectProperty(ontoresep:memiliki_kandungan))
+Declaration(ObjectProperty(ontoresep:menurunkan))
+Declaration(ObjectProperty(ontoresep:nama_bahan))
+Declaration(ObjectProperty(ontoresep:pantangan))
+Declaration(DataProperty(dp:asam_lemak_omega_3))
+Declaration(DataProperty(dp:cara_membuat))
+Declaration(DataProperty(dp:charantin))
+Declaration(DataProperty(dp:jumlah))
+Declaration(DataProperty(dp:kadar_asam_lemak_omega_3))
+Declaration(DataProperty(dp:kadar_kalium))
+Declaration(DataProperty(dp:kadar_kalori))
+Declaration(DataProperty(dp:kadar_kalsium))
+Declaration(DataProperty(dp:kadar_karbohidrat))
+Declaration(DataProperty(dp:kadar_lemak))
+Declaration(DataProperty(dp:kadar_natrium))
+Declaration(DataProperty(dp:kadar_protein))
+Declaration(DataProperty(dp:kadar_purin))
+Declaration(DataProperty(dp:kadar_serat))
+Declaration(DataProperty(dp:kalium))
+Declaration(DataProperty(dp:kalori))
+Declaration(DataProperty(dp:kalsium))
+Declaration(DataProperty(dp:karbohidrat))
+Declaration(DataProperty(dp:lemak))
+Declaration(DataProperty(dp:nilai_indeks_glikemik))
+Declaration(DataProperty(dp:nilai_muatan_glikemik))
+Declaration(DataProperty(dp:peptin))
+Declaration(DataProperty(dp:protein))
+Declaration(DataProperty(dp:satuan))
+Declaration(DataProperty(dp:serat))
+Declaration(NamedIndividual(ontoresep:A1))
+Declaration(NamedIndividual(ontoresep:A2))
+Declaration(NamedIndividual(ontoresep:A3))
+Declaration(NamedIndividual(ontoresep:A4))
+Declaration(NamedIndividual(ontoresep:A5))
+Declaration(NamedIndividual(ontoresep:A6))
+Declaration(NamedIndividual(ontoresep:A7))
+Declaration(NamedIndividual(ontoresep:A8))
+Declaration(NamedIndividual(ontoresep:A9))
+Declaration(NamedIndividual(ontoresep:A_10))
+Declaration(NamedIndividual(ontoresep:A_11))
+Declaration(NamedIndividual(ontoresep:A_12))
+Declaration(NamedIndividual(ontoresep:B1))
+Declaration(NamedIndividual(ontoresep:B2))
+Declaration(NamedIndividual(ontoresep:B3))
+Declaration(NamedIndividual(ontoresep:B4))
+Declaration(NamedIndividual(ontoresep:B5))
+Declaration(NamedIndividual(ontoresep:B6))
+Declaration(NamedIndividual(ontoresep:B7))
+Declaration(NamedIndividual(ontoresep:B8))
+Declaration(NamedIndividual(ontoresep:C1))
+Declaration(NamedIndividual(ontoresep:C2))
+Declaration(NamedIndividual(ontoresep:C3))
+Declaration(NamedIndividual(ontoresep:C4))
+Declaration(NamedIndividual(ontoresep:C5))
+Declaration(NamedIndividual(ontoresep:C6))
+Declaration(NamedIndividual(ontoresep:C7))
+Declaration(NamedIndividual(ontoresep:C8))
+Declaration(NamedIndividual(ontoresep:C9))
+Declaration(NamedIndividual(ontoresep:C_10))
+Declaration(NamedIndividual(ontoresep:C_11))
+Declaration(NamedIndividual(ontoresep:C_12))
+Declaration(NamedIndividual(ontoresep:D1))
+Declaration(NamedIndividual(ontoresep:D2))
+Declaration(NamedIndividual(ontoresep:D3))
+Declaration(NamedIndividual(ontoresep:D4))
+Declaration(NamedIndividual(ontoresep:D5))
+Declaration(NamedIndividual(ontoresep:D6))
+Declaration(NamedIndividual(ontoresep:D7))
+Declaration(NamedIndividual(ontoresep:D8))
+Declaration(NamedIndividual(ontoresep:D9))
+Declaration(NamedIndividual(ontoresep:D_10))
+Declaration(NamedIndividual(ontoresep:D_11))
+Declaration(NamedIndividual(ontoresep:D_12))
+Declaration(NamedIndividual(ontoresep:D_13))
+Declaration(NamedIndividual(ontoresep:D_14))
+Declaration(NamedIndividual(ontoresep:E1))
+Declaration(NamedIndividual(ontoresep:E2))
+Declaration(NamedIndividual(ontoresep:E3))
+Declaration(NamedIndividual(ontoresep:E4))
+Declaration(NamedIndividual(ontoresep:E5))
+Declaration(NamedIndividual(ontoresep:E6))
+Declaration(NamedIndividual(ontoresep:E7))
+Declaration(NamedIndividual(ontoresep:E8))
+Declaration(NamedIndividual(ontoresep:E9))
+Declaration(NamedIndividual(ontoresep:E_10))
+Declaration(NamedIndividual(ontoresep:E_11))
+Declaration(NamedIndividual(ontoresep:advokad))
+Declaration(NamedIndividual(ontoresep:agar_agar_bubuk_merah))
+Declaration(NamedIndividual(ontoresep:agar_agar_bubuk_putih))
+Declaration(NamedIndividual(ontoresep:air))
+Declaration(NamedIndividual(ontoresep:almond))
+Declaration(NamedIndividual(ontoresep:anggur))
+Declaration(NamedIndividual(ontoresep:apel))
+Declaration(NamedIndividual(ontoresep:arbei))
+Declaration(NamedIndividual(ontoresep:asam_urat))
+Declaration(NamedIndividual(ontoresep:babat))
+Declaration(NamedIndividual(ontoresep:bawang_bombay))
+Declaration(NamedIndividual(ontoresep:bawang_merah))
+Declaration(NamedIndividual(ontoresep:bawang_putih))
+Declaration(NamedIndividual(ontoresep:bayam))
+Declaration(NamedIndividual(ontoresep:belimbing))
+Declaration(NamedIndividual(ontoresep:beras_ketan))
+Declaration(NamedIndividual(ontoresep:beras_merah))
+Declaration(NamedIndividual(ontoresep:beras_putih))
+Declaration(NamedIndividual(ontoresep:bihun))
+Declaration(NamedIndividual(ontoresep:biskuit))
+Declaration(NamedIndividual(ontoresep:bit))
+Declaration(NamedIndividual(ontoresep:brokoli))
+Declaration(NamedIndividual(ontoresep:buncis))
+Declaration(NamedIndividual(ontoresep:cabe_merah))
+Declaration(NamedIndividual(ontoresep:cabe_rawit))
+Declaration(NamedIndividual(ontoresep:cah_buncis))
+Declaration(NamedIndividual(ontoresep:daging_ayam))
+Declaration(NamedIndividual(ontoresep:daging_babi))
+Declaration(NamedIndividual(ontoresep:daging_bebek))
+Declaration(NamedIndividual(ontoresep:daging_domba))
+Declaration(NamedIndividual(ontoresep:daging_kelinci))
+Declaration(NamedIndividual(ontoresep:daging_sapi))
+Declaration(NamedIndividual(ontoresep:daun_bawang))
+Declaration(NamedIndividual(ontoresep:daun_jeruk))
+Declaration(NamedIndividual(ontoresep:daun_melinjo))
+Declaration(NamedIndividual(ontoresep:daun_pepaya_muda))
+Declaration(NamedIndividual(ontoresep:daun_salam))
+Declaration(NamedIndividual(ontoresep:diabetes))
+Declaration(NamedIndividual(ontoresep:duku))
+Declaration(NamedIndividual(ontoresep:es_krim))
+Declaration(NamedIndividual(ontoresep:garam))
+Declaration(NamedIndividual(ontoresep:gula_pasir))
+Declaration(NamedIndividual(ontoresep:hati_ayam))
+Declaration(NamedIndividual(ontoresep:hati_babi))
+Declaration(NamedIndividual(ontoresep:hati_sapi))
+Declaration(NamedIndividual(ontoresep:havermout))
+Declaration(NamedIndividual(ontoresep:hipertensi))
+Declaration(NamedIndividual(ontoresep:ikan_kakap))
+Declaration(NamedIndividual(ontoresep:ikan_kembung))
+Declaration(NamedIndividual(ontoresep:ikan_mas))
+Declaration(NamedIndividual(ontoresep:ikan_salmon))
+Declaration(NamedIndividual(ontoresep:ikan_tongkol))
+Declaration(NamedIndividual(ontoresep:ikan_tuna))
+Declaration(NamedIndividual(ontoresep:jagung))
+Declaration(NamedIndividual(ontoresep:jagung_manis))
+Declaration(NamedIndividual(ontoresep:jagung_muda))
+Declaration(NamedIndividual(ontoresep:jahe))
+Declaration(NamedIndividual(ontoresep:jeruk))
+Declaration(NamedIndividual(ontoresep:jeruk_nipis))
+Declaration(NamedIndividual(ontoresep:kacang_hijau))
+Declaration(NamedIndividual(ontoresep:kacang_kedelai))
+Declaration(NamedIndividual(ontoresep:kacang_kedelai_hitam))
+Declaration(NamedIndividual(ontoresep:kacang_merah))
+Declaration(NamedIndividual(ontoresep:kacang_mete))
+Declaration(NamedIndividual(ontoresep:kacang_panjang))
+Declaration(NamedIndividual(ontoresep:kacang_polong))
+Declaration(NamedIndividual(ontoresep:kacang_tanah))
+Declaration(NamedIndividual(ontoresep:kapri))
+Declaration(NamedIndividual(ontoresep:kecap))
+Declaration(NamedIndividual(ontoresep:kecap_asin))
+Declaration(NamedIndividual(ontoresep:keju))
+Declaration(NamedIndividual(ontoresep:kelapa))
+Declaration(NamedIndividual(ontoresep:kemangi))
+Declaration(NamedIndividual(ontoresep:kembang_kol))
+Declaration(NamedIndividual(ontoresep:kemiri))
+Declaration(NamedIndividual(ontoresep:kentang))
+Declaration(NamedIndividual(ontoresep:kentang_rebus))
+Declaration(NamedIndividual(ontoresep:kerang))
+Declaration(NamedIndividual(ontoresep:ketimun))
+Declaration(NamedIndividual(ontoresep:kol))
+Declaration(NamedIndividual(ontoresep:kornet_beef))
+Declaration(NamedIndividual(ontoresep:kraker))
+Declaration(NamedIndividual(ontoresep:labu_rebus))
+Declaration(NamedIndividual(ontoresep:lada))
+Declaration(NamedIndividual(ontoresep:lemak_babi))
+Declaration(NamedIndividual(ontoresep:lengkuas))
+Declaration(NamedIndividual(ontoresep:lidah_sapi))
+Declaration(NamedIndividual(ontoresep:lobster))
+Declaration(NamedIndividual(ontoresep:lontong))
+Declaration(NamedIndividual(ontoresep:makaroni))
+Declaration(NamedIndividual(ontoresep:margarin))
+Declaration(NamedIndividual(ontoresep:margarin_tak_bergaram))
+Declaration(NamedIndividual(ontoresep:mentega))
+Declaration(NamedIndividual(ontoresep:merica_bubuk))
+Declaration(NamedIndividual(ontoresep:minyak_goreng))
+Declaration(NamedIndividual(ontoresep:minyak_sayur))
+Declaration(NamedIndividual(ontoresep:minyak_wijen))
+Declaration(NamedIndividual(ontoresep:misoa))
+Declaration(NamedIndividual(ontoresep:nanas))
+Declaration(NamedIndividual(ontoresep:nasi_merah))
+Declaration(NamedIndividual(ontoresep:nasi_putih))
+Declaration(NamedIndividual(ontoresep:oat))
+Declaration(NamedIndividual(ontoresep:pare))
+Declaration(NamedIndividual(ontoresep:paru_sapi))
+Declaration(NamedIndividual(ontoresep:pepaya))
+Declaration(NamedIndividual(ontoresep:peterseli))
+Declaration(NamedIndividual(ontoresep:pisang))
+Declaration(NamedIndividual(ontoresep:prei))
+Declaration(NamedIndividual(ontoresep:puding_strawberry))
+Declaration(NamedIndividual(ontoresep:roti_bakar))
+Declaration(NamedIndividual(ontoresep:roti_coklat))
+Declaration(NamedIndividual(ontoresep:roti_coklat_tak_bergaram))
+Declaration(NamedIndividual(ontoresep:roti_gandum_putih))
+Declaration(NamedIndividual(ontoresep:roti_gandum_utuh))
+Declaration(NamedIndividual(ontoresep:roti_putih))
+Declaration(NamedIndividual(ontoresep:roti_susu))
+Declaration(NamedIndividual(ontoresep:santan))
+Declaration(NamedIndividual(ontoresep:sari_apel))
+Declaration(NamedIndividual(ontoresep:saus_tiram))
+Declaration(NamedIndividual(ontoresep:saus_tomat))
+Declaration(NamedIndividual(ontoresep:sawo_manila))
+Declaration(NamedIndividual(ontoresep:sayur_pare))
+Declaration(NamedIndividual(ontoresep:sayur_rica_rodoh))
+Declaration(NamedIndividual(ontoresep:selada))
+Declaration(NamedIndividual(ontoresep:seledri))
+Declaration(NamedIndividual(ontoresep:semangka))
+Declaration(NamedIndividual(ontoresep:serai))
+Declaration(NamedIndividual(ontoresep:singkong))
+Declaration(NamedIndividual(ontoresep:sosis))
+Declaration(NamedIndividual(ontoresep:strawberry))
+Declaration(NamedIndividual(ontoresep:susu_cair))
+Declaration(NamedIndividual(ontoresep:susu_kambing))
+Declaration(NamedIndividual(ontoresep:susu_kental_manis))
+Declaration(NamedIndividual(ontoresep:susu_krim_cair))
+Declaration(NamedIndividual(ontoresep:tahu))
+Declaration(NamedIndividual(ontoresep:tauge))
+Declaration(NamedIndividual(ontoresep:telur_ayam))
+Declaration(NamedIndividual(ontoresep:telur_bebek))
+Declaration(NamedIndividual(ontoresep:tempe))
+Declaration(NamedIndividual(ontoresep:tepung_kedelai))
+Declaration(NamedIndividual(ontoresep:tepung_tapioka))
+Declaration(NamedIndividual(ontoresep:tepung_terigu))
+Declaration(NamedIndividual(ontoresep:terasi))
+Declaration(NamedIndividual(ontoresep:tiram))
+Declaration(NamedIndividual(ontoresep:tomat))
+Declaration(NamedIndividual(ontoresep:tomat_hijau))
+Declaration(NamedIndividual(ontoresep:tortila_jagung))
+Declaration(NamedIndividual(ontoresep:ubi_jalar_rebus))
+Declaration(NamedIndividual(ontoresep:ubi_kuning))
+Declaration(NamedIndividual(ontoresep:ubi_putih))
+Declaration(NamedIndividual(ontoresep:udang))
+Declaration(NamedIndividual(ontoresep:udang_brokoli))
+Declaration(NamedIndividual(ontoresep:usus_besar))
+Declaration(NamedIndividual(ontoresep:usus_halus))
+Declaration(NamedIndividual(ontoresep:wortel))
+Declaration(NamedIndividual(ontoresep:yogurt))
+Declaration(NamedIndividual(dp:susu_bebas_lemak))
+Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: ontoresep:aman (ontoresep:aman)
+
+EquivalentObjectProperties(ontoresep:aman ontoresep:aman_konsumsi)
+
+# Object Property: ontoresep:dihindari (ontoresep:dihindari)
+
+EquivalentObjectProperties(ontoresep:dihindari ontoresep:pantangan)
+SubObjectPropertyOf(ontoresep:dihindari ontoresep:pantangan)
+
+# Object Property: ontoresep:pantangan (ontoresep:pantangan)
+
+SubObjectPropertyOf(ontoresep:pantangan ontoresep:dihindari)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: dp:asam_lemak_omega_3 (dp:asam_lemak_omega_3)
+
+SubDataPropertyOf(dp:asam_lemak_omega_3 owl:topDataProperty)
+
+# Data Property: dp:charantin (dp:charantin)
+
+SubDataPropertyOf(dp:charantin owl:topDataProperty)
+
+# Data Property: dp:kadar_natrium (dp:kadar_natrium)
+
+SubDataPropertyOf(dp:kadar_natrium owl:topDataProperty)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: ontoresep:Biji_bijian (ontoresep:Biji_bijian)
+
+SubClassOf(ontoresep:Biji_bijian ontoresep:Nabati)
+
+# Class: ontoresep:Buah (ontoresep:Buah)
+
+SubClassOf(ontoresep:Buah ontoresep:Nabati)
+
+# Class: ontoresep:Bumbu (ontoresep:Bumbu)
+
+SubClassOf(ontoresep:Bumbu ontoresep:Nabati)
+
+# Class: ontoresep:Daging (ontoresep:Daging)
+
+SubClassOf(ontoresep:Daging ontoresep:Hewani)
+
+# Class: ontoresep:Hewani (ontoresep:Hewani)
+
+SubClassOf(ontoresep:Hewani ontoresep:Bahan_makanan)
+
+# Class: ontoresep:Ikan (ontoresep:Ikan)
+
+SubClassOf(ontoresep:Ikan ontoresep:Hewani)
+
+# Class: ontoresep:Indeks_glikemik (ontoresep:Indeks_glikemik)
+
+AnnotationAssertion(rdfs:comment ontoresep:Indeks_glikemik "Indeks Glikemik adalah ukuran yang dikembangkan untuk mengklasifikasikan pangan berkarbohidrat berdasarkan pengaruh fisiologisnya terhadap kadar glukosa darah."^^xsd:string)
+
+# Class: ontoresep:Indeks_glikemik_rendah (ontoresep:Indeks_glikemik_rendah)
+
+EquivalentClasses(ontoresep:Indeks_glikemik_rendah DataSomeValuesFrom(dp:nilai_indeks_glikemik DatatypeRestriction(xsd:integer xsd:maxInclusive "55"^^xsd:integer)))
+SubClassOf(ontoresep:Indeks_glikemik_rendah ontoresep:Indeks_glikemik)
+
+# Class: ontoresep:Indeks_glikemik_sedang (ontoresep:Indeks_glikemik_sedang)
+
+EquivalentClasses(ontoresep:Indeks_glikemik_sedang DataSomeValuesFrom(dp:nilai_indeks_glikemik DatatypeRestriction(xsd:integer xsd:minInclusive "56"^^xsd:integer xsd:maxInclusive "69"^^xsd:integer)))
+SubClassOf(ontoresep:Indeks_glikemik_sedang ontoresep:Indeks_glikemik)
+
+# Class: ontoresep:Indeks_glikemik_tinggi (ontoresep:Indeks_glikemik_tinggi)
+
+EquivalentClasses(ontoresep:Indeks_glikemik_tinggi DataSomeValuesFrom(dp:nilai_indeks_glikemik DatatypeRestriction(xsd:integer xsd:minExclusive "70"^^xsd:integer)))
+SubClassOf(ontoresep:Indeks_glikemik_tinggi ontoresep:Indeks_glikemik)
+
+# Class: ontoresep:Jeroan (ontoresep:Jeroan)
+
+SubClassOf(ontoresep:Jeroan ontoresep:Hewani)
+
+# Class: ontoresep:Kacang_kacangan (ontoresep:Kacang_kacangan)
+
+SubClassOf(ontoresep:Kacang_kacangan ontoresep:Nabati)
+
+# Class: ontoresep:Muatan_glikemik (ontoresep:Muatan_glikemik)
+
+AnnotationAssertion(rdfs:comment ontoresep:Muatan_glikemik "Muatan glikemik adalah pembobotan indeks glikemik dengan mengukur kandungan karbohidrat."^^xsd:string)
+
+# Class: ontoresep:Muatan_glikemik_rendah (ontoresep:Muatan_glikemik_rendah)
+
+EquivalentClasses(ontoresep:Muatan_glikemik_rendah DataSomeValuesFrom(dp:nilai_muatan_glikemik DatatypeRestriction(xsd:integer xsd:maxExclusive "11"^^xsd:integer)))
+SubClassOf(ontoresep:Muatan_glikemik_rendah ontoresep:Muatan_glikemik)
+
+# Class: ontoresep:Muatan_glikemik_sedang (ontoresep:Muatan_glikemik_sedang)
+
+EquivalentClasses(ontoresep:Muatan_glikemik_sedang DataSomeValuesFrom(dp:nilai_muatan_glikemik DatatypeRestriction(xsd:integer xsd:minInclusive "11"^^xsd:integer xsd:maxInclusive "19"^^xsd:integer)))
+SubClassOf(ontoresep:Muatan_glikemik_sedang ontoresep:Muatan_glikemik)
+
+# Class: ontoresep:Muatan_glikemik_tinggi (ontoresep:Muatan_glikemik_tinggi)
+
+EquivalentClasses(ontoresep:Muatan_glikemik_tinggi DataSomeValuesFrom(dp:nilai_muatan_glikemik DatatypeRestriction(xsd:integer xsd:minExclusive "20"^^xsd:integer)))
+SubClassOf(ontoresep:Muatan_glikemik_tinggi ontoresep:Muatan_glikemik)
+
+# Class: ontoresep:Nabati (ontoresep:Nabati)
+
+SubClassOf(ontoresep:Nabati ontoresep:Bahan_makanan)
+
+# Class: ontoresep:Natrium (ontoresep:Natrium)
+
+SubClassOf(ontoresep:Natrium ontoresep:Zat_makanan)
+
+# Class: ontoresep:Natrium_rendah (ontoresep:Natrium_rendah)
+
+EquivalentClasses(ontoresep:Natrium_rendah DataSomeValuesFrom(dp:kadar_natrium DatatypeRestriction(xsd:integer xsd:minInclusive "0"^^xsd:integer xsd:maxInclusive "800"^^xsd:integer)))
+SubClassOf(ontoresep:Natrium_rendah ontoresep:Natrium)
+
+# Class: ontoresep:Natrium_tinggi (ontoresep:Natrium_tinggi)
+
+EquivalentClasses(ontoresep:Natrium_tinggi DataSomeValuesFrom(dp:kadar_natrium DatatypeRestriction(xsd:integer xsd:minExclusive "800"^^xsd:integer)))
+SubClassOf(ontoresep:Natrium_tinggi ontoresep:Natrium)
+
+# Class: ontoresep:Purin (ontoresep:Purin)
+
+SubClassOf(ontoresep:Purin ontoresep:Zat_makanan)
+
+# Class: ontoresep:Purin_rendah (ontoresep:Purin_rendah)
+
+EquivalentClasses(ontoresep:Purin_rendah DataSomeValuesFrom(dp:kadar_purin DatatypeRestriction(xsd:integer xsd:minInclusive "0"^^xsd:integer xsd:maxExclusive "50"^^xsd:integer)))
+SubClassOf(ontoresep:Purin_rendah ontoresep:Purin)
+
+# Class: ontoresep:Purin_sedang (ontoresep:Purin_sedang)
+
+EquivalentClasses(ontoresep:Purin_sedang DataSomeValuesFrom(dp:kadar_purin DatatypeRestriction(xsd:integer xsd:minInclusive "50"^^xsd:integer xsd:maxInclusive "150"^^xsd:integer)))
+SubClassOf(ontoresep:Purin_sedang ontoresep:Purin)
+
+# Class: ontoresep:Purin_tinggi (ontoresep:Purin_tinggi)
+
+EquivalentClasses(ontoresep:Purin_tinggi DataSomeValuesFrom(dp:kadar_purin DatatypeRestriction(xsd:integer xsd:minExclusive "150"^^xsd:integer)))
+SubClassOf(ontoresep:Purin_tinggi ontoresep:Purin)
+
+# Class: ontoresep:Sayur (ontoresep:Sayur)
+
+SubClassOf(ontoresep:Sayur ontoresep:Nabati)
+
+# Class: ontoresep:Susu (ontoresep:Susu)
+
+SubClassOf(ontoresep:Susu ontoresep:Hewani)
+
+# Class: ontoresep:Udang (ontoresep:Udang)
+
+SubClassOf(ontoresep:Udang ontoresep:Hewani)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: ontoresep:A1 (ontoresep:A1)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A1 ontoresep:buncis)
+DataPropertyAssertion(dp:jumlah ontoresep:A1 "250"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:A1 "gram"^^xsd:string)
+
+# Individual: ontoresep:A2 (ontoresep:A2)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A2 ontoresep:wortel)
+DataPropertyAssertion(dp:jumlah ontoresep:A2 "100"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:A2 "gram"^^xsd:string)
+
+# Individual: ontoresep:A3 (ontoresep:A3)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A3 ontoresep:bawang_merah)
+DataPropertyAssertion(dp:jumlah ontoresep:A3 "5"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:A3 "butir"^^xsd:string)
+
+# Individual: ontoresep:A4 (ontoresep:A4)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A4 ontoresep:bawang_putih)
+DataPropertyAssertion(dp:jumlah ontoresep:A4 "2"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:A4 "siung"^^xsd:string)
+
+# Individual: ontoresep:A5 (ontoresep:A5)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A5 ontoresep:daun_bawang)
+DataPropertyAssertion(dp:jumlah ontoresep:A5 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:A5 "batang"^^xsd:string)
+
+# Individual: ontoresep:A6 (ontoresep:A6)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A6 ontoresep:tomat)
+DataPropertyAssertion(dp:jumlah ontoresep:A6 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:A6 "buah"^^xsd:string)
+
+# Individual: ontoresep:A7 (ontoresep:A7)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A7 ontoresep:bawang_bombay)
+DataPropertyAssertion(dp:jumlah ontoresep:A7 "50"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:A7 "gram"^^xsd:string)
+
+# Individual: ontoresep:A8 (ontoresep:A8)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A8 ontoresep:lada)
+DataPropertyAssertion(dp:jumlah ontoresep:A8 "0.5"^^xsd:float)
+DataPropertyAssertion(dp:satuan ontoresep:A8 "sendok teh"^^xsd:string)
+
+# Individual: ontoresep:A9 (ontoresep:A9)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A9 ontoresep:jahe)
+DataPropertyAssertion(dp:jumlah ontoresep:A9 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:A9 "ruas"^^xsd:string)
+
+# Individual: ontoresep:A_10 (ontoresep:A_10)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A_10 ontoresep:minyak_wijen)
+DataPropertyAssertion(dp:jumlah ontoresep:A_10 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:A_10 "sendok makan"^^xsd:string)
+
+# Individual: ontoresep:A_11 (ontoresep:A_11)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A_11 ontoresep:minyak_goreng)
+DataPropertyAssertion(dp:jumlah ontoresep:A_11 "5"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:A_11 "sendok makan"^^xsd:string)
+
+# Individual: ontoresep:A_12 (ontoresep:A_12)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:A_12 ontoresep:garam)
+DataPropertyAssertion(dp:satuan ontoresep:A_12 "secukupnya"^^xsd:string)
+
+# Individual: ontoresep:B1 (ontoresep:B1)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:B1 ontoresep:agar_agar_bubuk_merah)
+DataPropertyAssertion(dp:jumlah ontoresep:B1 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:B1 "bungkus"^^xsd:string)
+
+# Individual: ontoresep:B2 (ontoresep:B2)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:B2 ontoresep:gula_pasir)
+DataPropertyAssertion(dp:jumlah ontoresep:B2 "150"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:B2 "gram"^^xsd:string)
+
+# Individual: ontoresep:B3 (ontoresep:B3)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:B3 ontoresep:air)
+DataPropertyAssertion(dp:jumlah ontoresep:B3 "600"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:B3 "ml"^^xsd:string)
+
+# Individual: ontoresep:B4 (ontoresep:B4)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:B4 ontoresep:strawberry)
+DataPropertyAssertion(dp:jumlah ontoresep:B4 "200"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:B4 "gram"^^xsd:string)
+
+# Individual: ontoresep:B5 (ontoresep:B5)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:B5 ontoresep:agar_agar_bubuk_putih)
+DataPropertyAssertion(dp:jumlah ontoresep:B5 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:B5 "bungkus"^^xsd:string)
+
+# Individual: ontoresep:B6 (ontoresep:B6)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:B6 ontoresep:gula_pasir)
+DataPropertyAssertion(dp:jumlah ontoresep:B6 "150"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:B6 "gram"^^xsd:string)
+
+# Individual: ontoresep:B7 (ontoresep:B7)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:B7 ontoresep:susu_cair)
+DataPropertyAssertion(dp:jumlah ontoresep:B7 "600"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:B7 "ml"^^xsd:string)
+
+# Individual: ontoresep:B8 (ontoresep:B8)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:B8 ontoresep:garam)
+DataPropertyAssertion(dp:satuan ontoresep:B8 "secukupnya"^^xsd:string)
+
+# Individual: ontoresep:C1 (ontoresep:C1)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C1 ontoresep:pare)
+DataPropertyAssertion(dp:jumlah ontoresep:C1 "500"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C1 "gram"^^xsd:string)
+
+# Individual: ontoresep:C2 (ontoresep:C2)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C2 ontoresep:lengkuas)
+DataPropertyAssertion(dp:jumlah ontoresep:C2 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C2 "potong"^^xsd:string)
+
+# Individual: ontoresep:C3 (ontoresep:C3)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C3 ontoresep:daun_salam)
+DataPropertyAssertion(dp:jumlah ontoresep:C3 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C3 "lembar"^^xsd:string)
+
+# Individual: ontoresep:C4 (ontoresep:C4)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C4 ontoresep:garam)
+DataPropertyAssertion(dp:jumlah ontoresep:C4 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C4 "sendok makan"^^xsd:string)
+
+# Individual: ontoresep:C5 (ontoresep:C5)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C5 ontoresep:gula_pasir)
+DataPropertyAssertion(dp:jumlah ontoresep:C5 "15"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C5 "gram"^^xsd:string)
+
+# Individual: ontoresep:C6 (ontoresep:C6)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C6 ontoresep:cabe_merah)
+DataPropertyAssertion(dp:jumlah ontoresep:C6 "5"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C6 "buah"^^xsd:string)
+
+# Individual: ontoresep:C7 (ontoresep:C7)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C7 ontoresep:bawang_merah)
+DataPropertyAssertion(dp:jumlah ontoresep:C7 "7"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C7 "butir"^^xsd:string)
+
+# Individual: ontoresep:C8 (ontoresep:C8)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C8 ontoresep:bawang_putih)
+DataPropertyAssertion(dp:jumlah ontoresep:C8 "3"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C8 "siung"^^xsd:string)
+
+# Individual: ontoresep:C9 (ontoresep:C9)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C9 ontoresep:terasi)
+DataPropertyAssertion(dp:jumlah ontoresep:C9 "0.5"^^xsd:float)
+DataPropertyAssertion(dp:satuan ontoresep:C9 "sendok teh"^^xsd:string)
+
+# Individual: ontoresep:C_10 (ontoresep:C_10)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C_10 ontoresep:tomat)
+DataPropertyAssertion(dp:jumlah ontoresep:C_10 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C_10 "buah"^^xsd:string)
+
+# Individual: ontoresep:C_11 (ontoresep:C_11)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C_11 ontoresep:kemiri)
+DataPropertyAssertion(dp:jumlah ontoresep:C_11 "3"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C_11 "butir"^^xsd:string)
+
+# Individual: ontoresep:C_12 (ontoresep:C_12)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:C_12 ontoresep:garam)
+DataPropertyAssertion(dp:jumlah ontoresep:C_12 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:C_12 "sendok teh"^^xsd:string)
+
+# Individual: ontoresep:D1 (ontoresep:D1)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D1 ontoresep:kacang_panjang)
+DataPropertyAssertion(dp:jumlah ontoresep:D1 "50"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:D1 "gram"^^xsd:string)
+
+# Individual: ontoresep:D2 (ontoresep:D2)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D2 ontoresep:jagung_muda)
+DataPropertyAssertion(dp:jumlah ontoresep:D2 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:D2 "buah"^^xsd:string)
+
+# Individual: ontoresep:D3 (ontoresep:D3)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D3 ontoresep:kemangi)
+DataPropertyAssertion(dp:jumlah ontoresep:D3 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:D3 "genggam"^^xsd:string)
+
+# Individual: ontoresep:D4 (ontoresep:D4)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D4 ontoresep:tomat_hijau)
+DataPropertyAssertion(dp:jumlah ontoresep:D4 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:D4 "buah"^^xsd:string)
+
+# Individual: ontoresep:D5 (ontoresep:D5)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D5 ontoresep:daun_bawang)
+DataPropertyAssertion(dp:jumlah ontoresep:D5 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:D5 "batang"^^xsd:string)
+
+# Individual: ontoresep:D6 (ontoresep:D6)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D6 ontoresep:serai)
+DataPropertyAssertion(dp:jumlah ontoresep:D6 "0.5"^^xsd:float)
+DataPropertyAssertion(dp:satuan ontoresep:D6 "batang"^^xsd:string)
+
+# Individual: ontoresep:D7 (ontoresep:D7)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D7 ontoresep:daun_jeruk)
+DataPropertyAssertion(dp:jumlah ontoresep:D7 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:D7 "lembar"^^xsd:string)
+
+# Individual: ontoresep:D8 (ontoresep:D8)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D8 ontoresep:garam)
+DataPropertyAssertion(dp:satuan ontoresep:D8 "secukupnya"^^xsd:string)
+
+# Individual: ontoresep:D9 (ontoresep:D9)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D9 ontoresep:gula_pasir)
+DataPropertyAssertion(dp:satuan ontoresep:D9 "secukupnya"^^xsd:string)
+
+# Individual: ontoresep:D_10 (ontoresep:D_10)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D_10 ontoresep:minyak_goreng)
+DataPropertyAssertion(dp:jumlah ontoresep:D_10 "0.5"^^xsd:float)
+DataPropertyAssertion(dp:satuan ontoresep:D_10 "sendok teh"^^xsd:string)
+
+# Individual: ontoresep:D_11 (ontoresep:D_11)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D_11 ontoresep:air)
+DataPropertyAssertion(dp:jumlah ontoresep:D_11 "500"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:D_11 "cc"^^xsd:string)
+
+# Individual: ontoresep:D_12 (ontoresep:D_12)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D_12 ontoresep:cabe_rawit)
+DataPropertyAssertion(dp:jumlah ontoresep:D_12 "3"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:D_12 "buah"^^xsd:string)
+
+# Individual: ontoresep:D_13 (ontoresep:D_13)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D_13 ontoresep:cabe_merah)
+DataPropertyAssertion(dp:jumlah ontoresep:D_13 "2"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:D_13 "buah"^^xsd:string)
+
+# Individual: ontoresep:D_14 (ontoresep:D_14)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:D_14 ontoresep:jahe)
+DataPropertyAssertion(dp:jumlah ontoresep:D_14 "0.5"^^xsd:float)
+DataPropertyAssertion(dp:satuan ontoresep:D_14 "sendok teh"^^xsd:string)
+
+# Individual: ontoresep:E1 (ontoresep:E1)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E1 ontoresep:brokoli)
+DataPropertyAssertion(dp:jumlah ontoresep:E1 "300"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:E1 "gram"^^xsd:string)
+
+# Individual: ontoresep:E2 (ontoresep:E2)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E2 ontoresep:udang)
+DataPropertyAssertion(dp:jumlah ontoresep:E2 "100"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:E2 "gram"^^xsd:string)
+
+# Individual: ontoresep:E3 (ontoresep:E3)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E3 ontoresep:wortel)
+DataPropertyAssertion(dp:jumlah ontoresep:E3 "75"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:E3 "gram"^^xsd:string)
+
+# Individual: ontoresep:E4 (ontoresep:E4)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E4 ontoresep:bawang_bombay)
+DataPropertyAssertion(dp:jumlah ontoresep:E4 "0.5"^^xsd:float)
+DataPropertyAssertion(dp:satuan ontoresep:E4 "buah"^^xsd:string)
+
+# Individual: ontoresep:E5 (ontoresep:E5)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E5 ontoresep:bawang_putih)
+DataPropertyAssertion(dp:jumlah ontoresep:E5 "2"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:E5 "siung"^^xsd:string)
+
+# Individual: ontoresep:E6 (ontoresep:E6)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E6 ontoresep:saus_tiram)
+DataPropertyAssertion(dp:jumlah ontoresep:E6 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:E6 "sendok makan"^^xsd:string)
+
+# Individual: ontoresep:E7 (ontoresep:E7)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E7 ontoresep:kecap_asin)
+DataPropertyAssertion(dp:jumlah ontoresep:E7 "1"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:E7 "sendok teh"^^xsd:string)
+
+# Individual: ontoresep:E8 (ontoresep:E8)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E8 ontoresep:garam)
+DataPropertyAssertion(dp:jumlah ontoresep:E8 "0.75"^^xsd:float)
+DataPropertyAssertion(dp:satuan ontoresep:E8 "sendok teh"^^xsd:string)
+
+# Individual: ontoresep:E9 (ontoresep:E9)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E9 ontoresep:merica_bubuk)
+DataPropertyAssertion(dp:jumlah ontoresep:E9 "0.25"^^xsd:float)
+DataPropertyAssertion(dp:satuan ontoresep:E9 "sendok teh"^^xsd:string)
+
+# Individual: ontoresep:E_10 (ontoresep:E_10)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E_10 ontoresep:air)
+DataPropertyAssertion(dp:jumlah ontoresep:E_10 "200"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:E_10 "ml"^^xsd:string)
+
+# Individual: ontoresep:E_11 (ontoresep:E_11)
+
+ObjectPropertyAssertion(ontoresep:nama_bahan ontoresep:E_11 ontoresep:minyak_sayur)
+DataPropertyAssertion(dp:jumlah ontoresep:E_11 "2"^^xsd:integer)
+DataPropertyAssertion(dp:satuan ontoresep:E_11 "sendok makan"^^xsd:string)
+
+# Individual: ontoresep:advokad (ontoresep:advokad)
+
+ClassAssertion(ontoresep:Buah ontoresep:advokad)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:advokad "278"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:advokad "2"^^xsd:integer)
+
+# Individual: ontoresep:agar_agar_bubuk_merah (ontoresep:agar_agar_bubuk_merah)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:agar_agar_bubuk_merah)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:agar_agar_bubuk_merah "5.92"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:agar_agar_bubuk_merah "0.02"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:agar_agar_bubuk_merah "0.01"^^xsd:float)
+DataPropertyAssertion(dp:kadar_serat ontoresep:agar_agar_bubuk_merah "5.88"^^xsd:float)
+
+# Individual: ontoresep:agar_agar_bubuk_putih (ontoresep:agar_agar_bubuk_putih)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:agar_agar_bubuk_putih)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:agar_agar_bubuk_putih "5.92"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:agar_agar_bubuk_putih "0.02"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:agar_agar_bubuk_putih "0.01"^^xsd:float)
+DataPropertyAssertion(dp:kadar_serat ontoresep:agar_agar_bubuk_putih "5.88"^^xsd:float)
+
+# Individual: ontoresep:air (ontoresep:air)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:air)
+
+# Individual: ontoresep:almond (ontoresep:almond)
+
+ClassAssertion(ontoresep:Kacang_kacangan ontoresep:almond)
+DataPropertyAssertion(dp:kadar_purin ontoresep:almond "37"^^xsd:integer)
+
+# Individual: ontoresep:anggur (ontoresep:anggur)
+
+ClassAssertion(ontoresep:Buah ontoresep:anggur)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:anggur "111"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:anggur "18.1"^^xsd:float)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:anggur "6"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:anggur "46"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:anggur "8"^^xsd:integer)
+
+# Individual: ontoresep:apel (ontoresep:apel)
+
+ClassAssertion(ontoresep:Buah ontoresep:apel)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:apel "148"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:apel "4.235"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:apel "0.051"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:apel "0.08"^^xsd:float)
+DataPropertyAssertion(dp:kadar_serat ontoresep:apel "0.73"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:apel "38"^^xsd:integer)
+
+# Individual: ontoresep:arbei (ontoresep:arbei)
+
+ClassAssertion(ontoresep:Buah ontoresep:arbei)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:arbei "193"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:arbei "1"^^xsd:integer)
+
+# Individual: ontoresep:asam_urat (ontoresep:asam_urat)
+
+ClassAssertion(ontoresep:Penyakit ontoresep:asam_urat)
+
+# Individual: ontoresep:babat (ontoresep:babat)
+
+ClassAssertion(ontoresep:Jeroan ontoresep:babat)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:babat "158"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:babat "57"^^xsd:integer)
+
+# Individual: ontoresep:bawang_bombay (ontoresep:bawang_bombay)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:bawang_bombay)
+
+# Individual: ontoresep:bawang_merah (ontoresep:bawang_merah)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:bawang_merah)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:bawang_merah "166"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:bawang_merah "9"^^xsd:integer)
+
+# Individual: ontoresep:bawang_putih (ontoresep:bawang_putih)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:bawang_putih)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:bawang_putih "373"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:bawang_putih "18"^^xsd:integer)
+
+# Individual: ontoresep:bayam (ontoresep:bayam)
+
+ClassAssertion(ontoresep:Sayur ontoresep:bayam)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:bayam "416"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:bayam "3.63"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:bayam "0.39"^^xsd:float)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:bayam "4.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:bayam "2.86"^^xsd:float)
+DataPropertyAssertion(dp:kadar_purin ontoresep:bayam "366"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:bayam "15"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:bayam "1"^^xsd:integer)
+
+# Individual: ontoresep:belimbing (ontoresep:belimbing)
+
+ClassAssertion(ontoresep:Buah ontoresep:belimbing)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:belimbing "130"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:belimbing "4"^^xsd:integer)
+
+# Individual: ontoresep:beras_ketan (ontoresep:beras_ketan)
+
+ClassAssertion(ontoresep:Biji_bijian ontoresep:beras_ketan)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:beras_ketan "282"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:beras_ketan "5"^^xsd:integer)
+
+# Individual: ontoresep:beras_merah (ontoresep:beras_merah)
+
+ClassAssertion(ontoresep:Biji_bijian ontoresep:beras_merah)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:beras_merah "195"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:beras_merah "2"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:beras_merah "55"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:beras_merah "12"^^xsd:integer)
+
+# Individual: ontoresep:beras_putih (ontoresep:beras_putih)
+
+ClassAssertion(ontoresep:Biji_bijian ontoresep:beras_putih)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:beras_putih "115.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_kalsium ontoresep:beras_putih "28.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:beras_putih "79.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:beras_putih "0.66"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:beras_putih "7.13"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:beras_putih "58"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:beras_putih "46"^^xsd:integer)
+
+# Individual: ontoresep:bihun (ontoresep:bihun)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:bihun)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:bihun "197"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:bihun "13"^^xsd:integer)
+
+# Individual: ontoresep:biskuit (ontoresep:biskuit)
+
+ClassAssertion(ontoresep:Makanan ontoresep:biskuit)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:biskuit "200"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:biskuit "500"^^xsd:integer)
+
+# Individual: ontoresep:bit (ontoresep:bit)
+
+ClassAssertion(ontoresep:Buah ontoresep:bit)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:bit "330"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:bit "36"^^xsd:integer)
+
+# Individual: ontoresep:brokoli (ontoresep:brokoli)
+
+ClassAssertion(ontoresep:Sayur ontoresep:brokoli)
+DataPropertyAssertion(dp:kadar_purin ontoresep:brokoli "81"^^xsd:integer)
+DataPropertyAssertion(dp:karbohidrat ontoresep:brokoli "6.64"^^xsd:float)
+DataPropertyAssertion(dp:lemak ontoresep:brokoli "0.37"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:brokoli "15"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:brokoli "1"^^xsd:integer)
+DataPropertyAssertion(dp:protein ontoresep:brokoli "2.82"^^xsd:float)
+
+# Individual: ontoresep:buncis (ontoresep:buncis)
+
+ClassAssertion(ontoresep:Sayur ontoresep:buncis)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:buncis "295"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:buncis "7.13"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:buncis "0.12"^^xsd:float)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:buncis "18"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_protein ontoresep:buncis "1.82"^^xsd:float)
+DataPropertyAssertion(dp:kadar_purin ontoresep:buncis "37"^^xsd:integer)
+
+# Individual: ontoresep:cabe_merah (ontoresep:cabe_merah)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:cabe_merah)
+
+# Individual: ontoresep:cabe_rawit (ontoresep:cabe_rawit)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:cabe_rawit)
+
+# Individual: ontoresep:cah_buncis (ontoresep:cah_buncis)
+
+ClassAssertion(ontoresep:Resep ontoresep:cah_buncis)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A1)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A2)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A3)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A4)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A5)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A6)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A7)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A8)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A9)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A_10)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A_11)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:cah_buncis ontoresep:A_12)
+DataPropertyAssertion(dp:cara_membuat ontoresep:cah_buncis "1. Tomat dihancurkan dan bawang putih dicincang terlebih dahulu.
+2. Masukkan minyak dan bawang putih ke dalam panci besar diatas api sedang, tumis selama tiga menit.
+3. Tambahkan Rosemary dan tumis selama 2 menit lagi. masukkan tomat dan didihkan selama 15 menit.
+4. Tambahkan kaldu dan didihkan buncis selama sepuluh menit.
+5. Tambahkan makaroni dan masak sekitar 5 menit lagi. 
+6. Bumbui dengan garam dan merica secukupnya.
+7. Sajikan."^^xsd:string)
+
+# Individual: ontoresep:daging_ayam (ontoresep:daging_ayam)
+
+ClassAssertion(ontoresep:Daging ontoresep:daging_ayam)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:daging_ayam "350"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:daging_ayam "18.9"^^xsd:float)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:daging_ayam "100"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_protein ontoresep:daging_ayam "26.9"^^xsd:float)
+
+# Individual: ontoresep:daging_babi (ontoresep:daging_babi)
+
+ClassAssertion(ontoresep:Daging ontoresep:daging_babi)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:daging_babi "21"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:daging_babi "30"^^xsd:integer)
+
+# Individual: ontoresep:daging_bebek (ontoresep:daging_bebek)
+
+ClassAssertion(ontoresep:Daging ontoresep:daging_bebek)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:daging_bebek "300"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:daging_bebek "200"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_purin ontoresep:daging_bebek "138"^^xsd:integer)
+
+# Individual: ontoresep:daging_domba (ontoresep:daging_domba)
+
+ClassAssertion(ontoresep:Daging ontoresep:daging_domba)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:daging_domba "350"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:daging_domba "100"^^xsd:integer)
+
+# Individual: ontoresep:daging_kelinci (ontoresep:daging_kelinci)
+
+ClassAssertion(ontoresep:Daging ontoresep:daging_kelinci)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:daging_kelinci "350"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:daging_kelinci "50"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_purin ontoresep:daging_kelinci "132"^^xsd:integer)
+
+# Individual: ontoresep:daging_sapi (ontoresep:daging_sapi)
+
+ClassAssertion(ontoresep:Daging ontoresep:daging_sapi)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:daging_sapi "489"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:daging_sapi "93"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_purin ontoresep:daging_sapi "133"^^xsd:integer)
+
+# Individual: ontoresep:daun_bawang (ontoresep:daun_bawang)
+
+ClassAssertion(ontoresep:Sayur ontoresep:daun_bawang)
+
+# Individual: ontoresep:daun_jeruk (ontoresep:daun_jeruk)
+
+ClassAssertion(ontoresep:Sayur ontoresep:daun_jeruk)
+
+# Individual: ontoresep:daun_melinjo (ontoresep:daun_melinjo)
+
+ClassAssertion(ontoresep:Sayur ontoresep:daun_melinjo)
+
+# Individual: ontoresep:daun_pepaya_muda (ontoresep:daun_pepaya_muda)
+
+ClassAssertion(ontoresep:Sayur ontoresep:daun_pepaya_muda)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:daun_pepaya_muda "16"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:daun_pepaya_muda "652"^^xsd:integer)
+
+# Individual: ontoresep:daun_salam (ontoresep:daun_salam)
+
+ClassAssertion(ontoresep:Sayur ontoresep:daun_salam)
+
+# Individual: ontoresep:diabetes (ontoresep:diabetes)
+
+ClassAssertion(ontoresep:Penyakit ontoresep:diabetes)
+
+# Individual: ontoresep:duku (ontoresep:duku)
+
+ClassAssertion(ontoresep:Buah ontoresep:duku)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:duku "232"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:duku "1"^^xsd:integer)
+
+# Individual: ontoresep:es_krim (ontoresep:es_krim)
+
+ClassAssertion(ontoresep:Makanan ontoresep:es_krim)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:es_krim "90"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:es_krim "100"^^xsd:integer)
+
+# Individual: ontoresep:garam (ontoresep:garam)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:garam)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:garam "4.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:garam "38758"^^xsd:integer)
+
+# Individual: ontoresep:gula_pasir (ontoresep:gula_pasir)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:gula_pasir)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:gula_pasir "103"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:gula_pasir "3"^^xsd:integer)
+
+# Individual: ontoresep:hati_ayam (ontoresep:hati_ayam)
+
+ClassAssertion(ontoresep:Hewani ontoresep:hati_ayam)
+DataPropertyAssertion(dp:kadar_kalsium ontoresep:hati_ayam "230.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:hati_ayam "0.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:hati_ayam "4.83"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:hati_ayam "16.92"^^xsd:float)
+DataPropertyAssertion(dp:kadar_purin ontoresep:hati_ayam "243"^^xsd:integer)
+
+# Individual: ontoresep:hati_babi (ontoresep:hati_babi)
+
+ClassAssertion(ontoresep:Jeroan ontoresep:hati_babi)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:hati_babi "350"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:hati_babi "150"^^xsd:integer)
+
+# Individual: ontoresep:hati_sapi (ontoresep:hati_sapi)
+
+ClassAssertion(ontoresep:Jeroan ontoresep:hati_sapi)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:hati_sapi "213"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:hati_sapi "110"^^xsd:integer)
+
+# Individual: ontoresep:havermout (ontoresep:havermout)
+
+ClassAssertion(ontoresep:Biji_bijian ontoresep:havermout)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:havermout "400"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:havermout "5"^^xsd:integer)
+
+# Individual: ontoresep:hipertensi (ontoresep:hipertensi)
+
+ClassAssertion(ontoresep:Penyakit ontoresep:hipertensi)
+
+# Individual: ontoresep:ikan_kakap (ontoresep:ikan_kakap)
+
+ClassAssertion(ontoresep:Ikan ontoresep:ikan_kakap)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:ikan_kakap "417.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:ikan_kakap "0.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:ikan_kakap "1.34"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:ikan_kakap "20.51"^^xsd:float)
+DataPropertyAssertion(dp:kadar_purin ontoresep:ikan_kakap "160"^^xsd:integer)
+
+# Individual: ontoresep:ikan_kembung (ontoresep:ikan_kembung)
+
+ClassAssertion(ontoresep:Ikan ontoresep:ikan_kembung)
+DataPropertyAssertion(dp:kadar_purin ontoresep:ikan_kembung "145"^^xsd:integer)
+
+# Individual: ontoresep:ikan_mas (ontoresep:ikan_mas)
+
+ClassAssertion(ontoresep:Ikan ontoresep:ikan_mas)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:ikan_mas "335"^^xsd:integer)
+
+# Individual: ontoresep:ikan_salmon (ontoresep:ikan_salmon)
+
+ClassAssertion(ontoresep:Ikan ontoresep:ikan_salmon)
+DataPropertyAssertion(dp:kadar_asam_lemak_omega_3 ontoresep:ikan_salmon "600.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_kalsium ontoresep:ikan_salmon "423.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:ikan_salmon "0.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:ikan_salmon "5.93"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:ikan_salmon "21.62"^^xsd:float)
+DataPropertyAssertion(dp:kadar_purin ontoresep:ikan_salmon "170"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_serat ontoresep:ikan_salmon "0.0"^^xsd:float)
+
+# Individual: ontoresep:ikan_tongkol (ontoresep:ikan_tongkol)
+
+ClassAssertion(ontoresep:Ikan ontoresep:ikan_tongkol)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:ikan_tongkol "470"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:ikan_tongkol "180"^^xsd:integer)
+
+# Individual: ontoresep:ikan_tuna (ontoresep:ikan_tuna)
+
+ClassAssertion(ontoresep:Ikan ontoresep:ikan_tuna)
+DataPropertyAssertion(dp:asam_lemak_omega_3 ontoresep:ikan_tuna "433.3"^^xsd:float)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:ikan_tuna "444"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:ikan_tuna "0.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:ikan_tuna "0.9"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:ikan_tuna "23.38"^^xsd:float)
+DataPropertyAssertion(dp:kadar_purin ontoresep:ikan_tuna "257"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_serat ontoresep:ikan_tuna "0.0"^^xsd:float)
+
+# Individual: ontoresep:jagung (ontoresep:jagung)
+
+ClassAssertion(ontoresep:Buah ontoresep:jagung)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:jagung "400"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:jagung "5"^^xsd:integer)
+
+# Individual: ontoresep:jagung_manis (ontoresep:jagung_manis)
+
+ClassAssertion(ontoresep:Buah ontoresep:jagung_manis)
+DataPropertyAssertion(dp:kadar_purin ontoresep:jagung_manis "52"^^xsd:integer)
+
+# Individual: ontoresep:jagung_muda (ontoresep:jagung_muda)
+
+ClassAssertion(ontoresep:Sayur ontoresep:jagung_muda)
+
+# Individual: ontoresep:jahe (ontoresep:jahe)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:jahe)
+
+# Individual: ontoresep:jeruk (ontoresep:jeruk)
+
+ClassAssertion(ontoresep:Buah ontoresep:jeruk)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:jeruk "162"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:jeruk "2"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:jeruk "44"^^xsd:integer)
+
+# Individual: ontoresep:jeruk_nipis (ontoresep:jeruk_nipis)
+
+ClassAssertion(ontoresep:Buah ontoresep:jeruk_nipis)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:jeruk_nipis "137"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:jeruk_nipis "4"^^xsd:integer)
+
+# Individual: ontoresep:kacang_hijau (ontoresep:kacang_hijau)
+
+ClassAssertion(ontoresep:Kacang_kacangan ontoresep:kacang_hijau)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kacang_hijau "1132"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:kacang_hijau "15"^^xsd:integer)
+
+# Individual: ontoresep:kacang_kedelai (ontoresep:kacang_kedelai)
+
+ClassAssertion(ontoresep:Kacang_kacangan ontoresep:kacang_kedelai)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kacang_kedelai "1504"^^xsd:integer)
+
+# Individual: ontoresep:kacang_kedelai_hitam (ontoresep:kacang_kedelai_hitam)
+
+ClassAssertion(ontoresep:Kacang_kacangan ontoresep:kacang_kedelai_hitam)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kacang_kedelai_hitam "410"^^xsd:integer)
+
+# Individual: ontoresep:kacang_merah (ontoresep:kacang_merah)
+
+ClassAssertion(ontoresep:Kacang_kacangan ontoresep:kacang_merah)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:kacang_merah "59.8"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:kacang_merah "0.25"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:kacang_merah "24.37"^^xsd:float)
+DataPropertyAssertion(dp:kadar_purin ontoresep:kacang_merah "79"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_serat ontoresep:kacang_merah "24.9"^^xsd:float)
+
+# Individual: ontoresep:kacang_mete (ontoresep:kacang_mete)
+
+ClassAssertion(ontoresep:Kacang_kacangan ontoresep:kacang_mete)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kacang_mete "420"^^xsd:integer)
+
+# Individual: ontoresep:kacang_panjang (ontoresep:kacang_panjang)
+
+ClassAssertion(ontoresep:Kacang_kacangan ontoresep:kacang_panjang)
+
+# Individual: ontoresep:kacang_polong (ontoresep:kacang_polong)
+
+ClassAssertion(ontoresep:Kacang_kacangan ontoresep:kacang_polong)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kacang_polong "200.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_kalori ontoresep:kacang_polong "42.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:kacang_polong "7.55"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:kacang_polong "0.2"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:kacang_polong "2.8"^^xsd:float)
+DataPropertyAssertion(dp:kadar_purin ontoresep:kacang_polong "84"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_serat ontoresep:kacang_polong "2.6"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:kacang_polong "15"^^xsd:integer)
+
+# Individual: ontoresep:kacang_tanah (ontoresep:kacang_tanah)
+
+ClassAssertion(ontoresep:Kacang_kacangan ontoresep:kacang_tanah)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kacang_tanah "421"^^xsd:integer)
+
+# Individual: ontoresep:kapri (ontoresep:kapri)
+
+ClassAssertion(ontoresep:Sayur ontoresep:kapri)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kapri "370"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:kapri "1"^^xsd:integer)
+
+# Individual: ontoresep:kecap (ontoresep:kecap)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:kecap)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kecap "500"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:kecap "4000"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_purin ontoresep:kecap "80"^^xsd:integer)
+
+# Individual: ontoresep:kecap_asin (ontoresep:kecap_asin)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:kecap_asin)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kecap_asin "500"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:kecap_asin "4000"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_purin ontoresep:kecap_asin "80"^^xsd:integer)
+
+# Individual: ontoresep:keju (ontoresep:keju)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:keju)
+ClassAssertion(ontoresep:Hewani ontoresep:keju)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:keju "100"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:keju "1250"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_purin ontoresep:keju "7"^^xsd:integer)
+
+# Individual: ontoresep:kelapa (ontoresep:kelapa)
+
+ClassAssertion(ontoresep:Nabati ontoresep:kelapa)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kelapa "555"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:kelapa "7"^^xsd:integer)
+
+# Individual: ontoresep:kemangi (ontoresep:kemangi)
+
+ClassAssertion(ontoresep:Sayur ontoresep:kemangi)
+
+# Individual: ontoresep:kembang_kol (ontoresep:kembang_kol)
+
+ClassAssertion(ontoresep:Sayur ontoresep:kembang_kol)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kembang_kol "349"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:kembang_kol "5"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:kembang_kol "20"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:kembang_kol "15"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:kembang_kol "1"^^xsd:integer)
+
+# Individual: ontoresep:kemiri (ontoresep:kemiri)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:kemiri)
+
+# Individual: ontoresep:kentang (ontoresep:kentang)
+
+ClassAssertion(ontoresep:Sayur ontoresep:kentang)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kentang "396"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:kentang "7"^^xsd:integer)
+DataPropertyAssertion(dp:karbohidrat ontoresep:kentang "18.6"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:kentang "98"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:kentang "18"^^xsd:integer)
+
+# Individual: ontoresep:kentang_rebus (ontoresep:kentang_rebus)
+
+ClassAssertion(ontoresep:Makanan ontoresep:kentang_rebus)
+
+# Individual: ontoresep:kerang (ontoresep:kerang)
+
+ClassAssertion(ontoresep:Hewani ontoresep:kerang)
+DataPropertyAssertion(dp:kadar_purin ontoresep:kerang "136"^^xsd:integer)
+
+# Individual: ontoresep:ketimun (ontoresep:ketimun)
+
+ClassAssertion(ontoresep:Buah ontoresep:ketimun)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:ketimun "122"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:ketimun "5"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:ketimun "15"^^xsd:integer)
+
+# Individual: ontoresep:kol (ontoresep:kol)
+
+ClassAssertion(ontoresep:Sayur ontoresep:kol)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kol "238"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:kol "10"^^xsd:integer)
+DataPropertyAssertion(dp:karbohidrat ontoresep:kol "5.8"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:kol "10"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:kol "1"^^xsd:integer)
+
+# Individual: ontoresep:kornet_beef (ontoresep:kornet_beef)
+
+ClassAssertion(ontoresep:Hewani ontoresep:kornet_beef)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kornet_beef "100"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:kornet_beef "1250"^^xsd:integer)
+
+# Individual: ontoresep:kraker (ontoresep:kraker)
+
+ClassAssertion(ontoresep:Makanan ontoresep:kraker)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:kraker "120"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:kraker "110"^^xsd:integer)
+
+# Individual: ontoresep:labu_rebus (ontoresep:labu_rebus)
+
+ClassAssertion(ontoresep:Makanan ontoresep:labu_rebus)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:labu_rebus "67"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:labu_rebus "7"^^xsd:integer)
+
+# Individual: ontoresep:lada (ontoresep:lada)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:lada)
+
+# Individual: ontoresep:lemak_babi (ontoresep:lemak_babi)
+
+ClassAssertion(ontoresep:Hewani ontoresep:lemak_babi)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:lemak_babi "250"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:lemak_babi "1500"^^xsd:integer)
+
+# Individual: ontoresep:lengkuas (ontoresep:lengkuas)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:lengkuas)
+
+# Individual: ontoresep:lidah_sapi (ontoresep:lidah_sapi)
+
+ClassAssertion(ontoresep:Jeroan ontoresep:lidah_sapi)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:lidah_sapi "250"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:lidah_sapi "100"^^xsd:integer)
+
+# Individual: ontoresep:lobster (ontoresep:lobster)
+
+ClassAssertion(ontoresep:Udang ontoresep:lobster)
+
+# Individual: ontoresep:lontong (ontoresep:lontong)
+
+ClassAssertion(ontoresep:Makanan ontoresep:lontong)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:lontong "46"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:lontong "0.2"^^xsd:float)
+DataPropertyAssertion(dp:karbohidrat ontoresep:lontong "28.58"^^xsd:float)
+DataPropertyAssertion(dp:protein ontoresep:lontong "2.49"^^xsd:float)
+
+# Individual: ontoresep:makaroni (ontoresep:makaroni)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:makaroni)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:makaroni "132"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:makaroni "3"^^xsd:integer)
+
+# Individual: ontoresep:margarin (ontoresep:margarin)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:margarin)
+ClassAssertion(ontoresep:Hewani ontoresep:margarin)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:margarin "23"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:margarin "987"^^xsd:integer)
+
+# Individual: ontoresep:margarin_tak_bergaram (ontoresep:margarin_tak_bergaram)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:margarin_tak_bergaram)
+ClassAssertion(ontoresep:Hewani ontoresep:margarin_tak_bergaram)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:margarin_tak_bergaram "10"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:margarin_tak_bergaram "15"^^xsd:integer)
+
+# Individual: ontoresep:mentega (ontoresep:mentega)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:mentega)
+ClassAssertion(ontoresep:Hewani ontoresep:mentega)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:mentega "325"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:mentega "4"^^xsd:integer)
+
+# Individual: ontoresep:merica_bubuk (ontoresep:merica_bubuk)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:merica_bubuk)
+
+# Individual: ontoresep:minyak_goreng (ontoresep:minyak_goreng)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:minyak_goreng)
+
+# Individual: ontoresep:minyak_sayur (ontoresep:minyak_sayur)
+
+ClassAssertion(ontoresep:Nabati ontoresep:minyak_sayur)
+
+# Individual: ontoresep:minyak_wijen (ontoresep:minyak_wijen)
+
+ClassAssertion(ontoresep:Bahan_makanan ontoresep:minyak_wijen)
+
+# Individual: ontoresep:misoa (ontoresep:misoa)
+
+ClassAssertion(ontoresep:Makanan ontoresep:misoa)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:misoa "96"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:misoa "1"^^xsd:integer)
+
+# Individual: ontoresep:nanas (ontoresep:nanas)
+
+ClassAssertion(ontoresep:Buah ontoresep:nanas)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:nanas "125"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:nanas "2"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:nanas "66"^^xsd:integer)
+
+# Individual: ontoresep:nasi_merah (ontoresep:nasi_merah)
+
+ClassAssertion(ontoresep:Makanan ontoresep:nasi_merah)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:nasi_merah "43.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:nasi_merah "22.78"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:nasi_merah "0.89"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:nasi_merah "2.56"^^xsd:float)
+DataPropertyAssertion(dp:kadar_serat ontoresep:nasi_merah "1.8"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:nasi_merah "68"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:nasi_merah "4"^^xsd:integer)
+
+# Individual: ontoresep:nasi_putih (ontoresep:nasi_putih)
+
+ClassAssertion(ontoresep:Makanan ontoresep:nasi_putih)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:nasi_putih "55"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:nasi_putih "79.9"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:nasi_putih "0.44"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:nasi_putih "4.2"^^xsd:float)
+DataPropertyAssertion(dp:kadar_serat ontoresep:nasi_putih "0.6"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:nasi_putih "77"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:nasi_putih "60"^^xsd:integer)
+
+# Individual: ontoresep:oat (ontoresep:oat)
+
+ClassAssertion(ontoresep:Nabati ontoresep:oat)
+DataPropertyAssertion(dp:kadar_purin ontoresep:oat "94"^^xsd:integer)
+
+# Individual: ontoresep:pare (ontoresep:pare)
+
+ClassAssertion(ontoresep:Sayur ontoresep:pare)
+DataPropertyAssertion(dp:charantin ontoresep:pare "ada"^^xsd:string)
+DataPropertyAssertion(dp:kadar_kalsium ontoresep:pare "45.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:pare "6.6"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:pare "0.3"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:pare "1.1"^^xsd:float)
+
+# Individual: ontoresep:paru_sapi (ontoresep:paru_sapi)
+
+ClassAssertion(ontoresep:Jeroan ontoresep:paru_sapi)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:paru_sapi "190"^^xsd:integer)
+
+# Individual: ontoresep:pepaya (ontoresep:pepaya)
+
+ClassAssertion(ontoresep:Buah ontoresep:pepaya)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:pepaya "221"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:pepaya "4"^^xsd:integer)
+
+# Individual: ontoresep:peterseli (ontoresep:peterseli)
+
+ClassAssertion(ontoresep:Sayur ontoresep:peterseli)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:peterseli "900"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:peterseli "28"^^xsd:integer)
+
+# Individual: ontoresep:pisang (ontoresep:pisang)
+
+ClassAssertion(ontoresep:Buah ontoresep:pisang)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:pisang "345"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:pisang "18"^^xsd:integer)
+DataPropertyAssertion(dp:karbohidrat ontoresep:pisang "20.0"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:pisang "55"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:pisang "11"^^xsd:integer)
+
+# Individual: ontoresep:prei (ontoresep:prei)
+
+ClassAssertion(ontoresep:Sayur ontoresep:prei)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:prei "316"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:prei "5"^^xsd:integer)
+
+# Individual: ontoresep:puding_strawberry (ontoresep:puding_strawberry)
+
+ClassAssertion(ontoresep:Resep ontoresep:puding_strawberry)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:puding_strawberry ontoresep:B1)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:puding_strawberry ontoresep:B2)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:puding_strawberry ontoresep:B3)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:puding_strawberry ontoresep:B4)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:puding_strawberry ontoresep:B5)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:puding_strawberry ontoresep:B6)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:puding_strawberry ontoresep:B7)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:puding_strawberry ontoresep:B8)
+DataPropertyAssertion(dp:cara_membuat ontoresep:puding_strawberry "1. Campur bahan 1-3 dari bahan 1, sisakan sedikit air untuk memblender strawberi
+2. Masak sambil sesekali diaduk
+3. Sementara itu belender daging strawberi dengan sisa air
+4. Tunggu hingga campuran agar-agar mendidih. Masukkan jus buah strawberi, aduk lagi hingga mendidih. Angkat.
+5. Tuang adonan puding kedalam cetakan yang telah dibasahi
+6. Campur semua bahan 2, masak sambil sesekali diaduk hingga mendidih. Angkat.
+7. Jika pada lapisan pudding buah strawberi telah terbentuk langit-langit, tuang adonan pudding susu secara perlahan sedikit demi sedikit agar adonan pudding tidak banyak yang tercampur.
+8. Dinginkan."^^xsd:string)
+
+# Individual: ontoresep:roti_bakar (ontoresep:roti_bakar)
+
+ClassAssertion(ontoresep:Makanan ontoresep:roti_bakar)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:roti_bakar "210"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:roti_bakar "31"^^xsd:integer)
+
+# Individual: ontoresep:roti_coklat (ontoresep:roti_coklat)
+
+ClassAssertion(ontoresep:Makanan ontoresep:roti_coklat)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:roti_coklat "200"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:roti_coklat "500"^^xsd:integer)
+
+# Individual: ontoresep:roti_coklat_tak_bergaram (ontoresep:roti_coklat_tak_bergaram)
+
+ClassAssertion(ontoresep:Makanan ontoresep:roti_coklat_tak_bergaram)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:roti_coklat_tak_bergaram "200"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:roti_coklat_tak_bergaram "10"^^xsd:integer)
+
+# Individual: ontoresep:roti_gandum_putih (ontoresep:roti_gandum_putih)
+
+ClassAssertion(ontoresep:Makanan ontoresep:roti_gandum_putih)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:roti_gandum_putih "75"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:roti_gandum_putih "2"^^xsd:integer)
+
+# Individual: ontoresep:roti_gandum_utuh (ontoresep:roti_gandum_utuh)
+
+ClassAssertion(ontoresep:Makanan ontoresep:roti_gandum_utuh)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:roti_gandum_utuh "74"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:roti_gandum_utuh "2"^^xsd:integer)
+
+# Individual: ontoresep:roti_putih (ontoresep:roti_putih)
+
+ClassAssertion(ontoresep:Makanan ontoresep:roti_putih)
+DataPropertyAssertion(dp:karbohidrat ontoresep:roti_putih "50.0"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:roti_putih "95"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:roti_putih "48"^^xsd:integer)
+
+# Individual: ontoresep:roti_susu (ontoresep:roti_susu)
+
+ClassAssertion(ontoresep:Makanan ontoresep:roti_susu)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:roti_susu "926"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:roti_susu "11"^^xsd:integer)
+
+# Individual: ontoresep:santan (ontoresep:santan)
+
+ClassAssertion(ontoresep:Nabati ontoresep:santan)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:santan "0"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:santan "0"^^xsd:integer)
+
+# Individual: ontoresep:sari_apel (ontoresep:sari_apel)
+
+ClassAssertion(ontoresep:Nabati ontoresep:sari_apel)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:sari_apel "95"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:sari_apel "1"^^xsd:integer)
+
+# Individual: ontoresep:saus_tiram (ontoresep:saus_tiram)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:saus_tiram)
+
+# Individual: ontoresep:saus_tomat (ontoresep:saus_tomat)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:saus_tomat)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:saus_tomat "800.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:saus_tomat "2100"^^xsd:integer)
+
+# Individual: ontoresep:sawo_manila (ontoresep:sawo_manila)
+
+ClassAssertion(ontoresep:Buah ontoresep:sawo_manila)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:sawo_manila "181"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:sawo_manila "3"^^xsd:integer)
+
+# Individual: ontoresep:sayur_pare (ontoresep:sayur_pare)
+
+ClassAssertion(ontoresep:Resep ontoresep:sayur_pare)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C1)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C2)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C3)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C4)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C5)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C6)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C7)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C8)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C9)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C_10)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C_11)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_pare ontoresep:C_12)
+DataPropertyAssertion(dp:cara_membuat ontoresep:sayur_pare "1. Keruk biji pare, belah dua dan poton melintang dengan ketebalan ½ cm, remas-remas dengan garam sampai berbusa dan buang air garam remas lagi dengan menggunakan gula. Diamkan 10 menit, cuci dan tiriskan.
+2. Tumis bumbu halus, daun salam dan lengkuas sampai harum. Masukkan pare.
+3. Tuang 100 ml air, beri garam dan gula. Kecilkan api, masak hingga matang dan kuah habis.
+4. Angkat sajikan."^^xsd:string)
+
+# Individual: ontoresep:sayur_rica_rodoh (ontoresep:sayur_rica_rodoh)
+
+ClassAssertion(ontoresep:Resep ontoresep:sayur_rica_rodoh)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D1)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D2)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D3)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D4)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D5)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D6)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D7)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D8)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D9)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D_10)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D_11)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D_12)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D_13)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:sayur_rica_rodoh ontoresep:D_14)
+DataPropertyAssertion(dp:cara_membuat ontoresep:sayur_rica_rodoh "1. Tumis bumbu halus, serai, dan daun jeruk sampai layu tuangi 500 cc air
+2. Masukkan jagung,kacang panjang sampai matang terakhir masukan daun kemangi."^^xsd:string)
+DataPropertyAssertion(dp:kalori ontoresep:sayur_rica_rodoh "103"^^xsd:integer)
+DataPropertyAssertion(dp:karbohidrat ontoresep:sayur_rica_rodoh "18"^^xsd:integer)
+DataPropertyAssertion(dp:lemak ontoresep:sayur_rica_rodoh "3"^^xsd:integer)
+DataPropertyAssertion(dp:protein ontoresep:sayur_rica_rodoh "2"^^xsd:integer)
+
+# Individual: ontoresep:selada (ontoresep:selada)
+
+ClassAssertion(ontoresep:Sayur ontoresep:selada)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:selada "203"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:selada "15"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_purin ontoresep:selada "38"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:selada "15"^^xsd:integer)
+
+# Individual: ontoresep:seledri (ontoresep:seledri)
+
+ClassAssertion(ontoresep:Sayur ontoresep:seledri)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:seledri "326"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:seledri "96"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:seledri "15"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:seledri "1"^^xsd:integer)
+
+# Individual: ontoresep:semangka (ontoresep:semangka)
+
+ClassAssertion(ontoresep:Buah ontoresep:semangka)
+DataPropertyAssertion(dp:karbohidrat ontoresep:semangka "5.0"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:semangka "72"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:semangka "4"^^xsd:integer)
+
+# Individual: ontoresep:serai (ontoresep:serai)
+
+ClassAssertion(ontoresep:Nabati ontoresep:serai)
+
+# Individual: ontoresep:singkong (ontoresep:singkong)
+
+ClassAssertion(ontoresep:Nabati ontoresep:singkong)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:singkong "400"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:singkong "5"^^xsd:integer)
+
+# Individual: ontoresep:sosis (ontoresep:sosis)
+
+ClassAssertion(ontoresep:Hewani ontoresep:sosis)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:sosis "250"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:sosis "1000"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_purin ontoresep:sosis "112"^^xsd:integer)
+
+# Individual: ontoresep:strawberry (ontoresep:strawberry)
+
+ClassAssertion(ontoresep:Buah ontoresep:strawberry)
+
+# Individual: ontoresep:susu_cair (ontoresep:susu_cair)
+
+ClassAssertion(ontoresep:Susu ontoresep:susu_cair)
+
+# Individual: ontoresep:susu_kambing (ontoresep:susu_kambing)
+
+ClassAssertion(ontoresep:Susu ontoresep:susu_kambing)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:susu_kambing "200"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:susu_kambing "50"^^xsd:integer)
+
+# Individual: ontoresep:susu_kental_manis (ontoresep:susu_kental_manis)
+
+ClassAssertion(ontoresep:Susu ontoresep:susu_kental_manis)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:susu_kental_manis "320"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:susu_kental_manis "150"^^xsd:integer)
+
+# Individual: ontoresep:susu_krim_cair (ontoresep:susu_krim_cair)
+
+ClassAssertion(ontoresep:Susu ontoresep:susu_krim_cair)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:susu_krim_cair "1500"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:susu_krim_cair "470"^^xsd:integer)
+
+# Individual: ontoresep:tahu (ontoresep:tahu)
+
+ClassAssertion(ontoresep:Nabati ontoresep:tahu)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:tahu "151"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:tahu "12"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_purin ontoresep:tahu "108"^^xsd:integer)
+
+# Individual: ontoresep:tauge (ontoresep:tauge)
+
+ClassAssertion(ontoresep:Sayur ontoresep:tauge)
+DataPropertyAssertion(dp:kadar_purin ontoresep:tauge "80"^^xsd:integer)
+
+# Individual: ontoresep:telur_ayam (ontoresep:telur_ayam)
+
+ClassAssertion(ontoresep:Hewani ontoresep:telur_ayam)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:telur_ayam "176"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:telur_ayam "158"^^xsd:integer)
+
+# Individual: ontoresep:telur_bebek (ontoresep:telur_bebek)
+
+ClassAssertion(ontoresep:Hewani ontoresep:telur_bebek)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:telur_bebek "258"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:telur_bebek "191"^^xsd:integer)
+
+# Individual: ontoresep:tempe (ontoresep:tempe)
+
+ClassAssertion(ontoresep:Nabati ontoresep:tempe)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:tempe "0"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:tempe "2.1"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:tempe "4.95"^^xsd:float)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:tempe "0"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_purin ontoresep:tempe "141"^^xsd:integer)
+DataPropertyAssertion(dp:protein ontoresep:tempe "7.97"^^xsd:float)
+
+# Individual: ontoresep:tepung_kedelai (ontoresep:tepung_kedelai)
+
+ClassAssertion(ontoresep:Nabati ontoresep:tepung_kedelai)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:tepung_kedelai "400"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:tepung_kedelai "2"^^xsd:integer)
+
+# Individual: ontoresep:tepung_tapioka (ontoresep:tepung_tapioka)
+
+ClassAssertion(ontoresep:Nabati ontoresep:tepung_tapioka)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:tepung_tapioka "150"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:tepung_tapioka "700"^^xsd:integer)
+
+# Individual: ontoresep:tepung_terigu (ontoresep:tepung_terigu)
+
+ClassAssertion(ontoresep:Nabati ontoresep:tepung_terigu)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:tepung_terigu "304"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:tepung_terigu "36"^^xsd:integer)
+
+# Individual: ontoresep:terasi (ontoresep:terasi)
+
+ClassAssertion(ontoresep:Bumbu ontoresep:terasi)
+
+# Individual: ontoresep:tiram (ontoresep:tiram)
+
+ClassAssertion(ontoresep:Hewani ontoresep:tiram)
+DataPropertyAssertion(dp:kadar_purin ontoresep:tiram "90"^^xsd:integer)
+
+# Individual: ontoresep:tomat (ontoresep:tomat)
+
+ClassAssertion(ontoresep:Sayur ontoresep:tomat)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:tomat "235"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:tomat "4"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:tomat "4"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:tomat "15"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:tomat "1"^^xsd:integer)
+
+# Individual: ontoresep:tomat_hijau (ontoresep:tomat_hijau)
+
+ClassAssertion(ontoresep:Sayur ontoresep:tomat_hijau)
+
+# Individual: ontoresep:tortila_jagung (ontoresep:tortila_jagung)
+
+ClassAssertion(ontoresep:Makanan ontoresep:tortila_jagung)
+DataPropertyAssertion(dp:karbohidrat ontoresep:tortila_jagung "48.0"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:tortila_jagung "52"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:tortila_jagung "25"^^xsd:integer)
+
+# Individual: ontoresep:ubi_jalar_rebus (ontoresep:ubi_jalar_rebus)
+
+ClassAssertion(ontoresep:Makanan ontoresep:ubi_jalar_rebus)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:ubi_jalar_rebus "63"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:ubi_jalar_rebus "6"^^xsd:integer)
+
+# Individual: ontoresep:ubi_kuning (ontoresep:ubi_kuning)
+
+ClassAssertion(ontoresep:Nabati ontoresep:ubi_kuning)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:ubi_kuning "130"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:ubi_kuning "6"^^xsd:integer)
+
+# Individual: ontoresep:ubi_putih (ontoresep:ubi_putih)
+
+ClassAssertion(ontoresep:Nabati ontoresep:ubi_putih)
+
+# Individual: ontoresep:udang (ontoresep:udang)
+
+ClassAssertion(ontoresep:Udang ontoresep:udang)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:udang "333"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:udang "9"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:udang "0.12"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:udang "1.38"^^xsd:float)
+DataPropertyAssertion(dp:kadar_purin ontoresep:udang "234"^^xsd:integer)
+DataPropertyAssertion(dp:karbohidrat ontoresep:udang "0.06"^^xsd:float)
+
+# Individual: ontoresep:udang_brokoli (ontoresep:udang_brokoli)
+
+ClassAssertion(ontoresep:Resep ontoresep:udang_brokoli)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E1)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E2)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E3)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E4)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E5)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E6)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E7)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E8)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E9)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E_10)
+ObjectPropertyAssertion(ontoresep:bahan ontoresep:udang_brokoli ontoresep:E_11)
+DataPropertyAssertion(dp:cara_membuat ontoresep:udang_brokoli "1. Brokoli dipotong perkuntum.
+2. Udang dikupas dan sisakan ekor.
+3. Wortel diiris miring.
+4. Bawang bombay diiris panjang.
+5. Bawang putih dicincang halus.
+6. panaskan minyak.
+7. Tumis bawang bombay dan bawang putih sampai harum.
+8. Masukkan udang.
+9. Aduk sampai berubah warna.
+10. tambahkan wortel dan brokoli aduk sampai setengah layu
+11. Masukkan saus tiram, kecap asin, garam dan merica bubuk aduk rata.
+12. Tuangkan air lalu aduk sampai matang.
+13. udang brokoli siap dihidangkan."^^xsd:string)
+
+# Individual: ontoresep:usus_besar (ontoresep:usus_besar)
+
+ClassAssertion(ontoresep:Jeroan ontoresep:usus_besar)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:usus_besar "177"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:usus_besar "84"^^xsd:integer)
+
+# Individual: ontoresep:usus_halus (ontoresep:usus_halus)
+
+ClassAssertion(ontoresep:Jeroan ontoresep:usus_halus)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:usus_halus "213"^^xsd:integer)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:usus_halus "123"^^xsd:integer)
+
+# Individual: ontoresep:wortel (ontoresep:wortel)
+
+ClassAssertion(ontoresep:Sayur ontoresep:wortel)
+DataPropertyAssertion(dp:kadar_kalium ontoresep:wortel "246.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_karbohidrat ontoresep:wortel "7.5"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak ontoresep:wortel "0.24"^^xsd:float)
+DataPropertyAssertion(dp:kadar_natrium ontoresep:wortel "70.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein ontoresep:wortel "0.93"^^xsd:float)
+DataPropertyAssertion(dp:kadar_serat ontoresep:wortel "2.8"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik ontoresep:wortel "47"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik ontoresep:wortel "4"^^xsd:integer)
+
+# Individual: ontoresep:yogurt (ontoresep:yogurt)
+
+ClassAssertion(ontoresep:Minuman ontoresep:yogurt)
+DataPropertyAssertion(dp:kadar_purin ontoresep:yogurt "8"^^xsd:integer)
+
+# Individual: dp:susu_bebas_lemak (dp:susu_bebas_lemak)
+
+ClassAssertion(ontoresep:Susu dp:susu_bebas_lemak)
+DataPropertyAssertion(dp:kadar_kalium dp:susu_bebas_lemak "410.0"^^xsd:float)
+DataPropertyAssertion(dp:kadar_karbohidrat dp:susu_bebas_lemak "0.08"^^xsd:float)
+DataPropertyAssertion(dp:kadar_karbohidrat dp:susu_bebas_lemak "11.98"^^xsd:float)
+DataPropertyAssertion(dp:kadar_lemak dp:susu_bebas_lemak "0.44"^^xsd:float)
+DataPropertyAssertion(dp:kadar_protein dp:susu_bebas_lemak "8.4"^^xsd:float)
+DataPropertyAssertion(dp:nilai_indeks_glikemik dp:susu_bebas_lemak "32"^^xsd:integer)
+DataPropertyAssertion(dp:nilai_muatan_glikemik dp:susu_bebas_lemak "0"^^xsd:integer)
+
+
+SubClassOf(DataSomeValuesFrom(dp:nilai_indeks_glikemik DatatypeRestriction(xsd:integer xsd:minInclusive "56"^^xsd:integer xsd:maxInclusive "69"^^xsd:integer)) ontoresep:Indeks_glikemik)
+SubClassOf(DataSomeValuesFrom(dp:nilai_indeks_glikemik DatatypeRestriction(xsd:integer xsd:minExclusive "70"^^xsd:integer)) ontoresep:Indeks_glikemik)
+SubClassOf(DataSomeValuesFrom(dp:nilai_indeks_glikemik DatatypeRestriction(xsd:integer xsd:maxInclusive "55"^^xsd:integer)) ontoresep:Indeks_glikemik)
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Makanan dengan indeks glikemiks rendah dan muatan rendah aman dikonsumsi diabetes"^^xsd:string) Annotation(rdfs:label "Indeks_glikemiks_rendah_muatan_rendah"^^xsd:string) Body(ClassAtom(ontoresep:Indeks_glikemik_rendah Variable(ontoresep:x)) ClassAtom(ontoresep:Muatan_glikemik_rendah Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:aman_konsumsi Variable(ontoresep:x) ontoresep:diabetes)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Makanan yang memiliki indeks glikemik rendah dan muatan tinggi dihindari oleh penderita diabetes"^^xsd:string) Annotation(rdfs:label "Indeks_glikemik_rendah_muatan_sedang"^^xsd:string) Body(ClassAtom(ontoresep:Indeks_glikemik_rendah Variable(ontoresep:x)) ClassAtom(ontoresep:Muatan_glikemik_sedang Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:aman_konsumsi Variable(ontoresep:x) ontoresep:diabetes)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Makanan yang memiliki indeks glikemik rendah dan muatan tinggi dihindari oleh penderita diabetes"^^xsd:string) Annotation(rdfs:label "Indeks_rendah_muatan_tinggi"^^xsd:string) Body(ClassAtom(ontoresep:Indeks_glikemik_rendah Variable(ontoresep:x)) ClassAtom(ontoresep:Muatan_glikemik_tinggi Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:dihindari Variable(ontoresep:x) ontoresep:diabetes)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Makanan yang memiliki indeks glikemik sedang dan muatan rendah aman dikonsumsi oleh penderita diabetes"^^xsd:string) Annotation(rdfs:label "Indeks_glikemik_sedang_muatan_glikemik_rendah"^^xsd:string) Body(ClassAtom(ontoresep:Indeks_glikemik_sedang Variable(ontoresep:x)) ClassAtom(ontoresep:Muatan_glikemik_rendah Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:aman_konsumsi Variable(ontoresep:x) ontoresep:diabetes)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Makanan yang memiliki indeks glikemik rendah dan muatan tinggi dihindari oleh penderita diabetes"^^xsd:string) Annotation(rdfs:label "Indeks_sedang_muatan_sedang"^^xsd:string) Body(ClassAtom(ontoresep:Indeks_glikemik_sedang Variable(ontoresep:x)) ClassAtom(ontoresep:Muatan_glikemik_sedang Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:aman_konsumsi Variable(ontoresep:x) ontoresep:diabetes)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Makanan dengan Indeks Glikemiks sedang dan muatan tinggi dihidari oleh penderita diabetes"^^xsd:string) Annotation(rdfs:label "Indeks_sedang_muatan_tinggi"^^xsd:string) Body(ClassAtom(ontoresep:Indeks_glikemik_sedang Variable(ontoresep:x)) ClassAtom(ontoresep:Muatan_glikemik_tinggi Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:dihindari Variable(ontoresep:x) ontoresep:diabetes)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Makanan dengan Indeks glikemik tinggi dan muatan rendah dihindari oleh diabetes"^^xsd:string) Annotation(rdfs:label "Indeks_tinggi_muatan_glikemik_rendah"^^xsd:string) Body(ClassAtom(ontoresep:Indeks_glikemik_tinggi Variable(ontoresep:x)) ClassAtom(ontoresep:Muatan_glikemik_rendah Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:dihindari Variable(ontoresep:x) ontoresep:diabetes)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Bahan makanan yang memiliki indeks tinggi dan muatan sedang dihindari oleh penderita diabetes"^^xsd:string) Annotation(rdfs:label "Indeks_tinggi_muatan_sedang"^^xsd:string) Body(ClassAtom(ontoresep:Muatan_glikemik_sedang Variable(ontoresep:x)) ClassAtom(ontoresep:Indeks_glikemik_tinggi Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:dihindari Variable(ontoresep:x) ontoresep:diabetes)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Bahan makanan dan Makanan yang mengandung indeks glikemik tinggi dihindari oleh penderita diabetes"^^xsd:string) Annotation(rdfs:label "Rule_indeks_glikemik_tinggi"^^xsd:string) Body(ClassAtom(ontoresep:Indeks_glikemik_tinggi Variable(ontoresep:x)) ClassAtom(ontoresep:Muatan_glikemik_tinggi Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:dihindari Variable(ontoresep:x) ontoresep:diabetes)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "semua yang memiliki kandungan natrium rendah aman dikonsumsi oleh penderita hipertensi."^^xsd:string) Annotation(rdfs:label "Rule_natrium_rendah"^^xsd:string) Body(ClassAtom(ontoresep:Natrium_tinggi Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:aman_konsumsi Variable(ontoresep:x) ontoresep:hipertensi)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "semua yang memiliki kandungan natrium tinggi harus dihindari penderita hipertensi"^^xsd:string) Annotation(rdfs:label "Rule_natrium_tinggi"^^xsd:string) Body(ClassAtom(ontoresep:Natrium_tinggi Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:dihindari Variable(ontoresep:x) ontoresep:hipertensi)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Semua Bahan makanan dan makanan yang mengandung kadar purin sedang dibatasi oleh penderita asam urat"^^xsd:string) Annotation(rdfs:label "Rule_purin_sedang"^^xsd:string) Body(ClassAtom(ontoresep:Purin_sedang Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:dibatasi Variable(ontoresep:x) ontoresep:asam_urat)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Semua bahan makanan dan makanan yang mengandung kadar purin tinggi dihindari oleh penderita asam urat"^^xsd:string) Annotation(rdfs:label "Rule_purin_tinggi"^^xsd:string) Body(ClassAtom(ontoresep:Purin_tinggi Variable(ontoresep:x)))Head(ObjectPropertyAtom(ontoresep:pantangan Variable(ontoresep:x) ontoresep:asam_urat)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment ""^^xsd:string) Annotation(rdfs:label "Rule_resep_aman_konsumsi"^^xsd:string) Body(ClassAtom(ontoresep:Resep Variable(ontoresep:a)) ObjectPropertyAtom(ontoresep:bahan Variable(ontoresep:a) Variable(ontoresep:b)) ObjectPropertyAtom(ontoresep:nama_bahan Variable(ontoresep:b) Variable(ontoresep:c)) ObjectPropertyAtom(ontoresep:aman_konsumsi Variable(ontoresep:c) Variable(ontoresep:d)))Head(ObjectPropertyAtom(ontoresep:aman_konsumsi Variable(ontoresep:a) Variable(ontoresep:d))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment ""^^xsd:string) Annotation(rdfs:label "Rule_resep_pantangan"^^xsd:string) Body(ClassAtom(ontoresep:Resep Variable(ontoresep:a)) ObjectPropertyAtom(ontoresep:pantangan Variable(ontoresep:c) Variable(ontoresep:d)) ObjectPropertyAtom(ontoresep:bahan Variable(ontoresep:a) Variable(ontoresep:b)) ObjectPropertyAtom(ontoresep:nama_bahan Variable(ontoresep:b) Variable(ontoresep:c)))Head(ObjectPropertyAtom(ontoresep:pantangan Variable(ontoresep:a) Variable(ontoresep:d))))
+)
