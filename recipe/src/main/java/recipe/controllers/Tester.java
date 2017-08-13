@@ -36,13 +36,12 @@ public class Tester {
 //		String question = "apa saja pantangan penyakit diabetes";
 
 //		==== UJI COBA TERHADAP PERTANYAAN DARI RESPONDEN ===
-//		-- pending, buat method baru untuk menangani query (2)	
 //		String question = "resep apa yang baik bagi penderita diabetes"; 
 	
 //		String question = "apa saja bahan resep sosis saus teriyaki";
 //		String question = "apa resep yang dihindari oleh penderita hipertensi";
-		String question = "apa resep yang aman untuk penderita hipertensi";
-//		String question = "bagaimana cara membuat udang brokoli"; lebih baik diberi bahannya juga
+//		String question = "apa resep yang aman untuk penderita hipertensi";
+		String question = "bagaimana cara membuat udang brokoli";
 //		String question = "apa bahan makanan yang dapat meningkatkan resiko hipertensi";
 //		String question = "apa saja yang dapat meningkatkan gejala asam urat";
 //		String question = "bagaimana resep timun aceh yang bisa menurunkan hipertensi";
