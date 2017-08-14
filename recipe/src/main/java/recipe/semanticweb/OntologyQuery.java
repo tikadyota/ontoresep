@@ -6,7 +6,6 @@
 package recipe.semanticweb;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -15,26 +14,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.openrdf.OpenRDFException;
-import org.openrdf.query.TupleQuery;
-import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.codehaus.jettison.json.JSONObject;
 import org.semanticweb.owlapi.model.IRI;
-import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataProperty;
-import org.semanticweb.owlapi.model.OWLDataPropertyExpression;
-import org.semanticweb.owlapi.model.OWLEntity;
-import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
-import org.semanticweb.owlapi.model.OWLProperty;
-import org.semanticweb.owlapi.model.PrefixManager;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
-
-import com.mysql.fabric.xmlrpc.base.Array;
 
 import de.derivo.sparqldlapi.Query;
 import de.derivo.sparqldlapi.QueryArgument;
@@ -54,7 +43,6 @@ public class OntologyQuery {
 	public static final boolean theQuestionIsSingular = true;
 	private QueryEngine queryEngine;
 	private String queryPattern = "";
-	private static final String RECIPEONTOLOGY_PROPERTY_FILTER = "(http://www.tesis.semantikweb.org/ontoresep/dp)";
 	
 	private OWLObject currentSentencePredicate = null;
 	
@@ -79,17 +67,19 @@ public class OntologyQuery {
 	private OWLReasoner reasoner;
 	private OntologyMapper mapper;
 	
+	private static Set<OWLDataProperty> dp;
+	private static Set<OWLObjectProperty> op;
+	
 	public OntologyQuery(OntologyMapper mapper, OWLReasoner reasoner) {
 		this.queryEngine =  QueryEngine.create(mapper.ontology.getOWLOntologyManager(), reasoner);
 		this.reasoner = reasoner;
 		this.mapper = mapper;
 		inferredItem = new HashMap<String, String>();
+		dp = reasoner.getRootOntology().getDataPropertiesInSignature();
+		op = reasoner.getRootOntology().getObjectPropertiesInSignature();
 	}
 	
 	public Map<String, List<? extends QueryResultModel>> execute(List<Sentence> model) throws Exception {
-		
-		Set<OWLDataProperty> dp = reasoner.getRootOntology().getDataPropertiesInSignature();
-		Set<OWLObjectProperty> op = reasoner.getRootOntology().getObjectPropertiesInSignature();
 		
 		Map<String, List<? extends QueryResultModel>> result = new HashMap<String, List<? extends QueryResultModel>>();
 		
@@ -147,12 +137,15 @@ public class OntologyQuery {
 										OWLNamedIndividual i = iter.next();
 										// panggil method untuk mengambil informasi object property dari 
 										// individu yang sedang di proses saat ini
-										extractDataPropertyValue(i, dp, resultModel);
+										LinkedHashMap<String, String> dp_result = extractDataPropertyValue(i, dp);
 										// Panggil method untuk mengambil semua nilai (range) dari object property
 										// yang ber-relasi dengan individu yang sedang di proses saat ini
-										extractObjectPropertyValue(i, op, resultModel);
+										LinkedHashMap<String, JSONObject> op_result = extractObjectPropertyValue(i, op);
 										
 										resultModel.setSubject(i.toStringID());
+										resultModel.addData(dp_result);
+										resultModel.addObjectData(op_result);
+										
 										Set<OWLClass> individualTypes = reasoner.getTypes(i, true).getFlattened();
 									
 										List<OWLClass> cls = new ArrayList<OWLClass>(individualTypes);
@@ -318,6 +311,25 @@ public class OntologyQuery {
 							+ "\n}";					
 				break;
 				
+				case "OPCI":
+					inferredItem.put(Key.InferedItem.TYPE, "object");
+					inferredItem.put(Key.InferedItem.URI, listOfObjects.get(2).toString());
+					
+					analyzedQuery = "{\n"
+							+ "PropertyValue("+ listOfObjects.get(2) + "," + listOfObjects.get(0) + ",?object)"
+							+ "\n}";				
+				break;
+				
+				case "DPCI":
+					inferredItem.put(Key.InferedItem.TYPE, "object");
+					inferredItem.put(Key.InferedItem.URI, listOfObjects.get(2).toString());
+					
+					analyzedQuery = "{\n"
+							+ "DataProperty(" + listOfObjects.get(0) +"),\n"
+							+ "PropertyValue("+ listOfObjects.get(2) + "," + listOfObjects.get(0) + ",?object)"
+							+ "\n}";				
+				break;
+				
 			}
 		}
 	}
@@ -330,14 +342,15 @@ public class OntologyQuery {
 		return Query.create(query);
 	}
 	
-	private QueryResultData extractDataPropertyValue(OWLNamedIndividual individu, Set<OWLDataProperty> prop, QueryResultData result) {
+	private LinkedHashMap<String, String> extractDataPropertyValue(OWLNamedIndividual individu, Set<OWLDataProperty> prop) {
+		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		for( OWLDataProperty d:prop ) {
 			Set<OWLLiteral> lit = reasoner.getDataPropertyValues(individu, d);
 			if( !lit.isEmpty() ){
 				String namaProperty = normalize(d.toStringID());
 				for(OWLLiteral l: lit) {
 					String value = l.getLiteral();
-					result.putData(namaProperty, value);
+					result.put(namaProperty, value);
 				}
 			}
 		}
@@ -345,13 +358,18 @@ public class OntologyQuery {
 		return result;
 	}
 	
-	private QueryResultData extractObjectPropertyValue(OWLNamedIndividual individu, Set<OWLObjectProperty> prop, QueryResultData result) {
+	private LinkedHashMap<String, JSONObject> extractObjectPropertyValue(OWLNamedIndividual individu, Set<OWLObjectProperty> prop) {
+		LinkedHashMap<String, JSONObject> result = new LinkedHashMap<String, JSONObject>();
 		for( OWLObjectProperty o:prop ) {
+			String normalized_op = normalize(o.toString());			
 			Set<OWLNamedIndividual> ind = reasoner.getObjectPropertyValues(individu, (OWLObjectPropertyExpression) o).getFlattened();
 			if( !ind.isEmpty() ){
 				for( OWLNamedIndividual val: ind ) {
-					System.out.println(val);
+					LinkedHashMap<String, String> res = this.extractDataPropertyValue(val, dp);
+					System.out.println(normalized_op);
+					result.put(normalized_op, new JSONObject(res));
 				}
+				
 			}
 		}
 		
@@ -359,6 +377,6 @@ public class OntologyQuery {
 	}
 	
 	private static String normalize(String uri) {
-		return uri.replaceAll("[a-z].*#", "");
+		return uri.replaceAll("[a-z<].*#", "").replaceAll(">", "");
 	}
 }

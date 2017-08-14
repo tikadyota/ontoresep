@@ -3,6 +3,7 @@ package recipe.semanticweb;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
@@ -39,7 +40,15 @@ public class AnswerBuilder {
 		for ( QueryResultData resultData:queryResultData ) {
 			JSONObject item = new JSONObject();
 			Map<String, String> data = resultData.getData();
+			Map<String, JSONObject> extracted_dp_data = resultData.getObjectData();
 			JSONObject itemData = new JSONObject(data);
+			if ( extracted_dp_data != null ){
+				Set<String> keyset = extracted_dp_data.keySet();
+				
+				for( String key:keyset ) {
+					itemData.put(key, extracted_dp_data.get(key));				
+				}
+			}
 			
 			String subject = shorten(resultData.getSubject());
 			subject = normalize(subject);
