@@ -5,7 +5,7 @@
   <artifactId>recipe</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>recipe Maven Webapp</name>
+  <name>recipe-webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
