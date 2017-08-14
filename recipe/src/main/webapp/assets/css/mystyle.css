@@ -12,7 +12,7 @@ body {
 
 .mainContainer h1 {
   font-family: 'Sansita One', cursive;
-  font-size: 54px;
+  font-size: 44px;
   color: #C51162;
   margin-top: 100px;
   margin-bottom: 0;
@@ -21,7 +21,7 @@ body {
 .mainContainer h3 {
   font-family: 'Sniglet', cursive;
   font-size: 28px;
-  line-height: 1.5;
+  line-height: 2;
   margin-top: 0;
   margin-bottom: 40px;
 }

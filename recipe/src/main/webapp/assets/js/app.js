@@ -25,7 +25,7 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 
 .controller('appController', function ($http, $scope) {
 	var _self = this;
-	_self.serverAPI = 'swproject/ask?q=';
+	_self.serverAPI = 'recipe/ask?q=';
 
 	$scope.loading = false;
 	$scope.formIsSubmitted = false;
@@ -73,18 +73,18 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 	}	
 });
 
-angular.module('myApp').config(function($routeProvider){
-	$routeProvider
-	.when('/scrape',{
-		templateUrl: 'scrape-main.html',
-		controller: 'scrapeController',
-	})
-	.when('/',{
-		templateUrl: 'main.html',
-		controller: 'appController',
-	})
-	.otherwise({
-		redirectTo:'/'
-	});
-	
-})
+//angular.module('myApp').config(function($routeProvider){
+//	$routeProvider
+//	.when('/scrape',{
+//		templateUrl: 'scrape-main.html',
+//		controller: 'scrapeController',
+//	})
+//	.when('/',{
+//		templateUrl: 'main.html',
+//		controller: 'appController',
+//	})
+//	.otherwise({
+//		redirectTo:'/'
+//	});
+//	
+//})

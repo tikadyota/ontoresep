@@ -5,21 +5,21 @@
 						http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
 						id="WebApp_ID" version="3.1">
 						
-  <display-name>MyThesis</display-name>
+  <display-name>recipe</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
   <servlet>
-	<servlet-name>MyThesis</servlet-name>
+	<servlet-name>recipe</servlet-name>
 	<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
   <init-param>
     <param-name>com.sun.jersey.config.property.packages</param-name>
-    <param-value>SWproject.controllers</param-value>
+    <param-value>recipe.controllers</param-value>
   </init-param>
   <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <servlet-name>MyThesis</servlet-name>
-    <url-pattern>/mythesis/*</url-pattern>
+    <servlet-name>recipe</servlet-name>
+    <url-pattern>/recipe/*</url-pattern>
   </servlet-mapping>
 </web-app>
