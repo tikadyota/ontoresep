@@ -25,7 +25,7 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 
 .controller('appController', function ($http, $scope) {
 	var _self = this;
-	_self.serverAPI = 'swproject/ask?q=';
+	_self.serverAPI = 'recipe-project/ask?q=';
 
 	$scope.loading = false;
 	$scope.formIsSubmitted = false;
