@@ -366,7 +366,7 @@ public class OntologyQuery {
 			if( !ind.isEmpty() ){
 				for( OWLNamedIndividual val: ind ) {
 					LinkedHashMap<String, String> res = this.extractDataPropertyValue(val, dp);
-					System.out.println(normalized_op);
+//					System.out.println(normalized_op);
 					result.put(normalized_op, new JSONObject(res));
 				}
 				

@@ -54,6 +54,16 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 									about: value.about,
 									data:[]
 								};	
+								
+								for (var key in value.data ) {
+									if ( value.data.hasOwnProperty(key) ) {
+										var dataItem = {
+											isSpan	: false,
+											name 	: key,
+											value 	: value.data[key]
+										};
+									}
+								}
 								$scope.facts.push(fact);
 							}
 						});
@@ -75,10 +85,6 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 
 angular.module('myApp').config(function($routeProvider){
 	$routeProvider
-	.when('/scrape',{
-		templateUrl: 'scrape-main.html',
-		controller: 'scrapeController',
-	})
 	.when('/',{
 		templateUrl: 'main.html',
 		controller: 'appController',

@@ -20,6 +20,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>recipe-project</servlet-name>
-    <url-pattern>/recipe/*</url-pattern>
+    <url-pattern>/api/*</url-pattern>
   </servlet-mapping>
 </web-app>
