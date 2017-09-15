@@ -280,7 +280,7 @@ public class OntologyQuery {
 							+ "PropertyValue(?subject, ?op," + listOfObjects.get(1) +")"
 							+ "\n}";
 					break;
-				
+								
 				case "COPI":
 					inferredItem.put(Key.InferedItem.TYPE, "object");
 					inferredItem.put(Key.InferedItem.URI, listOfObjects.get(0).toString());
@@ -289,16 +289,7 @@ public class OntologyQuery {
 					analyzedQuery = "{\n"
 							+ "Type( ?subject ," + listOfObjects.get(0) +"),\n"
 							+ "PropertyValue(?subject, " + listOfObjects.get(1) + ", " + listOfObjects.get(2) +")"
-							+ "\n}";
-					
-//					String cls = listOfObjects.get(0).toString();
-//					if(cls.equals("<http://www.tesis.semantikweb.org/ontoresep#Resep>")){
-//						analyzedQuery = "{\n"
-//								+ "Type( ?subject ," + listOfObjects.get(0) +"),\n"
-//								+ "PropertyValue(?subject, " + listOfObjects.get(1) + ", " + listOfObjects.get(2) +")"
-//								+ "\n}";
-//					}
-					
+							+ "\n}";					
 					break;
 					
 				case "OPCCI":
@@ -328,6 +319,29 @@ public class OntologyQuery {
 							+ "DataProperty(" + listOfObjects.get(0) +"),\n"
 							+ "PropertyValue("+ listOfObjects.get(2) + "," + listOfObjects.get(0) + ",?object)"
 							+ "\n}";				
+				break;
+				
+				case "COPCI":
+					inferredItem.put(Key.InferedItem.TYPE, "object");
+					inferredItem.put(Key.InferedItem.URI, listOfObjects.get(3).toString());
+//					this.currentSentencePredicate = listOfObjects.get(1);
+					
+					analyzedQuery = "{\n"
+							+ "Type(?subject," + listOfObjects.get(0) +"),\n"
+							+ "PropertyValue(?subject, " + listOfObjects.get(1) + ", " + listOfObjects.get(3)+ ")"
+							+ "\n}";	
+				break;
+				
+				case "COPDPOPI":
+					inferredItem.put(Key.InferedItem.TYPE, "object");
+					inferredItem.put(Key.InferedItem.URI, listOfObjects.get(0).toString());
+					this.currentSentencePredicate = listOfObjects.get(1);
+					
+					analyzedQuery = "{\n"
+							+ "Type(?subject," + listOfObjects.get(0) +"),\n"
+							+ "PropertyValue(?subject, " + listOfObjects.get(1) + ", ?x),\n"
+							+ "PropertyValue(?x, " + listOfObjects.get(3) + ", " + listOfObjects.get(4)+ ")"
+							+ "\n}";	
 				break;
 				
 			}

@@ -25,17 +25,17 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 
 .controller('appController', function ($http, $scope) {
 	var _self = this;
-	_self.serverAPI = 'recipe-project/ask?q=';
+	_self.serverAPI = 'api/ask?q=';
 
 	$scope.loading = false;
 	$scope.formIsSubmitted = false;
 	$scope.dataIsReady = false;
 	$scope.mainAnswer = '';
-	$scope.facts = [];
+	$scope.reseps = [];
 
 	$scope.search = function (form) {
 		if(form.$valid){
-			$scope.facts = [];
+			$scope.reseps = [];
 			$scope.mainAnswer = '';
 			$scope.dataIsReady = false;
 			$scope.loading = true;
@@ -46,25 +46,21 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 					if ( res.data.code === 200) {
 						var data = res.data.answer;
 						$scope.mainAnswer = res.data.answer.text;
-						$scope.facts = [];
+						$scope.reseps = [];
 						
-						data.inferedFacts.forEach(function (value) {
+						data.inferedFacts.map( function(value) {
+							console.log(value);
+							
 							if( value !== null ) {
-								var fact = {
-									about: value.about,
-									data:[]
-								};	
-								
-								for (var key in value.data ) {
-									if ( value.data.hasOwnProperty(key) ) {
-										var dataItem = {
-											isSpan	: false,
-											name 	: key,
-											value 	: value.data[key]
-										};
-									}
-								}
-								$scope.facts.push(fact);
+								var resep = {}
+								var entries = Object.entries(value.data);
+								entries.map(function(entry) {
+									resep = {
+										key:entry[0],
+										value: entry[1]
+									};
+									$scope.reseps.push(resep);
+								})
 							}
 						});
 	
@@ -75,7 +71,6 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 					$scope.loading = false;
 					$scope.dataIsReady = true;
 				});
-				console.log($scope.input)
 			}
 		} else {
 			alert("Invalid")

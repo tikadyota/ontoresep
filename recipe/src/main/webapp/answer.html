@@ -5,21 +5,10 @@
 </div>
 
 <div class="row">
-	<div class="answerBox animated fadeInBottom" ng-repeat="fact in facts">
-		<h4> {{ fact.about }} </h4>
-		<h4>Berikut adalah beberapa informasi tentang {{ fact.about }}:</h4>
-		<table cellpadding="0" cellspacing="0">
-			<tr valign="top" ng-repeat="data in fact.data">
-				<td ng-if="!data.isSpan">
-					{{ data.name }}
-				</td>
-				<td ng-if="!data.isSpan">
-					<span ng-bind-html="data.value"></span>
-				</td>
-				<td align="center" colspan="2" ng-if="data.isSpan">
-					<span ng-bind-html="data.value"></span>
-				</td>
-			</tr>
-		</table>
-	</div>
+	<table class = "table table-striped" cellpadding="1" cellspacing="1">
+		<tr ng-repeat="resep in reseps">
+			<td>{{ resep.key }}</td>
+			<td>{{ resep.value }}</td>
+		</tr>
+	</table>
 </div>
