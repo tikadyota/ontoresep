@@ -53,14 +53,26 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 							
 							if( value !== null ) {
 								var resep = {}
+								var dataItem = {}
 								var entries = Object.entries(value.data);
-								entries.map(function(entry) {
-									resep = {
-										key:entry[0],
-										value: entry[1]
-									};
-									$scope.reseps.push(resep);
-								})
+								
+								resep = {
+										about: value.about,
+										data:[]
+									};	
+																
+								for (var key in entries ) {
+									if ( entries.hasOwnProperty(key) ) {
+										entries.map(function(entry) {
+											dataItem = {
+												key:entry[0],
+												value: entry[1]
+											};
+											$scope.reseps.push(dataItem);
+										})
+									}
+								}
+								$scope.reseps.push(resep);
 							}
 						});
 	

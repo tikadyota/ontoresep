@@ -73,6 +73,7 @@ public class Main {
 		}
 		
 		finalResult = AnswerBuilder.json(bufferPrseResult, queryResult);
+		System.out.println(finalResult);
 		
 		return finalResult;
 	}

@@ -7,8 +7,9 @@
 <div class="row">
 	<table class = "table table-striped" cellpadding="1" cellspacing="1">
 		<tr ng-repeat="resep in reseps">
+			<td> {{ resep.about }} </td>
 			<td>{{ resep.key }}</td>
-			<td>{{ resep.value }}</td>
+			<td>{{ resep.value }}</td>	
 		</tr>
 	</table>
 </div>
