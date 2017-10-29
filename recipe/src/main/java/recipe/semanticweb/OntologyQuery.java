@@ -302,6 +302,16 @@ public class OntologyQuery {
 							+ "\n}";					
 				break;
 				
+				case "OPCCOPI":
+					inferredItem.put(Key.InferedItem.TYPE, "object");
+					inferredItem.put(Key.InferedItem.URI, listOfObjects.get(4).toString());
+					
+					analyzedQuery = "{\n"
+							+ "Type( ?subject ," + listOfObjects.get(2) +"),\n"
+							+ "PropertyValue(?subject, " + listOfObjects.get(3) + ", " + listOfObjects.get(4) +")"
+							+ "\n}";				
+				break;
+				
 				case "OPCI":
 					inferredItem.put(Key.InferedItem.TYPE, "object");
 					inferredItem.put(Key.InferedItem.URI, listOfObjects.get(2).toString());

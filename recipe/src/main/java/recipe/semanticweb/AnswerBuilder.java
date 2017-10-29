@@ -37,7 +37,9 @@ public class AnswerBuilder {
 			summryText.add("adalah ...");
 		}
 		
-		for ( QueryResultData resultData:queryResultData ) {
+		int h =0;
+		for (  h = 0 ; h < queryResultData.size()-1; h++ ) {
+			QueryResultData resultData = queryResultData.get(h);
 			JSONObject item = new JSONObject();
 			Map<String, String> data = resultData.getData();
 			Map<String, JSONObject> extracted_dp_data = resultData.getObjectData();
@@ -46,13 +48,14 @@ public class AnswerBuilder {
 				Set<String> keyset = extracted_dp_data.keySet();
 				
 				for( String key:keyset ) {
-					itemData.put(key, extracted_dp_data.get(key));				
+					itemData.put(key, extracted_dp_data.get(key));
+					System.out.println(key);
 				}
 			}
 			
 			String subject = shorten(resultData.getSubject());
 			subject = normalize(subject);
-		
+			System.out.println("tes: " + subject);
 			item.put("about", subject);
 			item.put("data", itemData);
 			inferedFacts.put(item);

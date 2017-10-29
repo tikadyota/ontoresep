@@ -49,30 +49,32 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 						$scope.reseps = [];
 						
 						data.inferedFacts.map( function(value) {
-							console.log(value);
+//							console.log(value);
 							
 							if( value !== null ) {
 								var resep = {}
-								var dataItem = {}
+								var dataItem = {};
 								var entries = Object.entries(value.data);
 								
 								resep = {
 										about: value.about,
-										data:[]
+//										data: [],
 									};	
-																
+								$scope.reseps.push(resep);
+//								console.log(resep);
+								
 								for (var key in entries ) {
-									if ( entries.hasOwnProperty(key) ) {
+									if ( entries.hasOwnProperty(key)) {
 										entries.map(function(entry) {
 											dataItem = {
 												key:entry[0],
 												value: entry[1]
 											};
 											$scope.reseps.push(dataItem);
+											console.log(dataItem);
 										})
 									}
-								}
-								$scope.reseps.push(resep);
+								}								
 							}
 						});
 	

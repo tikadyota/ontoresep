@@ -36,20 +36,15 @@ public class Tester {
 //		String question = "apa saja pantangan penyakit diabetes";
 
 //		==== UJI COBA TERHADAP PERTANYAAN DARI RESPONDEN ===
-//		String question = "resep apa yang baik bagi penderita diabetes"; 
-	
+		String question = "resep apa yang baik bagi penderita diabetes";
+//		String question = "bahan makanan hewani apa yang dihindari untuk penderita hipertensi";
 //		String question = "resep apa yang mengandung bahan dengan nama bahan sosis";
 //		String question = "makanan yang baik di konsumsi penyakit hipertensi";
 //		String question = "apa saja bahan resep sosis saus teriyaki";
 //		String question = "apa resep yang dihindari oleh penderita hipertensi";
 //		String question = "apa resep yang aman untuk penderita hipertensi";
-		String question = "bagaimana cara membuat udang brokoli";
-//		String question = "apa bahan makanan yang dapat meningkatkan resiko hipertensi";
-//		String question = "apa saja yang dapat meningkatkan gejala asam urat";
-//		String question = "bagaimana resep timun aceh yang bisa menurunkan hipertensi";
-//		String question = "resep makanan bunda yang dapat menurunkan diabetes tinggi";
-		
-		
+//		String question = "bagaimana cara membuat udang brokoli";
+				
 		Tokenizer tokenizer = new Tokenizer(new MySQLDatabase());
 		Parser parser = new Parser();
 		OntologyMapper ontologyMapper;
