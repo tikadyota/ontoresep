@@ -48,9 +48,7 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 						$scope.mainAnswer = res.data.answer.text;
 						$scope.reseps = [];
 						
-						data.inferedFacts.map( function(value) {
-//							console.log(value);
-							
+						data.inferedFacts.map( function(value) {							
 							if( value !== null ) {
 								var resep = {}
 								var dataItem = {};
@@ -58,23 +56,20 @@ angular.module('myApp',['ngAnimate','ngSanitize','ngRoute'])
 								
 								resep = {
 										about: value.about,
-//										data: [],
 									};	
 								$scope.reseps.push(resep);
-//								console.log(resep);
+								console.log(entries);
 								
-								for (var key in entries ) {
-									if ( entries.hasOwnProperty(key)) {
-										entries.map(function(entry) {
-											dataItem = {
-												key:entry[0],
-												value: entry[1]
-											};
-											$scope.reseps.push(dataItem);
-											console.log(dataItem);
-										})
-									}
-								}								
+								entries.map(function(entry) {
+									dataItem = {
+										key:entry[0],
+										value: entry[1]
+									};
+									$scope.reseps.push(dataItem);
+//									console.log(key);
+//									console.log(entry[0]);
+//									console.log(entry[1]);
+								})
 							}
 						});
 	
